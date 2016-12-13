@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------- *\
+ * Globals.
+\* ---------------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------- *\
+ * Typography & colors.
+\* ---------------------------------------------------------- */
+
+html {
+  color: black;
+  font: 62.5%/1.6 "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.26em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+::selection {
+  color: white;
+  background: #fa6c86;
+}
+
+/* ---------------------------------------------------------- *\
+ * App.
+\* ---------------------------------------------------------- */
+
+body {
+  padding: 20px 0;
+}
+
+.page {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* Tmp */
+.page-header img { max-width: 100%; }
