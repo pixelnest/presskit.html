@@ -18,6 +18,12 @@
     "jest": "^17.0.3"
   },
   "standard": {
-    "globals": ["it", "describe"]
+    "globals": [
+      "it",
+      "describe"
+    ]
+  },
+  "dependencies": {
+    "xml2js": "^0.4.17"
   }
 }
