@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{presskit.title}}</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Navigation -->
+      <nav class="page-nav">
+        <h1>{{presskit.title}}</h1>
+        <p>
+          <a href="{{presskit.link}}">{{presskit.link}}</a>
+        </p>
+
+        <ul>
+          {{#each presskit.sections}}
+            <li>
+              <a href="{{link}}">{{name}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      <nav>
+
+      <div class="page-wrapper">
+        <header class="page-header">
+          <img src="img/header.png" alt="{{presskit.title}} Banner">
+        </header>
+
+        <main class="page-content" role="main">
+          <!-- Intro -->
+          <section>
+            <!-- Factsheet -->
+            <aside>
+              <h2>Factsheet</h2>
+            </aside>
+
+            <article>
+              <h2>Description</h2>
+
+              <h2>History</h2>
+
+              <h2>Projects</h2>
+            </article>
+          </section>
+
+          <!-- Videos, trailers, etc. -->
+          <section>
+            <h2>Videos</h2>
+          </section>
+
+          <!-- Images -->
+          <section>
+            <h2>Images</h2>
+          </section>
+
+          <!-- Logo: download + preview -->
+          <section>
+            <h2>Logo & Icon</h2>
+          </section>
+
+          <!-- List of nominations -->
+          <section>
+            <h2>Awards & Recognition</h2>
+          </section>
+
+          <!-- Articles & Press -->
+          <section>
+            <h2>Selected Articles</h2>
+          </section>
+
+          <!-- Other sources of information -->
+          <section>
+            <h2>Additional Links</h2>
+          </section>
+
+          <!-- Notes -->
+          <section>
+            <!-- Team -->
+            <article>
+              <h2>Team & Repeating Collaborator</h2>
+            </article>
+
+            <!-- Contact -->
+            <article>
+              <h2>Contact</h2>
+            </article>
+          </section>
+        </main>
+
+        <footer class="page-footer">
+          <a href="https://github.com/pixelnest/presskit.html">presskit.html</a> by <a href="http://pixelnest.io">Pixelnest Studio</a> — original <a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>)
+        </footer>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      // GA
+    </script>
+  </body>
+</html>
