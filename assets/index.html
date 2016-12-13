@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{presskit.title}}</title>
 
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
-    <div class="page">
+    <div class="page grid">
       <!-- Navigation -->
-      <nav class="page-nav">
+      <nav class="page-nav grid__item">
         <h1>{{presskit.title}}</h1>
         <p>
           <a href="{{presskit.link}}">{{presskit.link}}</a>
@@ -25,20 +26,50 @@
         </ul>
       </nav>
 
-      <div class="page-wrapper">
+      <div class="page-wrapper grid__item">
         <header class="page-header">
           <img src="img/header.png" alt="{{presskit.title}} Banner">
         </header>
 
         <main class="page-content" role="main">
           <!-- Intro -->
-          <section>
+          <section class="grid">
             <!-- Factsheet -->
-            <aside>
+            <aside class="factsheet grid__item">
               <h2>Factsheet</h2>
+
+              <dl>
+                <dt>Developer:</dt>
+                <dd>{{developer}}</dd>
+
+                <dt>Founding Date:</dt>
+                <dd>{{founding_date}}</dd>
+
+                <dt>Website:</dt>
+                <dd>{{website}}</dd>
+
+                <dt>Press / Business Contact:</dt>
+                <dd>{{business_mail}}</dd>
+
+                <dt>Social:</dt>
+                {{#each social_links}}
+                  <dd>{{link}}</dd>
+                {{/each}}
+
+                <dt>Releases</dt>
+                {{#each releases}}
+                  <dd>{{product}}</dd>
+                {{/each}}
+
+                <dt>Address:</dt>
+                <dd>{{address}}</dd>
+
+                <dt>Phone:</dt>
+                <dd>{{phone}}</dd>
+              </dl>
             </aside>
 
-            <article>
+            <article class="description grid__item">
               <h2>Description</h2>
 
               <h2>History</h2>

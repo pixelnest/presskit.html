@@ -25,7 +25,7 @@ body {
 \* ---------------------------------------------------------- */
 
 html {
-  color: black;
+  color: #444;
   font: 62.5%/1.6 "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
@@ -45,11 +45,50 @@ h6 {
 
 ::selection {
   color: white;
-  background: #fa6c86;
+  background: #3398ff;
 }
 
 /* ---------------------------------------------------------- *\
- * App.
+ * Components - Links.
+\* ---------------------------------------------------------- */
+
+a,
+a:visited {
+  color: #07d;
+}
+
+a:hover {
+  color: #059;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Grid.
+\* ---------------------------------------------------------- */
+
+.grid {
+  display: flex;
+}
+
+.grid .grid__item {
+  padding-left: 25px;
+}
+
+.grid .grid__item:first-child {
+  padding-left: 0;
+}
+
+/* ---------------------------------------------------------- *\
+ * Layout.
 \* ---------------------------------------------------------- */
 
 body {
@@ -57,8 +96,18 @@ body {
 }
 
 .page {
-  width: 980px;
+  display: flex;
+  width: 1165px;
   margin: 0 auto;
+  padding: 0 25px;
+}
+
+.page-nav {
+  min-width: 25%;
+}
+
+.factsheet {
+  min-width: 33%;
 }
 
 /* Tmp */
