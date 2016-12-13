@@ -1,0 +1,23 @@
+{
+  "name": "presskit.html",
+  "description": "Re-implementation of presskit() in static HTML",
+  "version": "0.0.1",
+  "author": "Pixelnest Studio",
+  "license": "MIT",
+  "homepage": "https://github.com/pixelnest/presskit.html#readme",
+  "repository": "https://github.com/pixelnest/presskit.html.git",
+  "bugs": "https://github.com/pixelnest/presskit.html/issues",
+  "main": "lib/main.js",
+  "bin": {
+    "presskit": "bin/presskit"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^17.0.3"
+  },
+  "standard": {
+    "globals": ["it", "describe"]
+  }
+}
