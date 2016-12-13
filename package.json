@@ -12,7 +12,7 @@
     "presskit": "bin/presskit"
   },
   "scripts": {
-    "test": "standard && jest"
+    "test": "standard | snazzy && jest"
   },
   "standard": {
     "globals": [
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "jest": "^17.0.3",
+    "snazzy": "^5.0.0",
     "standard": "^8.6.0"
   }
 }
