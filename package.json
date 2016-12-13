@@ -12,18 +12,22 @@
     "presskit": "bin/presskit"
   },
   "scripts": {
-    "test": "jest"
-  },
-  "devDependencies": {
-    "jest": "^17.0.3"
+    "test": "standard && jest"
   },
   "standard": {
     "globals": [
       "it",
-      "describe"
+      "describe",
+      "expect"
     ]
   },
   "dependencies": {
+    "handlebars": "^4.0.6",
+    "lodash": "^4.17.2",
     "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "jest": "^17.0.3",
+    "standard": "^8.6.0"
   }
 }
