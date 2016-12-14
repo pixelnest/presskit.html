@@ -72,4 +72,65 @@ it('handles valid XML game presskit string', () => {
 
 // JSON tests
 // ----------------------------------------------------------------------------------------
-// TODO
+const templateGamePresskitJSON = '{"game":{"title":"My Super Game","release-date":"04 Feb, 2016","website":"http://pizzaburger.studio/mysupergame"}}'
+const templateCompanyPresskitJSON = '{"company":{"title":"Pizza Burger Studio","based-in":"Paris, France","founding-date":"February 6, 2014","website":"http://pizzaburger.studio/","press-contact":"contact@pizzaburger.studio","press-can-request-copy":"true","monetization-permission":"monetize","phone":"+42 (3) 42 42 42 42 42"}}'
+
+it('handles undefined JSON strings', () => {
+  parser.parseJSON(undefined, function (err, data) {
+    expect(err).toBeDefined()
+    expect(data).toBeUndefined()
+  })
+})
+
+it('handles null JSON strings', () => {
+  parser.parseJSON(null, function (err, data) {
+    expect(err).toBeDefined()
+    expect(data).toBeUndefined()
+  })
+})
+
+it('handles empty JSON strings', () => {
+  parser.parseJSON('', function (err, data) {
+    expect(err).toBeDefined()
+    expect(data).toBeUndefined()
+  })
+})
+
+it('handles invalid JSON strings', () => {
+  parser.parseJSON('Test. This is not JSON', function (err, data) {
+    expect(err).toBeDefined()
+    expect(data).toBeUndefined()
+  })
+})
+
+it('handles incompleted JSON strings', () => {
+  parser.parseJSON('{ "game" : { "title": "My Super Game!!"'
+  , function (err, data) {
+    expect(err).toBeDefined()
+    expect(data).toBeUndefined()
+  })
+})
+
+it('handles valid JSON strings but invalid presskit data', () => {
+  parser.parseJSON('{"employees":[{"firstName":"John","lastName":"Doe"},{"firstName":"Anna","lastName":"Smith"},{"firstName":"Peter","lastName":"Jones"}]}'
+  , function (err, data) {
+    expect(data).toBeUndefined()
+    expect(err).toBeDefined()
+  })
+})
+
+it('handles valid JSON company presskit string', () => {
+  parser.parseJSON(templateCompanyPresskitJSON, function (err, data) {
+    expect(err).toBeNull()
+    expect(data.type).toBe('company')
+    expect(data.title).toBeDefined()
+  })
+})
+
+it('handles valid JSON game presskit string', () => {
+  parser.parseJSON(templateGamePresskitJSON, function (err, data) {
+    expect(err).toBeNull()
+    expect(data.type).toBe('product')
+    expect(data.title).toBeDefined()
+  })
+})
