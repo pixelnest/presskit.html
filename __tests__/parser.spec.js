@@ -6,35 +6,35 @@ const templateGamePresskitXML = '<?xml version="1.0" encoding="UTF-8"?><product>
 const templateCompanyPresskitXML = '<?xml version="1.0" encoding="UTF-8"?><company><title>Pizza Burger Studio</title><based-in>Paris, France</based-in><founding-date>February 6, 2014</founding-date><website>http://pizzaburger.studio/</website><press-contact>contact@pizzaburger.studio</press-contact><press-can-request-copy>true</press-can-request-copy><monetization-permission>monetize</monetization-permission><phone>+42 (3) 42 42 42 42 42</phone><address><line>42, invisible lane</line><line>35000 Rennes</line><line>France</line></address><socials><social><name>twitter.com/pizzaburgerstudio</name><link>twitter.com/pizzaburgerstudio</link></social><social><name>facebook.com/pizzaburgerstudio</name><link>facebook.com/pizzaburgerstudio</link></social><social><name>Skype</name><link>callto:pizzaburgerstudio</link></social></socials><description>What is your company? What are you doing?</description><histories><history><header>Beginning</header><text>Tell your story.</text></history><history><header>Now</header><text>More to tell? Use multiple history block.</text></history></histories><trailers><trailer><name>Example from YouTube. Don\'t give a full link: the ID is enough</name><youtube>er416Ad3R1g</youtube></trailer><trailer><name>Example from both YouTube and Vimeo</name><youtube>YH3c1QZzRK4</youtube><vimeo>108650530</vimeo></trailer></trailers><awards><award><description>An award.</description><info>Name, location, 29 April, 1988</info></award><award><description>A nomination.</description><info>Name, location, 03 October, 1988</info></award></awards><quotes><quote><description>There\'s not enough pizza in your life. It\'s never enough.</description><name>@mrhelmut</name><website>Tweet</website><link>https://twitter.com/mrhelmut/status/717276362814447616</link></quote></quotes><additionals><additional><title>Patricia Pizza Twitter</title><description>@patpiz at</description><link>https://twitter.com/patpiz</link></additional><additional><title>Bob Burger Twitter</title><description>@bobburg at</description><link>https://twitter.com/bobburg</link></additional></additionals><credits><credit><person>Patricia Pizza</person><role>Founder, Developer, Pizza Burger Studio</role></credit><credit><person>Bob Burger</person><role>Founder, Designer, Pizza Burger Studio</role></credit><credit><person>Jake Burgza</person><website>www.jakeburgza.com</website><role>Artist, Collaborator</role></credit><credit><person>Sophia Pizer</person><website>www.sophiapizer.com</website><role>Musician, Collaborator</role></credit></credits><contacts><contact><name>Inquiries</name><mail>contact@pizzaburger.studio</mail></contact><contact><name>Twitter</name><link>https://twitter.com/pizzaburgerstudio</link></contact><contact><name>Facebook</name><link>https://facebook.com/pizzaburgerstudio</link></contact><contact><name>Web</name><link>pizzaburger.studio</link></contact></contacts></company>'
 
 it('handles undefined XML strings', () => {
-  parser.convert(undefined, function (err, data) {
+  parser.parseXML(undefined, function (err, data) {
     expect(err).toBeDefined()
     expect(data).toBeUndefined()
   })
 })
 
 it('handles null XML strings', () => {
-  parser.convert(null, function (err, data) {
+  parser.parseXML(null, function (err, data) {
     expect(err).toBeDefined()
     expect(data).toBeUndefined()
   })
 })
 
 it('handles empty XML strings', () => {
-  parser.convert('', function (err, data) {
+  parser.parseXML('', function (err, data) {
     expect(err).toBeDefined()
     expect(data).toBeUndefined()
   })
 })
 
 it('handles invalid XML strings', () => {
-  parser.convert('Test. This is not XML', function (err, data) {
+  parser.parseXML('Test. This is not XML', function (err, data) {
     expect(err).toBeDefined()
     expect(data).toBeUndefined()
   })
 })
 
 it('handles incompleted XML strings', () => {
-  parser.convert('<?xml version="1.0"?><catalog><book id="bk101"><author>Gambardella, Matthew'
+  parser.parseXML('<?xml version="1.0"?><catalog><book id="bk101"><author>Gambardella, Matthew'
   , function (err, data) {
     expect(err).toBeDefined()
     expect(data).toBeUndefined()
@@ -42,7 +42,7 @@ it('handles incompleted XML strings', () => {
 })
 
 it('handles valid XML strings but invalid presskit data', () => {
-  parser.convert('<?xml version="1.0"?><catalog><book id="bk101"><author>Gambardella, Matthew</author><title>XML Developer\'s Guide</title><genre>Computer</genre><price>44.95</price><publish_date>2000-10-01</publish_date><description>An in-depth look at creating applications with XML.</description></book></catalog>'
+  parser.parseXML('<?xml version="1.0"?><catalog><book id="bk101"><author>Gambardella, Matthew</author><title>XML Developer\'s Guide</title><genre>Computer</genre><price>44.95</price><publish_date>2000-10-01</publish_date><description>An in-depth look at creating applications with XML.</description></book></catalog>'
   , function (err, data) {
     expect(data).toBeUndefined()
     expect(err).toBeDefined()
@@ -50,7 +50,7 @@ it('handles valid XML strings but invalid presskit data', () => {
 })
 
 it('handles valid XML company presskit string', () => {
-  parser.convert(templateCompanyPresskitXML, function (err, data) {
+  parser.parseXML(templateCompanyPresskitXML, function (err, data) {
     expect(err).toBeNull()
     expect(data.type).toBe('company')
     expect(data.title).toBeDefined()
@@ -59,7 +59,7 @@ it('handles valid XML company presskit string', () => {
 })
 
 it('handles valid XML game presskit string', () => {
-  parser.convert(templateGamePresskitXML, function (err, data) {
+  parser.parseXML(templateGamePresskitXML, function (err, data) {
     expect(err).toBeNull()
     expect(data.type).toBe('product')
     expect(data.title).toBeDefined()
