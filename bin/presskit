@@ -2,4 +2,4 @@
 
 // Execute the generator in the working directory
 const generator = require('../lib/generator')
-generator.generate(process.cwd())
+generator.generate(process.cwd(), true)
