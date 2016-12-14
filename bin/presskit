@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-console.log('Hello, world!')
+
+// Execute the generator in the working directory
+const generator = require('../lib/generator')
+generator.generate(process.cwd())
