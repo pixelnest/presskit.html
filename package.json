@@ -35,6 +35,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "jest": "^18.0.0",
+    "mock-fs": "^3.12.1",
     "snazzy": "^5.0.0",
     "standard": "^8.6.0"
   }
