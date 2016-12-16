@@ -72,8 +72,8 @@ it('handles valid XML game presskit string', () => {
 
 // JSON tests
 // ----------------------------------------------------------------------------------------
-const templateGamePresskitJSON = '{"game":{"title":"My Super Game","release-date":"04 Feb, 2016","website":"http://pizzaburger.studio/mysupergame"}}'
-const templateCompanyPresskitJSON = '{"company":{"title":"Pizza Burger Studio","based-in":"Paris, France","founding-date":"February 6, 2014","website":"http://pizzaburger.studio/","press-contact":"contact@pizzaburger.studio","press-can-request-copy":"true","monetization-permission":"monetize","phone":"+42 (3) 42 42 42 42 42"}}'
+const templateGamePresskitJSON = '{"type": "product", "title":"My Super Game","release-date":"04 Feb, 2016","website":"http://pizzaburger.studio/mysupergame"}'
+const templateCompanyPresskitJSON = '{"type": "company", "title":"Pizza Burger Studio","based-in":"Paris, France","founding-date":"February 6, 2014","website":"http://pizzaburger.studio/","press-contact":"contact@pizzaburger.studio","press-can-request-copy":"true","monetization-permission":"monetize","phone":"+42 (3) 42 42 42 42 42"}'
 
 it('handles undefined JSON strings', () => {
   parser.parseJSON(undefined, function (err, data) {

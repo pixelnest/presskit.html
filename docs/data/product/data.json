@@ -1,122 +1,122 @@
 {
-  "game": {
-    "title": "My Super Game",
-    "release-date": "04 Feb, 2016",
-    "website": "http://pizzaburger.studio/mysupergame",
+  "type": "product",
 
-    "press-can-request-copy": true,
+  "title": "My Super Game",
+  "release-date": "04 Feb, 2016",
+  "website": "http://pizzaburger.studio/mysupergame",
 
-    "platforms": [
-      {
-        "name": "PC / Mac",
-        "link": "http://itch.io/"
-      }, {
-        "name": "Steam",
-        "link": "http://steampowered.com/"
-      }
-    ],
+  "press-can-request-copy": true,
 
-    "prices": [
-      {
-        "currency": "EUR",
-        "value": "€20"
-      }, {
-        "currency": "USD",
-        "value": "$20"
-      }, {
-        "currency": "GBP",
-        "value": "£16"
-      }, {
-        "currency": "JPY",
-        "value": "¥2300"
-      }
-    ],
+  "platforms": [
+    {
+      "name": "PC / Mac",
+      "link": "http://itch.io/"
+    }, {
+      "name": "Steam",
+      "link": "http://steampowered.com/"
+    }
+  ],
 
-    "description": "Here goes a quick description of your game. Be concise and explain in very few words the gameplay and why it's really cool and why everyone should play it.",
+  "prices": [
+    {
+      "currency": "EUR",
+      "value": "€20"
+    }, {
+      "currency": "USD",
+      "value": "$20"
+    }, {
+      "currency": "GBP",
+      "value": "£16"
+    }, {
+      "currency": "JPY",
+      "value": "¥2300"
+    }
+  ],
 
-    "history": "Add some storytelling here. Not the scenario of your game but rather some background of the creation process: why are you making this game? Most projects starts with a cool story.",
+  "description": "Here goes a quick description of your game. Be concise and explain in very few words the gameplay and why it's really cool and why everyone should play it.",
 
-    "features": [
-      "List some \"Key Sellings Points\" to grab player's attention.",
-      "Don't be too generic (\"pixel art graphics!\"), don't be too pretentious (\"most incredible game experience!\").",
-      "Also, people like numbers, so you can add some (450 weapons, hundreds of levels, dozens of hours of playtime!)",
-      "Need ideas? Maybe explain some game modes?",
-      "It would be a nice place to say something about multiplayer, if you have some.",
-      "Have you translated your game? (You probably should btw.)"
-    ],
+  "history": "Add some storytelling here. Not the scenario of your game but rather some background of the creation process: why are you making this game? Most projects starts with a cool story.",
 
-    "trailers": [
-      {
-        "name": "Official Trailer",
-        "youtube": "EtXajayBLzw",
-        "vimeo": "189815199"
-      }, {
-        "name": "Gameplay Video 2",
-        "youtube": "EPNK1j3TMjU",
-        "vimeo": "189815199"
-      }, {
-        "name": "Gameplay Video 1",
-        "youtube": "EPNK1j3TMjU",
-        "vimeo": "189815199"
-      }
-    ],
+  "features": [
+    "List some \"Key Sellings Points\" to grab player's attention.",
+    "Don't be too generic (\"pixel art graphics!\"), don't be too pretentious (\"most incredible game experience!\").",
+    "Also, people like numbers, so you can add some (450 weapons, hundreds of levels, dozens of hours of playtime!)",
+    "Need ideas? Maybe explain some game modes?",
+    "It would be a nice place to say something about multiplayer, if you have some.",
+    "Have you translated your game? (You probably should btw.)"
+  ],
 
-    "awards": [
-      {
-        "description": "Game of the year without a doubt.",
-        "info": "Saint-Père-Marc-En-Poulet (France), 04 February, 2016"
-      }, {
-        "description": "Best soundtrack.",
-        "info": "A great game festival (World), 01 October, 2015"
-      }, {
-        "description": "Best MYGAMENGINE game.",
-        "info": "Deep into the woods (Forest), 31 March, 2014"
-      }
-    ],
+  "trailers": [
+    {
+      "name": "Official Trailer",
+      "youtube": "EtXajayBLzw",
+      "vimeo": "189815199"
+    }, {
+      "name": "Gameplay Video 2",
+      "youtube": "EPNK1j3TMjU",
+      "vimeo": "189815199"
+    }, {
+      "name": "Gameplay Video 1",
+      "youtube": "EPNK1j3TMjU",
+      "vimeo": "189815199"
+    }
+  ],
 
-    "quotes": [
-      {
-        "description": "This is my favorite game of all time.",
-        "name": "Mum",
-        "website": "At home",
-        "link": "http://at.home/"
-      }, {
-        "description": "A very serious quote you're very proud of by someone you respect.",
-        "name": "Master",
-        "website": "Master's website",
-        "link": "http://mast.er/"
-      }, {
-        "description": "10/10 would play it again and again.",
-        "name": "A friendly anonymous Steam reviewer",
-        "website": "Steam Review",
-        "link": "http://steam.review/"
-      }
-    ],
+  "awards": [
+    {
+      "description": "Game of the year without a doubt.",
+      "info": "Saint-Père-Marc-En-Poulet (France), 04 February, 2016"
+    }, {
+      "description": "Best soundtrack.",
+      "info": "A great game festival (World), 01 October, 2015"
+    }, {
+      "description": "Best MYGAMENGINE game.",
+      "info": "Deep into the woods (Forest), 31 March, 2014"
+    }
+  ],
 
-    "additionals": [
-      {
-        "title": "Original Soundtrack (OST)",
-        "description": "Composed by an awesome musician. Listen for free, download for $3 at",
-        "link": "http://zandernoriega.bandcamp.com/album/steredenn-original-soundtrack"
-      }, {
-        "title": "Release announcement",
-        "description": "Announcement are exciting, so we usually make blog posts or news about it on",
-        "link": "http://pixelnest.io/journal/"
-      }
-    ],
+  "quotes": [
+    {
+      "description": "This is my favorite game of all time.",
+      "name": "Mum",
+      "website": "At home",
+      "link": "http://at.home/"
+    }, {
+      "description": "A very serious quote you're very proud of by someone you respect.",
+      "name": "Master",
+      "website": "Master's website",
+      "link": "http://mast.er/"
+    }, {
+      "description": "10/10 would play it again and again.",
+      "name": "A friendly anonymous Steam reviewer",
+      "website": "Steam Review",
+      "link": "http://steam.review/"
+    }
+  ],
 
-    "credits": [
-      {
-        "person": "Krokmou",
-        "role": "Bot Leader, Game Designer, Pixelnest Studio"
-      }, {
-        "person": "Hiccup",
-        "role": "Developer, Pixelnest Studio"
-      }, {
-        "person": "Astrid",
-        "website": "http://www.astridsupergame.com",
-        "role": "Musician, Freelancer"
-      }
-    ]
-  }
+  "additionals": [
+    {
+      "title": "Original Soundtrack (OST)",
+      "description": "Composed by an awesome musician. Listen for free, download for $3 at",
+      "link": "http://zandernoriega.bandcamp.com/album/steredenn-original-soundtrack"
+    }, {
+      "title": "Release announcement",
+      "description": "Announcement are exciting, so we usually make blog posts or news about it on",
+      "link": "http://pixelnest.io/journal/"
+    }
+  ],
+
+  "credits": [
+    {
+      "person": "Krokmou",
+      "role": "Bot Leader, Game Designer, Pixelnest Studio"
+    }, {
+      "person": "Hiccup",
+      "role": "Developer, Pixelnest Studio"
+    }, {
+      "person": "Astrid",
+      "website": "http://www.astridsupergame.com",
+      "role": "Musician, Freelancer"
+    }
+  ]
 }

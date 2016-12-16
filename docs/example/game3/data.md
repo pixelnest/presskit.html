@@ -1,4 +1,5 @@
 ---
+type: game
 release_date: YYYY/MM/DD
 website: http://pizzaburger.studio/mysupergame
 press-can-request-copy: true
