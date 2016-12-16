@@ -4,7 +4,7 @@
 // Imports.
 // -------------------------------------------------------------
 
-const generator = require('../lib/generator')
+const generator = require('../lib/core/generator')
 
 // -------------------------------------------------------------
 // Spec.

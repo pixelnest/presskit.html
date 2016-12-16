@@ -6,7 +6,7 @@
 
 const mock = require('mock-fs')
 const fs = require('fs')
-const sfs = require('../lib/sfs')
+const sfs = require('../lib/helpers/sfs')
 
 // -------------------------------------------------------------
 // Data.

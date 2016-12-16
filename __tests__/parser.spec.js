@@ -6,7 +6,7 @@
 
 const fs = require('fs')
 
-const parser = require('../lib/parser')
+const parser = require('../lib/core/parser')
 
 // -------------------------------------------------------------
 // XML.

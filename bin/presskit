@@ -1,5 +1,3 @@
 #!/usr/bin/env node
 
-// Execute the generator in the working directory
-const generator = require('../lib/generator')
-generator.generate(process.cwd(), true)
+require('../lib/index').start()
