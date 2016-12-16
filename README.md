@@ -9,17 +9,17 @@ The goal is to generate only HTML pages — no PHP required at all. Just fill so
 
 ## Installation
 
-Simpliest way to install **presskit.html** is to use [npm](http://npmjs.org/):
+The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/):
 
 ```
-npm install <TODO,  package not ready!>
+npm install -g <TODO,  package not ready!>
 ```
 
-This should add the `presskit` command to your shell.
+This should add (globally) the `presskit` command to your shell.
 
 ## Usage
 
-`presskit` will scan your local working directory (where you are executing the command) and all sub-directories for data files.
+`presskit` will scan your local working directory (where you are executing the command) and all direct sub-directories for data files.
 
 A data file is either:
 
