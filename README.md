@@ -25,8 +25,7 @@ A data file is either:
 
 - a [presskit()](http://dopresskit.com) `data.xml` file
 - a new `data.json` file
-
-(- soon a `data.md` file)
+- (soon a `data.md` file)
 
 ### Files structure
 
