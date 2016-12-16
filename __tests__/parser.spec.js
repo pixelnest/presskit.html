@@ -4,6 +4,8 @@
 // Imports.
 // -------------------------------------------------------------
 
+const fs = require('fs')
+
 const samples = require('./samples')
 const parser = require('../lib/parser')
 
@@ -82,6 +84,9 @@ describe('XML Parser', () => {
 // -------------------------------------------------------------
 
 describe('JSON Parser', () => {
+  let companyJSON = fs.readFileSync('./docs/data/company/data.json', 'utf-8')
+  let productJSON = fs.readFileSync('./docs/data/product/data.json', 'utf-8')
+
   it('handles undefined JSON strings', () => {
     parser.parseJSON(undefined, (err, data) => {
       expect(err).toBeDefined()
@@ -127,7 +132,7 @@ describe('JSON Parser', () => {
   })
 
   it('handles valid JSON company presskit string', () => {
-    parser.parseJSON(samples.companyJSON, (err, data) => {
+    parser.parseJSON(companyJSON, (err, data) => {
       expect(err).toBeNull()
       expect(data.type).toBe('company')
       expect(data.title).toBeDefined()
@@ -135,7 +140,7 @@ describe('JSON Parser', () => {
   })
 
   it('handles valid JSON game presskit string', () => {
-    parser.parseJSON(samples.productJSON, (err, data) => {
+    parser.parseJSON(productJSON, (err, data) => {
       expect(err).toBeNull()
       expect(data.type).toBe('product')
       expect(data.title).toBeDefined()
