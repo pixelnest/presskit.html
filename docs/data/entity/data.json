@@ -1,0 +1,119 @@
+{
+  "type": "company",
+
+  "title": "Pizza Burger Studio",
+  "based-in": "Paris, France",
+  "founding-date": "February 6, 2014",
+
+  "website": "http://pizzaburger.studio/",
+  "press-contact": "contact@pizzaburger.studio",
+
+  "press-can-request-copy": "true",
+  "monetization-permission": "monetize",
+
+  "phone": "+42 (3) 42 42 42 42 42",
+  "address": {
+    "line": ["42, invisible lane", "35000 Rennes", "France"]
+  },
+
+  "socials": [
+    {
+      "name": "twitter.com/pizzaburgerstudio",
+      "link": "twitter.com/pizzaburgerstudio"
+    }, {
+      "name": "facebook.com/pizzaburgerstudio",
+      "link": "facebook.com/pizzaburgerstudio"
+    }, {
+      "name": "Skype",
+      "link": "callto:pizzaburgerstudio"
+    }
+  ],
+
+  "description": "What is your company? What are you doing?",
+
+  "histories": [
+    {
+      "header": "Beginning",
+      "text": "Tell your story."
+    }, {
+      "header": "Now",
+      "text": "More to tell? Use multiple history block."
+    }
+  ],
+
+  "trailers": [
+    {
+      "name": "Example from YouTube. Don't give a full link: the ID is enough",
+      "youtube": "er416Ad3R1g"
+    }, {
+      "name": "Example from both YouTube and Vimeo",
+      "youtube": "YH3c1QZzRK4",
+      "vimeo": "108650530"
+    }
+  ],
+
+  "awards": [
+    {
+      "description": "An award.",
+      "info": "Name, location, 29 April, 1988"
+    }, {
+      "description": "A nomination.",
+      "info": "Name, location, 03 October, 1988"
+    }
+  ],
+
+  "quotes": [
+    {
+      "description": "There's not enough pizza in your life. It's never enough.",
+      "name": "@mrhelmut",
+      "website": "Tweet",
+      "link": "https://twitter.com/mrhelmut/status/717276362814447616"
+    }
+  ],
+
+  "additionals": [
+    {
+      "title": "Patricia Pizza Twitter",
+      "description": "@patpiz at",
+      "link": "https://twitter.com/patpiz"
+    }, {
+      "title": "Bob Burger Twitter",
+      "description": "@bobburg at",
+      "link": "https://twitter.com/bobburg"
+    }
+  ],
+
+  "credits": [
+    {
+      "person": "Patricia Pizza",
+      "role": "Founder, Developer, Pizza Burger Studio"
+    }, {
+      "person": "Bob Burger",
+      "role": "Founder, Designer, Pizza Burger Studio"
+    }, {
+      "person": "Jake Burgza",
+      "website": "www.jakeburgza.com",
+      "role": "Artist, Collaborator"
+    }, {
+      "person": "Sophia Pizer",
+      "website": "www.sophiapizer.com",
+      "role": "Musician, Collaborator"
+    }
+  ],
+
+  "contacts": [
+    {
+      "name": "Inquiries",
+      "mail": "contact@pizzaburger.studio"
+    }, {
+      "name": "Twitter",
+      "link": "https://twitter.com/pizzaburgerstudio"
+    }, {
+      "name": "Facebook",
+      "link": "https://facebook.com/pizzaburgerstudio"
+    }, {
+      "name": "Web",
+      "link": "pizzaburger.studio"
+    }
+  ]
+}
