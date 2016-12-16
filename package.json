@@ -18,7 +18,7 @@
     "servebuild": "npm start && browser-sync start -s build/ -f build/ --no-ui --no-open"
   },
   "standard": {
-    "globals": [ "beforeAll", "afterAll", "it", "describe", "expect" ]
+    "globals": [ "beforeAll", "afterAll", "beforeEach", "afterEach", "it", "describe", "expect" ]
   },
   "jest": {
     "testEnvironment": "node"
