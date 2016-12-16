@@ -24,8 +24,9 @@ This should add the `presskit` command to your shell.
 A data file is either:
 
 - a [presskit()](http://dopresskit.com) `data.xml` file
-- a new data.json file
-(- soon a data.md file)
+- a new `data.json` file
+
+(- soon a `data.md` file)
 
 ### Files structure
 
@@ -55,7 +56,8 @@ After looking for all data, `presskit` will generate a `build/` folder with all 
 
 Simply copy **all** the files to your hosting location... and you're done!
 
-Note: the webserver is **not** included.
+
+*Note: the webserver is __not__ included.*
 
 <!-- TODO -->
 <!-- Contributing -->
