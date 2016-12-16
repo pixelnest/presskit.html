@@ -75,6 +75,12 @@
               <h2>History</h2>
 
               <h2>Projects</h2>
+
+              {{#each products}}
+                <li>
+                  <a href="{{path}}">{{title}}</a>
+                </li>
+              {{/each}}
             </article>
           </section>
 
