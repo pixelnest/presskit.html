@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.5",
-    "jest": "^17.0.3",
+    "jest": "^18.0.0",
     "snazzy": "^5.0.0",
     "standard": "^8.6.0"
   }
