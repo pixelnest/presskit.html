@@ -6,7 +6,6 @@
 
 const fs = require('fs')
 
-const samples = require('./samples')
 const parser = require('../lib/parser')
 
 // -------------------------------------------------------------
@@ -14,6 +13,9 @@ const parser = require('../lib/parser')
 // -------------------------------------------------------------
 
 describe('XML Parser', () => {
+  let companyXML = fs.readFileSync('./docs/data/company/data.xml', 'utf-8')
+  let productXML = fs.readFileSync('./docs/data/product/data.xml', 'utf-8')
+
   it('handles undefined XML strings', () => {
     parser.parseXML(undefined, (err, data) => {
       expect(err).toBeDefined()
@@ -61,7 +63,7 @@ describe('XML Parser', () => {
   })
 
   it('handles valid XML company presskit string', () => {
-    parser.parseXML(samples.companyXML, (err, data) => {
+    parser.parseXML(companyXML, (err, data) => {
       expect(err).toBeNull()
       expect(data.type).toBe('company')
       expect(data.title).toBeDefined()
@@ -70,7 +72,7 @@ describe('XML Parser', () => {
   })
 
   it('handles valid XML game presskit string', () => {
-    parser.parseXML(samples.productXML, (err, data) => {
+    parser.parseXML(productXML, (err, data) => {
       expect(err).toBeNull()
       expect(data.type).toBe('product')
       expect(data.title).toBeDefined()
