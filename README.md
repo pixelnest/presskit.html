@@ -1,6 +1,7 @@
 # presskit.html
 
 ![Build status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 Complete re-implementation of [presskit()](http://dopresskit.com) (originally created by [Rami Ismail](https://twitter.com/tha_rami)).
 
