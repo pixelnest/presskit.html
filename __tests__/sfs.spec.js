@@ -20,15 +20,18 @@ let fakeFileSystem = {
       'img02.png': new Buffer([]),
       'img03.png': new Buffer([])
     },
-    'empty': {}
+    'emptyDir1': {}
   },
   'product2': {
     'data.xml': '<?xml version="1.0" encoding="utf-8"?><product></product>'
   },
   'misc': {
-    'test': {}
+    'product3': {
+      'data.md': 'Fake Product'
+    },
+    'emptyDir2': {}
   },
-  'other': {},
+  'emptyDir3': {},
   'data.json': '{ "type": "company", "title": "Fake Company" }'
 }
 
@@ -59,7 +62,26 @@ describe('#createDir', () => {
   })
 
   it('should not create the directory if it already exists', () => {
-    let result = sfs.createDir('other')
+    let result = sfs.createDir('product1')
     expect(result).toBeFalsy()
+  })
+})
+
+describe('#findAllFiles', () => {
+  it('should return an array containing every files on the FS', () => {
+    let files = sfs.findAllFiles('.')
+
+    // Number of files in mockfs.
+    expect(files.length).toBe(7)
+  })
+
+  it('should limit its search to one subfolder only', () => {
+    let files = sfs.findAllFiles('.', { maxDepth: 1 })
+    expect(files.length).toBe(3)
+  })
+
+  it('should ignore some folders', () => {
+    let files = sfs.findAllFiles('.', { ignoredFolders: ['product1', 'product2'] })
+    expect(files.length).toBe(2)
   })
 })
