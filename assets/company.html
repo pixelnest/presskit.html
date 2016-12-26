@@ -52,7 +52,7 @@
                 <dd>{{business_mail}}</dd>
 
                 <dt>Social:</dt>
-                {{#each social_links}}
+                {{#each presskit.socials}}
                   <dd>{{link}}</dd>
                 {{/each}}
 
@@ -70,9 +70,15 @@
             </aside>
 
             <article class="description grid__item">
+
               <h2>Description</h2>
+              {{presskit.description}}
 
               <h2>History</h2>
+              {{#presskit.histories.history}}
+                <h3>{{header}}</h3>
+                <p>{{text}}</p>
+              {{/presskit.histories.history}}
 
               <h2>Projects</h2>
 
@@ -87,6 +93,21 @@
           <!-- Videos, trailers, etc. -->
           <section>
             <h2>Videos</h2>
+
+            {{#presskit.trailers.trailer}}
+            <div>
+              <p>
+                {{name}}
+              </p>
+              {{#youtube}}
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
+              {{/youtube}}
+
+              {{#vimeo}}
+                <iframe src="https://player.vimeo.com/video/{{.}}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              {{/vimeo}}
+            </div>
+            {{/presskit.trailers.trailer}}
           </section>
 
           <!-- Images -->
