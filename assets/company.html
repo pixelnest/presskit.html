@@ -28,7 +28,7 @@
 
       <div class="page-wrapper grid__item">
         <header class="page-header">
-          <img src="img/header.png" alt="{{presskit.title}} Banner">
+          <img src="images/header.png" alt="{{presskit.title}} Banner">
         </header>
 
         <main class="page-content" role="main">
@@ -116,11 +116,20 @@
           <!-- Images -->
           <section>
             <h2>Images</h2>
+            {{#images.screenshots}}
+              <img src="./images/{{.}}" />
+            {{/images.screenshots}}
           </section>
 
           <!-- Logo: download + preview -->
           <section>
             <h2>Logo & Icon</h2>
+            {{#images.logos}}
+              <img src="./images/{{.}}" />
+            {{/images.logos}}
+            {{#images.icons}}
+              <img src="./images/{{.}}" />
+            {{/images.icons}}
           </section>
 
           <!-- List of nominations -->
