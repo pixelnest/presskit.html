@@ -40,32 +40,35 @@
 
               <dl>
                 <dt>Developer:</dt>
-                <dd>{{developer}}</dd>
+                <dd>{{presskit.title}}</dd>
+                <dd>Based in {{presskit.based-in}}</dd>
 
                 <dt>Founding Date:</dt>
-                <dd>{{founding_date}}</dd>
+                <dd>{{presskit.founding-date}}</dd>
 
                 <dt>Website:</dt>
-                <dd>{{website}}</dd>
+                <dd><a href="{{presskit.website}}">{{presskit.website}}</a></dd>
 
                 <dt>Press / Business Contact:</dt>
-                <dd>{{business_mail}}</dd>
+                <dd><a href="mailto:{{presskit.press-contact}}">{{presskit.press-contact}}</a></dd>
 
                 <dt>Social:</dt>
-                {{#each presskit.socials}}
-                  <dd>{{link}}</dd>
-                {{/each}}
+                {{#presskit.socials.social}}
+                  <dd><a href="{{link}}">{{name}}</a></dd>
+                {{/presskit.socials.social}}
 
                 <dt>Releases</dt>
-                {{#each releases}}
+                {{#each presskit.releases}}
                   <dd>{{product}}</dd>
                 {{/each}}
 
                 <dt>Address:</dt>
-                <dd>{{address}}</dd>
+                {{#presskit.address.line}}
+                  <dd>{{.}}</dd>
+                {{/presskit.address.line}}
 
                 <dt>Phone:</dt>
-                <dd>{{phone}}</dd>
+                <dd>{{presskit.phone}}</dd>
               </dl>
             </aside>
 
@@ -123,16 +126,32 @@
           <!-- List of nominations -->
           <section>
             <h2>Awards & Recognition</h2>
+            <ul>
+              {{#presskit.awards.award}}
+                <li>{{description}} - {{info}}</li>
+              {{/presskit.awards.award}}
+            </ul>
           </section>
 
           <!-- Articles & Press -->
           <section>
             <h2>Selected Articles</h2>
+            <ul>
+              {{#presskit.quotes.quote}}
+                <li>{{description}} - {{name}} (<a href="{{link}}">{{website}}</a>)</li>
+              {{/presskit.quotes.quote}}
+            </ul>
           </section>
 
           <!-- Other sources of information -->
           <section>
             <h2>Additional Links</h2>
+            {{#presskit.additionals.additional}}
+              <p>
+                <a href="{{link}}">{{title}}</a><br />
+                {{description}}
+              </p>
+            {{/presskit.additionals.additional}}
           </section>
 
           <!-- Notes -->
@@ -140,11 +159,31 @@
             <!-- Team -->
             <article>
               <h2>Team & Repeating Collaborator</h2>
+              {{#presskit.credits.credit}}
+                <p>
+                  {{person}}<br />
+                  {{role}}<br />
+                  {{#website}}
+                    <a href="{{.}}">{{.}}</a><br />
+                  {{/website}}
+                </p>
+              {{/presskit.credits.credit}}
             </article>
 
             <!-- Contact -->
             <article>
               <h2>Contact</h2>
+              {{#presskit.contacts.contact}}
+                <p>
+                  {{name}}<br />
+                  {{#mail}}
+                    <a href="mailto:{{.}}">{{.}}</a><br />
+                  {{/mail}}
+                  {{#link}}
+                    <a href="{{.}}">{{.}}</a><br />
+                  {{/link}}
+                </p>
+              {{/presskit.contacts.contact}}
             </article>
           </section>
         </main>
