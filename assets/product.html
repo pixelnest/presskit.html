@@ -11,5 +11,110 @@
   </head>
   <body>
     <h1>{{presskit.title}}</h1>
+    <p>Released {{presskit.release-date}}</p>
+    <p>Press copy request {{presskit.press-can-request-copy}}</p>
+
+    <h2>Description</h2>
+    {{presskit.description}}
+
+    <h2>History</h2>
+    {{#presskit.histories.history}}
+      <h3>{{header}}</h3>
+      <p>{{text}}</p>
+    {{/presskit.histories.history}}
+    {{#presskit.history}}
+      <h3>{{header}}</h3>
+      <p>{{text}}</p>
+    {{/presskit.history}}
+
+    <h2>Platforms</h2>
+    <ul>
+    {{#presskit.platforms.platform}}
+      <li><a href="{{link}}">{{name}}</a></li>
+    {{/presskit.platforms.platform}}
+    </ul>
+
+    <h2>Pricing</h2>
+    <ul>
+    {{#presskit.prices.price}}
+      <li>{{value}} ({{currency}})</li>
+    {{/presskit.prices.price}}
+    </ul>
+
+    <h2>Features</h2>
+    <ul>
+    {{#presskit.features.feature}}
+      <li>{{.}}</li>
+    {{/presskit.features.feature}}
+    </ul>
+
+    <!-- Videos, trailers, etc. -->
+    <h2>Videos</h2>
+
+    {{#presskit.trailers.trailer}}
+    <div>
+      <p>
+        {{name}}
+      </p>
+      {{#youtube}}
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
+      {{/youtube}}
+
+      {{#vimeo}}
+        <iframe src="https://player.vimeo.com/video/{{.}}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {{/vimeo}}
+    </div>
+    {{/presskit.trailers.trailer}}
+
+    <!-- Images -->
+    <h2>Images</h2>
+    <a href="./images/images.zip">Download all images (.zip)</a>
+    {{#images.screenshots}}
+      <img src="./images/{{.}}" />
+    {{/images.screenshots}}
+
+    <!-- Logo: download + preview -->
+    <h2>Logo & Icon</h2>
+    <a href="./images/logos-icons.zip">Download all logos & icons (.zip)</a>
+    {{#images.logos}}
+      <img src="./images/{{.}}" />
+    {{/images.logos}}
+    {{#images.icons}}
+      <img src="./images/{{.}}" />
+    {{/images.icons}}
+
+    <!-- List of nominations -->
+    <h2>Awards & Recognition</h2>
+    <ul>
+      {{#presskit.awards.award}}
+        <li>{{description}} - {{info}}</li>
+      {{/presskit.awards.award}}
+    </ul>
+
+    <h2>Selected Articles</h2>
+    <ul>
+      {{#presskit.quotes.quote}}
+        <li>{{description}} - {{name}} (<a href="{{link}}">{{website}}</a>)</li>
+      {{/presskit.quotes.quote}}
+    </ul>
+
+    <h2>Additional Links</h2>
+    {{#presskit.additionals.additional}}
+      <p>
+        <a href="{{link}}">{{title}}</a><br />
+        {{description}}
+      </p>
+    {{/presskit.additionals.additional}}
+
+    <h2>Meet the team</h2>
+    {{#presskit.credits.credit}}
+      <p>
+        {{person}}<br />
+        {{role}}<br />
+        {{#website}}
+          <a href="{{.}}">{{.}}</a><br />
+        {{/website}}
+      </p>
+    {{/presskit.credits.credit}}
   </body>
 </html>
