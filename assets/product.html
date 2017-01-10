@@ -98,12 +98,7 @@
       {{/presskit.quotes.quote}}
     </ul>
 
-    <h2>Additional Links</h2>
-    {{#presskit.additionals.additional}}
-      <p>
-        {{description}} <a href="{{link}}">{{title}}</a>
-      </p>
-    {{/presskit.additionals.additional}}
+    {{>additional_links}}
 
     <h2>Meet the team</h2>
     {{#presskit.credits.credit}}
