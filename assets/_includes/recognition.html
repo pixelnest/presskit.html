@@ -1,0 +1,29 @@
+<!-- List of nominations -->
+<section>
+  <h2>Awards & Recognition</h2>
+  <ul>
+    {{#presskit.awards.award}}
+      <li>{{description}} - {{info}}</li>
+    {{/presskit.awards.award}}
+  </ul>
+</section>
+
+<!-- Articles & Press -->
+<section>
+  <h2>Selected Articles</h2>
+  <ul>
+    {{#presskit.quotes.quote}}
+      <li>{{description}} - {{name}} (<a href="{{link}}">{{website}}</a>)</li>
+    {{/presskit.quotes.quote}}
+  </ul>
+</section>
+
+<!-- Other sources of information -->
+<section>
+  <h2>Additional Links</h2>
+  {{#presskit.additionals.additional}}
+    <p>
+      {{description}} <a href="{{link}}">{{title}}</a>
+    </p>
+  {{/presskit.additionals.additional}}
+</section>

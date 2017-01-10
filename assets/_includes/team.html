@@ -1,0 +1,13 @@
+<article>
+  <h2>{{title}}</h2>
+    {{#presskit.credits.credit}}
+      <p>
+        {{person}}<br />
+        {{role}}<br />
+        {{#website}}
+          <a href="{{.}}">{{.}}</a><br />
+        {{/website}}
+      </p>
+    {{/presskit.credits.credit}}
+  </h2>
+</article>

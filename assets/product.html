@@ -1,114 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{product}}</title>
 
-    <!-- The product page is always in a sub-folder. -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/master.css">
-  </head>
-  <body>
-    <h1>{{presskit.title}}</h1>
-    <p>Released {{presskit.release-date}}</p>
-    <p>Press copy request {{presskit.press-can-request-copy}}</p>
+{{>header}}
 
-    <h2>Description</h2>
-    {{presskit.description}}
+<body>
+  <div class="page grid">
+    <!-- Navigation -->
+    {{>nav}}
 
-    <h2>History</h2>
-    {{#presskit.histories.history}}
-      <h3>{{header}}</h3>
-      <p>{{text}}</p>
-    {{/presskit.histories.history}}
-    {{#presskit.history}}
-      <h3>{{header}}</h3>
-      <p>{{text}}</p>
-    {{/presskit.history}}
+    <div class="page-wrapper grid__item">
+      <header class="page-header">
+        <img src="images/header.png" alt="{{presskit.title}} Banner">
+      </header>
 
-    <h2>Platforms</h2>
-    <ul>
-    {{#presskit.platforms.platform}}
-      <li><a href="{{link}}">{{name}}</a></li>
-    {{/presskit.platforms.platform}}
-    </ul>
+      <main class="page-content" role="main">
+        <!-- Intro -->
+        <section class="grid">
+          <!-- Factsheet -->
+          <aside class="factsheet grid__item">
+            <h2>Factsheet</h2>
 
-    <h2>Pricing</h2>
-    <ul>
-    {{#presskit.prices.price}}
-      <li>{{value}} ({{currency}})</li>
-    {{/presskit.prices.price}}
-    </ul>
+            <dl>
+              <dt>Released</dt>
+              <dd>{{presskit.release-date}}</dd>
+              <dt>Press copy request</dt>
+              <dd>{{presskit.press-can-request-copy}}</dd>
 
-    <h2>Features</h2>
-    <ul>
-    {{#presskit.features.feature}}
-      <li>{{.}}</li>
-    {{/presskit.features.feature}}
-    </ul>
+              <dt>Platforms</dt>
+              <dd>
+                <ul>
+                  {{#presskit.platforms.platform}}
+                  <li><a href="{{link}}">{{name}}</a></li>
+                  {{/presskit.platforms.platform}}
+                </ul>
+              </dd>
 
-    <!-- Videos, trailers, etc. -->
-    <h2>Videos</h2>
+              <dt>Pricing</dt>
+              <dd>
+                <ul>
+                  {{#presskit.prices.price}}
+                  <li>{{value}} ({{currency}})</li>
+                  {{/presskit.prices.price}}
+                </ul>
+              </dd>
+            </dl>
 
-    {{#presskit.trailers.trailer}}
-    <div>
-      <p>
-        {{name}}
-      </p>
-      {{#youtube}}
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
-      {{/youtube}}
+          </aside>
 
-      {{#vimeo}}
-        <iframe src="https://player.vimeo.com/video/{{.}}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      {{/vimeo}}
+          <article class="description grid__item">
+
+            <h2>Description</h2>
+            {{presskit.description}}
+
+            <h2>History</h2>
+            {{#presskit.histories.history}}
+              <h3>{{header}}</h3>
+              <p>{{text}}</p>
+            {{/presskit.histories.history}}
+            {{#presskit.history}}
+              <h3>{{header}}</h3>
+              <p>{{text}}</p>
+            {{/presskit.history}}
+
+            <h2>Features</h2>
+            <ul>
+              {{#presskit.features.feature}}
+                <li>{{.}}</li>
+              {{/presskit.features.feature}}
+            </ul>
+          </article>
+        </section>
+
+        {{>assets}}
+
+        {{>recognition}}
+
+        <section>
+          {{>team title="Meet the team"}}
+        </section>
+
+      </main>
+
+      {{>footer}}
     </div>
-    {{/presskit.trailers.trailer}}
+  </div>
 
-    <!-- Images -->
-    <h2>Images</h2>
-    <a href="./images/images.zip">Download all images (.zip)</a>
-    {{#images.screenshots}}
-      <img src="./images/{{.}}" />
-    {{/images.screenshots}}
+  <!-- Scripts -->
+  {{>scripts}}
+</body>
 
-    <!-- Logo: download + preview -->
-    <h2>Logo & Icon</h2>
-    <a href="./images/logos-icons.zip">Download all logos & icons (.zip)</a>
-    {{#images.logos}}
-      <img src="./images/{{.}}" />
-    {{/images.logos}}
-    {{#images.icons}}
-      <img src="./images/{{.}}" />
-    {{/images.icons}}
-
-    <!-- List of nominations -->
-    <h2>Awards & Recognition</h2>
-    <ul>
-      {{#presskit.awards.award}}
-        <li>{{description}} - {{info}}</li>
-      {{/presskit.awards.award}}
-    </ul>
-
-    <h2>Selected Articles</h2>
-    <ul>
-      {{#presskit.quotes.quote}}
-        <li>{{description}} - {{name}} (<a href="{{link}}">{{website}}</a>)</li>
-      {{/presskit.quotes.quote}}
-    </ul>
-
-    {{>additional_links}}
-
-    <h2>Meet the team</h2>
-    {{#presskit.credits.credit}}
-      <p>
-        {{person}}<br />
-        {{role}}<br />
-        {{#website}}
-          <a href="{{.}}">{{.}}</a><br />
-        {{/website}}
-      </p>
-    {{/presskit.credits.credit}}
-  </body>
 </html>

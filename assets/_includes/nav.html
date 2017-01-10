@@ -1,0 +1,14 @@
+<nav class="page-nav grid__item">
+  <h1>{{presskit.title}}</h1>
+  <p>
+    <a href="{{presskit.link}}">{{presskit.link}}</a>
+  </p>
+
+  <ul>
+    {{#each presskit.sections}}
+      <li>
+        <a href="{{link}}">{{name}}</a>
+      </li>
+    {{/each}}
+  </ul>
+</nav>
