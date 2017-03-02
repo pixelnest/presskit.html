@@ -13,8 +13,8 @@ const parser = require('../lib/core/parser')
 // -------------------------------------------------------------
 
 describe('XML Parser', () => {
-  let companyXML = fs.readFileSync('./docs/data/company/data.xml', 'utf-8')
-  let productXML = fs.readFileSync('./docs/data/product/data.xml', 'utf-8')
+  let companyXML = fs.readFileSync(`${process.cwd()}/data/data.xml`, 'utf-8')
+  let productXML = fs.readFileSync(`${process.cwd()}/data/product/data.xml`, 'utf-8')
 
   it('handles empty, null or undefined XML strings', () => {
     expect(() => parser.parseXML(undefined)).toThrow()
