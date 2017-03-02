@@ -1,3 +1,20 @@
 #!/usr/bin/env node
 
-require('../lib/index').start()
+const parseArgs = require('minimist')
+const presskit = require('../lib/index')
+
+// -------------------------------------------------------------
+// Module.
+// -------------------------------------------------------------
+
+// Slice removes `node` and the script name from the argv list.
+const argv = parseArgs(process.argv.slice(2), {
+  boolean: ['dev'],
+  alias: {
+    'dev': ['D', 'development']
+  }
+})
+
+if (argv.dev) {}
+
+presskit.start()
