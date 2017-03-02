@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Pizza Burger Studio</title>
+  <based-in>Paris, France</based-in>
+  <founding-date>February 6, 2014</founding-date>
+
+  <website>http://pizzaburger.studio/</website>
+  <press-contact>contact@pizzaburger.studio</press-contact>
+
+  <!-- true or false -->
+  <press-can-request-copy>true</press-can-request-copy>
+
+  <!--
+    - false (no video allowed)
+    - ask (permission on case-per-case basis)
+    - non-commercial (no monetization allowed)
+    - monetize (full permission)
+  -->
+  <monetization-permission>monetize</monetization-permission>
+
+  <phone>+42 (3) 42 42 42 42 42</phone>
+  <address>
+    <line>42, invisible lane</line>
+    <line>35000 Rennes</line>
+    <line>France</line>
+  </address>
+
+  <socials>
+    <social>
+      <name>twitter.com/pizzaburgerstudio</name>
+      <link>twitter.com/pizzaburgerstudio</link>
+    </social>
+    <social>
+      <name>facebook.com/pizzaburgerstudio</name>
+      <link>facebook.com/pizzaburgerstudio</link>
+    </social>
+    <social>
+      <name>Skype</name>
+      <link>callto:pizzaburgerstudio</link>
+    </social>
+  </socials>
+
+  <description>
+    What is your company? What are you doing?
+  </description>
+
+  <histories>
+    <history>
+      <header>Beginning</header>
+      <text>Tell your story.</text>
+    </history>
+    <history>
+      <header>Now</header>
+      <text>More to tell? Use multiple history block.</text>
+    </history>
+  </histories>
+
+  <!--
+    <history>
+      You can also use this simpler variant if you have a small story to tell.
+    </history>
+  -->
+
+  <!-- Try to mix videos from different products here. -->
+  <trailers>
+    <trailer>
+      <name>Example from YouTube. Don't give a full link: the ID is enough</name>
+      <youtube>er416Ad3R1g</youtube>
+    </trailer>
+    <trailer>
+      <name>Example from both YouTube and Vimeo</name>
+      <youtube>YH3c1QZzRK4</youtube>
+      <vimeo>108650530</vimeo>
+    </trailer>
+  </trailers>
+
+  <awards>
+    <award>
+      <description>An award.</description>
+      <info>Name, location, 29 April, 1988</info>
+    </award>
+    <award>
+      <description>A nomination.</description>
+      <info>Name, location, 03 October, 1988</info>
+    </award>
+  </awards>
+
+  <quotes>
+    <quote>
+      <description>There's not enough pizza in your life. It's never enough.</description>
+      <name>@mrhelmut</name>
+      <website>Tweet</website>
+      <link>https://twitter.com/mrhelmut/status/717276362814447616</link>
+    </quote>
+  </quotes>
+
+  <additionals>
+    <additional>
+      <title>Patricia Pizza Twitter</title>
+      <description>@patpiz at</description>
+      <link>https://twitter.com/patpiz</link>
+    </additional>
+    <additional>
+      <title>Bob Burger Twitter</title>
+      <description>@bobburg at</description>
+      <link>https://twitter.com/bobburg</link>
+    </additional>
+  </additionals>
+
+  <credits>
+    <credit>
+      <person>Patricia Pizza</person>
+      <role>Founder, Developer, Pizza Burger Studio</role>
+    </credit>
+    <credit>
+      <person>Bob Burger</person>
+      <role>Founder, Designer, Pizza Burger Studio</role>
+    </credit>
+    <credit>
+      <person>Jake Burgza</person>
+      <website>www.jakeburgza.com</website>
+      <role>Artist, Collaborator</role>
+    </credit>
+    <credit>
+      <person>Sophia Pizer</person>
+      <website>www.sophiapizer.com</website>
+      <role>Musician, Collaborator</role>
+    </credit>
+  </credits>
+
+  <contacts>
+    <contact>
+      <name>Inquiries</name>
+      <mail>contact@pizzaburger.studio</mail>
+    </contact>
+    <contact>
+      <name>Twitter</name>
+      <link>https://twitter.com/pizzaburgerstudio</link>
+    </contact>
+    <contact>
+      <name>Facebook</name>
+      <link>https://facebook.com/pizzaburgerstudio</link>
+    </contact>
+    <contact>
+      <name>Web</name>
+      <link>http://pizzaburger.studio</link>
+    </contact>
+  </contacts>
+</company>
