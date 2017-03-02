@@ -14,7 +14,7 @@
   "scripts": {
     "start": "node bin/presskit",
     "test": "standard | snazzy && jest",
-    "serve": "browser-sync start --server assets/ --files assets/ --no-ui --no-open",
+    "serve": "browser-sync start --server assets/ --files assets/ --no-ui --no-open --port 8080",
     "servebuild": "npm start && browser-sync start -s build/ -f build/ --no-ui --no-open"
   },
   "standard": {
