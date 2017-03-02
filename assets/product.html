@@ -10,7 +10,9 @@
 
     <div class="page-wrapper grid__item">
       <header class="page-header">
-        <img src="images/header.png" alt="{{presskit.title}} Banner">
+        {{#if images.header}}
+        <img src="./images/{{images.header}}" alt="{{presskit.title}} Banner">
+        {{/if}}
       </header>
 
       <main class="page-content" role="main">
