@@ -61,3 +61,7 @@ Simply copy **all** the files to your hosting location... and you're done!
 <!-- TODO -->
 <!-- Contributing -->
 <!-- Live examples -->
+
+## Images
+
+The images used in this repository can be found on [Unsplash](https://unsplash.com/), a free provider of high-quality images.
