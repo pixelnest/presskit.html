@@ -9,12 +9,10 @@ const presskit = require('../lib/index')
 
 // Slice removes `node` and the script name from the argv list.
 const argv = parseArgs(process.argv.slice(2), {
-  boolean: ['dev'],
+  boolean: ['watch'],
   alias: {
-    'dev': ['D', 'development']
+    'watch': ['w']
   }
 })
 
-if (argv.dev) {}
-
-presskit.start()
+presskit.start(argv)
