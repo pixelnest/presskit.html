@@ -16,6 +16,7 @@ html {
 
 body {
   position: relative;
+
   min-height: 100vh;
   margin: 0;
 }
@@ -25,7 +26,8 @@ body {
 \* ---------------------------------------------------------- */
 
 html {
-  color: #444;
+  color: #444444;
+
   font: 62.5%/1.6 "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
@@ -54,11 +56,12 @@ h6 {
 
 a,
 a:visited {
-  color: #07d;
+  color: #0077dd;
 }
 
 a:hover {
-  color: #059;
+  color: #005599;
+
   text-decoration: underline;
 }
 
@@ -97,6 +100,7 @@ body {
 
 .page {
   display: flex;
+
   width: 1165px;
   margin: 0 auto;
   padding: 0 25px;
@@ -111,4 +115,6 @@ body {
 }
 
 /* Tmp */
-.page-header img { max-width: 100%; }
+.page-header img {
+  max-width: 100%;
+}
