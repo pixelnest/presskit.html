@@ -13,9 +13,7 @@
   },
   "scripts": {
     "start": "node bin/presskit",
-    "test": "standard | snazzy && jest",
-    "serve": "browser-sync start --server assets/ --files assets/ --no-ui --no-open --port 8080",
-    "servebuild": "npm start && browser-sync start -s build/ -f build/ --no-ui --no-open"
+    "test": "standard | snazzy && jest"
   },
   "standard": {
     "globals": [
