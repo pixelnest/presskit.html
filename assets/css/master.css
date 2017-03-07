@@ -45,6 +45,14 @@ h6 {
   font-weight: normal;
 }
 
+h1 {
+  font-size: 2.85em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
 ::selection {
   color: white;
   background: #3398ff;
