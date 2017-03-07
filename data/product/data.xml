@@ -56,19 +56,16 @@
 
 	<trailers>
 		<trailer>
-			<name>Official Trailer</name>
+			<name>Release Trailer</name>
 			<youtube>EtXajayBLzw</youtube>
-			<vimeo>108650530</vimeo>
 		</trailer>
 		<trailer>
 			<name>Gameplay Video #2</name>
 			<youtube>EPNK1j3TMjU</youtube>
-			<vimeo>108650530</vimeo>
 		</trailer>
 		<trailer>
-			<name>Gameplay Video #1</name>
-			<youtube>EPNK1j3TMjU</youtube>
-			<vimeo>108650530</vimeo>
+			<name>Early Access Trailer</name>
+			<youtube>EtyQMcc19xY</youtube>
 		</trailer>
 	</trailers>
 

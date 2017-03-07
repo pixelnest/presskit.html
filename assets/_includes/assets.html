@@ -1,40 +1,41 @@
-<!-- Videos, trailers, etc. -->
 <section>
   <h2>Videos</h2>
 
-  {{#presskit.trailers.trailer}}
+  {{#each presskit.trailers.trailer}}
   <div>
     <p>
       {{name}}
     </p>
+
     {{#youtube}}
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
     {{/youtube}}
 
     {{#vimeo}}
-      <iframe src="https://player.vimeo.com/video/{{.}}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/{{.}}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     {{/vimeo}}
   </div>
-  {{/presskit.trailers.trailer}}
+  {{/each}}
 </section>
 
-<!-- Images -->
 <section>
   <h2>Images</h2>
   <a href="./images/images.zip">Download all images (.zip)</a>
-  {{#images.screenshots}}
-    <img src="./images/{{.}}" />
-  {{/images.screenshots}}
+
+  {{#each images.screenshots}}
+  <img src="./images/{{.}}">
+  {{/each}}
 </section>
 
-<!-- Logo: download + preview -->
 <section>
   <h2>Logo & Icon</h2>
   <a href="./images/logos-icons.zip">Download all logos & icons (.zip)</a>
+
   {{#images.logos}}
-    <img src="./images/{{.}}" />
+  <img src="./images/{{.}}">
   {{/images.logos}}
+
   {{#images.icons}}
-    <img src="./images/{{.}}" />
+  <img src="./images/{{.}}">
   {{/images.icons}}
 </section>

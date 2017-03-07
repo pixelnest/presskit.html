@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    <div class="page grid">
+      {{>nav}}
 
-{{>header}}
+      <div class="page-wrapper grid__item">
+        <header class="page-header">
+          {{#if images.header}}
+          <img src="./images/{{images.header}}" alt="{{presskit.title}}">
+          {{/if}}
+        </header>
 
-<body>
-  <div class="page grid">
-    <!-- Navigation -->
-    {{>nav}}
+        <main class="page-content" role="main">
+          <section class="grid">
+            {{>factsheet isCompanySheet="true"}}
 
-    <div class="page-wrapper grid__item">
-      <header class="page-header">
-        {{#if images.header}}
-        <img src="./images/{{images.header}}" alt="{{presskit.title}} Banner">
-        {{/if}}
-      </header>
+            <article class="description grid__item">
+              <h2>Description</h2>
+              <p>{{presskit.description}}</p>
 
-      <main class="page-content" role="main">
-        <section class="grid">
-          {{>factsheet isCompanySheet="true"}}
+              <h2>History</h2>
 
-          <article class="description grid__item">
-            <h2>Description</h2>
-            <p>{{presskit.description}}</p>
-
-            <h2>History</h2>
-            {{#presskit.histories.history}}
+              {{#each presskit.histories.history}}
               <h3>{{header}}</h3>
               <p>{{text}}</p>
-            {{/presskit.histories.history}}
-            {{#presskit.history}}
+              {{/each}}
+
+              {{#each presskit.history}}
               <h3>{{header}}</h3>
               <p>{{text}}</p>
-            {{/presskit.history}}
+              {{/each}}
 
-            <h2>Projects</h2>
-            {{#each products}}
-              <li>
-                <a href="{{path}}">{{title}}</a>
-              </li>
-            {{/each}}
-          </article>
-        </section>
+              <h2>Projects</h2>
+              <ul>
+                {{#each products}}
+                <li>
+                  <a href="{{path}}">{{title}}</a>
+                </li>
+                {{/each}}
+              </ul>
+            </article>
+          </section>
 
-        {{>assets}}
+          {{>assets}}
+          {{>recognition}}
 
-        {{>recognition}}
+          <section>
+            {{>team title="Team & Repeating Collaborator"}}
 
-        <!-- Notes -->
-        <section>
-          <!-- Team -->
-          {{>team title="Team & Repeating Collaborator"}}
+            <article>
+              <h2>Contact</h2>
 
-          <!-- Contact -->
-          <article>
-            <h2>Contact</h2>
-            {{#presskit.contacts.contact}}
+              {{#presskit.contacts.contact}}
               <p>
-                {{name}}<br />
+                {{name}}
+                <br>
+
                 {{#mail}}
-                  <a href="mailto:{{.}}">{{.}}</a><br />
+                <a href="mailto:{{.}}">{{.}}</a>
+                <br>
                 {{/mail}}
+
                 {{#link}}
-                  <a href="{{.}}">{{.}}</a><br />
+                <a href="{{.}}">{{.}}</a>
+                <br>
                 {{/link}}
               </p>
-            {{/presskit.contacts.contact}}
-          </article>
-        </section>
+              {{/presskit.contacts.contact}}
+            </article>
+          </section>
+        </main>
 
-      </main>
-
-      {{>footer}}
+        {{>footer}}
+      </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  {{>scripts}}
-</body>
-
+    {{>scripts}}
+  </body>
 </html>

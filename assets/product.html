@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    <div class="page grid">
+      {{>nav}}
 
-{{>header}}
+      <div class="page-wrapper grid__item">
+        <header class="page-header">
+          {{#if images.header}}
+          <img src="./images/{{images.header}}" alt="{{presskit.title}}">
+          {{/if}}
+        </header>
 
-<body>
-  <div class="page grid">
-    <!-- Navigation -->
-    {{>nav}}
+        <main class="page-content" role="main">
+          <section class="grid">
+            {{> factsheet isProductSheet="true"}}
 
-    <div class="page-wrapper grid__item">
-      <header class="page-header">
-        {{#if images.header}}
-        <img src="./images/{{images.header}}" alt="{{presskit.title}} Banner">
-        {{/if}}
-      </header>
+            <article class="description grid__item">
+              <h2>Description</h2>
+              <p>{{presskit.description}}</p>
 
-      <main class="page-content" role="main">
-        <section class="grid">
-          {{> factsheet isProductSheet="true"}}
-
-          <article class="description grid__item">
-            <h2>Description</h2>
-            <p>{{presskit.description}}</p>
-
-            <h2>History</h2>
-            {{#presskit.histories.history}}
+              <h2>History</h2>
+              
+              {{#each presskit.histories.history}}
               <h3>{{header}}</h3>
               <p>{{text}}</p>
-            {{/presskit.histories.history}}
-            {{#presskit.history}}
+              {{/each}}
+
+              {{#each presskit.history}}
               <h3>{{header}}</h3>
               <p>{{text}}</p>
-            {{/presskit.history}}
+              {{/each}}
 
-            <h2>Features</h2>
-            <ul>
-              {{#presskit.features.feature}}
+              <h2>Features</h2>
+              <ul>
+                {{#each presskit.features.feature}}
                 <li>{{.}}</li>
-              {{/presskit.features.feature}}
-            </ul>
-          </article>
-        </section>
+                {{/each}}
+              </ul>
+            </article>
+          </section>
 
-        {{>assets}}
+          {{>assets}}
+          {{>recognition}}
 
-        {{>recognition}}
+          <section>
+            {{>team title="Credits"}}
+          </section>
+        </main>
 
-        <section>
-          {{>team title="Meet the team"}}
-        </section>
-
-      </main>
-
-      {{>footer}}
+        {{>footer}}
+      </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  {{>scripts}}
-</body>
-
+    {{>scripts}}
+  </body>
 </html>
