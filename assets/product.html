@@ -16,38 +16,8 @@
       </header>
 
       <main class="page-content" role="main">
-        <!-- Intro -->
         <section class="grid">
-          <!-- Factsheet -->
-          <aside class="factsheet grid__item">
-            <h2>Factsheet</h2>
-
-            <dl>
-              <dt>Released</dt>
-              <dd>{{presskit.release-date}}</dd>
-              <dt>Press copy request</dt>
-              <dd>{{presskit.press-can-request-copy}}</dd>
-
-              <dt>Platforms</dt>
-              <dd>
-                <ul>
-                  {{#presskit.platforms.platform}}
-                  <li><a href="{{link}}">{{name}}</a></li>
-                  {{/presskit.platforms.platform}}
-                </ul>
-              </dd>
-
-              <dt>Pricing</dt>
-              <dd>
-                <ul>
-                  {{#presskit.prices.price}}
-                  <li>{{value}} ({{currency}})</li>
-                  {{/presskit.prices.price}}
-                </ul>
-              </dd>
-            </dl>
-
-          </aside>
+          {{> factsheet isProductSheet="true"}}
 
           <article class="description grid__item">
             <h2>Description</h2>

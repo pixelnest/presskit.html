@@ -16,46 +16,8 @@
       </header>
 
       <main class="page-content" role="main">
-        <!-- Intro -->
         <section class="grid">
-          <!-- Factsheet -->
-          <aside class="factsheet grid__item">
-            <h2>Factsheet</h2>
-
-            <dl>
-              <dt>Developer:</dt>
-              <dd>{{presskit.title}}</dd>
-              <dd>Based in {{presskit.based-in}}</dd>
-
-              <dt>Founding Date:</dt>
-              <dd>{{presskit.founding-date}}</dd>
-
-              <dt>Website:</dt>
-              <dd><a href="{{presskit.website}}">{{presskit.website}}</a></dd>
-
-              <dt>Press / Business Contact:</dt>
-              <dd><a href="mailto:{{presskit.press-contact}}">{{presskit.press-contact}}</a></dd>
-
-              <dt>Social:</dt> {{#presskit.socials.social}}
-              <dd><a href="{{link}}">{{name}}</a></dd>
-              {{/presskit.socials.social}}
-
-              <dt>Releases</dt>
-              {{#each products}}
-                <dd>
-                  <a href="{{path}}">{{title}}</a>
-                </dd>
-              {{/each}}
-
-              <dt>Address:</dt>
-              {{#presskit.address.line}}
-                <dd>{{.}}</dd>
-              {{/presskit.address.line}}
-
-              <dt>Phone:</dt>
-              <dd>{{presskit.phone}}</dd>
-            </dl>
-          </aside>
+          {{>factsheet isCompanySheet="true"}}
 
           <article class="description grid__item">
             <h2>Description</h2>

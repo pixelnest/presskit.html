@@ -1,0 +1,81 @@
+<aside class="factsheet grid__item">
+  <h2 class="factsheet__title">Factsheet</h2>
+
+  {{#if isCompanySheet}}
+  <dl class="factsheet__list">
+    <dt>Developer:</dt>
+    <dd>
+      <a href="{{presskit.website}}">{{presskit.title}}</a>
+    </dd>
+    <dd>Based in {{presskit.based-in}}</dd>
+
+    <dt>Founding date:</dt>
+    <dd>{{presskit.founding-date}}</dd>
+
+    <dt>Website:</dt>
+    <dd>
+      <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
+    </dd>
+
+    <dt>Press / Business contact:</dt>
+    <dd>
+      <a href="mailto:{{presskit.press-contact}}">{{presskit.press-contact}}</a>
+    </dd>
+
+    <dt>Social:</dt>
+    {{#each presskit.socials.social}}
+    <dd>
+      <a href="{{link}}">{{name}}</a>
+    </dd>
+    {{/each}}
+
+    <dt>Releases:</dt>
+    {{#each products}}
+    <dd>
+      <a href="{{path}}">{{title}}</a>
+    </dd>
+    {{/each}}
+
+    <dt>Address:</dt>
+    {{#each presskit.address.line}}
+    <dd>{{.}}</dd>
+    {{/each}}
+
+    <dt>Phone:</dt>
+    <dd>{{presskit.phone}}</dd>
+  </dl>
+  {{/if}}
+
+  {{#if isProductSheet}}
+  <dl class="factsheet__list">
+    <dt>Developer:</dt>
+    <dd>
+      <a href="{{presskit.website}}">{{presskit.title}}</a>
+    </dd>
+    <dd>{{presskit.based-in}}</dd>
+
+    <dt>Release date:</dt>
+    <dd>{{presskit.release-date}}</dd>
+
+    <dt>Press copy request:</dt>
+    <dd>{{presskit.press-can-request-copy}}</dd>
+
+    <dt>Platforms:</dt>
+    {{#each presskit.platforms.platform}}
+    <dd>
+      <a href="{{link}}">{{name}}</a>
+    </dd>
+    {{/each}}
+
+    <dt>Website:</dt>
+    <dd>
+      <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
+    </dd>
+
+    <dt>Pricing:</dt>
+    {{#each presskit.prices.price}}
+    <dd>{{currency}} {{value}}</dd>
+    {{/each}}
+  </dl>
+  {{/if}}
+</aside>
