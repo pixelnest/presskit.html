@@ -65,6 +65,8 @@ h2 {
 a,
 a:visited {
   color: #0077dd;
+
+  text-decoration: none;
 }
 
 a:hover {
