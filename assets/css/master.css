@@ -50,6 +50,8 @@ h1 {
 }
 
 h2 {
+  margin: 30px 0 15px 0;
+
   font-size: 1.9em;
 }
 
@@ -101,6 +103,29 @@ a:hover {
 }
 
 /* ---------------------------------------------------------- *\
+ * Components - Factsheet
+\* ---------------------------------------------------------- */
+
+.factsheet {
+}
+
+.factsheet dl {
+  margin: 0;
+}
+
+.factsheet dt {
+  font-weight: bold;
+}
+
+.factsheet dd {
+  margin: 0;
+}
+
+.factsheet dd + dt {
+  margin-top: 15px;
+}
+
+/* ---------------------------------------------------------- *\
  * Layout.
 \* ---------------------------------------------------------- */
 
@@ -108,12 +133,19 @@ body {
   padding: 20px 0;
 }
 
+section {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 .page {
   display: flex;
 
-  width: 1165px;
+  width: 955px;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0;
 }
 
 .page-nav {
