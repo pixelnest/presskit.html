@@ -21,19 +21,19 @@
 	<prices>
 		<price>
 			<currency>EUR</currency>
-			<value>€20</value>
+			<value>20</value>
 		</price>
 		<price>
 			<currency>USD</currency>
-			<value>$20</value>
+			<value>20</value>
 		</price>
 		<price>
 			<currency>GBP</currency>
-			<value>£16</value>
+			<value>16</value>
 		</price>
 		<price>
 			<currency>JPY</currency>
-			<value>¥2300</value>
+			<value>2300</value>
 		</price>
 	</prices>
 
