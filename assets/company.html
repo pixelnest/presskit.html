@@ -41,8 +41,10 @@
               {{/presskit.socials.social}}
 
               <dt>Releases</dt>
-              {{#each presskit.releases}}
-                <dd>{{product}}</dd>
+              {{#each products}}
+                <dd>
+                  <a href="{{path}}">{{title}}</a>
+                </dd>
               {{/each}}
 
               <dt>Address:</dt>
@@ -70,10 +72,11 @@
               <p>{{text}}</p>
             {{/presskit.history}}
 
-            <h2>Projects</h2> {{#each products}}
-            <li>
-              <a href="{{path}}">{{title}}</a>
-            </li>
+            <h2>Projects</h2>
+            {{#each products}}
+              <li>
+                <a href="{{path}}">{{title}}</a>
+              </li>
             {{/each}}
           </article>
         </section>
