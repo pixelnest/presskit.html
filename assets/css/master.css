@@ -45,6 +45,15 @@ h6 {
   font-weight: normal;
 }
 
+::selection {
+  color: white;
+  background: #3398ff;
+}
+
+/* ---------------------------------------------------------- *\
+ * Titles.
+\* ---------------------------------------------------------- */
+
 h1 {
   font-size: 2.85em;
 }
@@ -55,9 +64,28 @@ h2 {
   font-size: 1.9em;
 }
 
-::selection {
-  color: white;
-  background: #3398ff;
+/* ---------------------------------------------------------- *\
+ * Layout.
+\* ---------------------------------------------------------- */
+
+body {
+  padding: 20px 0;
+}
+
+.page {
+  display: flex;
+
+  max-width: 955px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-nav {
+  min-width: 25%;
+}
+
+.factsheet {
+  min-width: 33%;
 }
 
 /* ---------------------------------------------------------- *\
@@ -103,7 +131,7 @@ a:hover {
 }
 
 /* ---------------------------------------------------------- *\
- * Components - Factsheet
+ * Components - Factsheet.
 \* ---------------------------------------------------------- */
 
 .factsheet {
@@ -126,7 +154,7 @@ a:hover {
 }
 
 /* ---------------------------------------------------------- *\
- * Video player.
+ * Components - Video player.
 \* ---------------------------------------------------------- */
 
 .video-player {
@@ -145,34 +173,27 @@ a:hover {
 }
 
 /* ---------------------------------------------------------- *\
- * Layout.
+ * Components - Block.
 \* ---------------------------------------------------------- */
 
-body {
-  padding: 20px 0;
-}
-
-section {
+.block {
   margin-bottom: 15px;
   padding-bottom: 15px;
 
   border-bottom: 1px solid rgb(221, 221, 221);
 }
 
-.page {
-  display: flex;
+.block__notice {
+  padding: 10px;
 
-  max-width: 955px;
-  margin: 0 auto;
-  padding: 0;
+  color: #027194;
+  background: #ebf7fd;
+  border: 1px solid rgba(45,112,145,0.3);
+  border-radius: 4px;
 }
 
-.page-nav {
-  min-width: 25%;
-}
-
-.factsheet {
-  min-width: 33%;
+.block__notice a {
+  color: inherit;
 }
 
 /* ---------------------------------------------------------- *\
