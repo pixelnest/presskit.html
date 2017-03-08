@@ -34,14 +34,15 @@
   },
   "dependencies": {
     "archiver": "^1.3.0",
+    "browser-sync": "^2.18.5",
+    "camelcase": "^4.0.0",
     "chalk": "^1.1.3",
     "chokidar": "^1.6.1",
     "handlebars": "^4.0.6",
     "lodash": "^4.17.2",
     "minimist": "^1.2.0",
     "rimraf": "^2.6.1",
-    "xml2js": "^0.4.17",
-    "browser-sync": "^2.18.5"
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "jest": "^18.0.0",
