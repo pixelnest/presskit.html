@@ -12,9 +12,16 @@
   <h2>Selected Articles</h2>
 
   <ul>
-    {{#presskit.quotes.quote}}
-    <li>{{description}} - {{name}} (<a href="{{link}}">{{website}}</a>)</li>
-    {{/presskit.quotes.quote}}
+    {{#each presskit.quotes.quote}}
+    <li class="quote">
+      <blockquote class="quote__content" cite="{{link}}">
+        {{description}}
+      </blockquote>
+      <cite class="quote__author">
+        {{name}}, <a href="{{link}}">{{website}}</a>
+      </cite>
+    </li>
+    {{/each}}
   </ul>
 </section>
 
