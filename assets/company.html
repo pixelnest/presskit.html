@@ -19,10 +19,10 @@
             {{>factsheet isCompanySheet="true"}}
 
             <article class="description grid__item">
-              <h2>Description</h2>
+              <h2 id="description">Description</h2>
               <p>{{presskit.description}}</p>
 
-              <h2>History</h2>
+              <h2 id="history">History</h2>
 
               {{#each presskit.histories.history}}
               <h3>{{header}}</h3>
@@ -34,7 +34,8 @@
               <p>{{text}}</p>
               {{/each}}
 
-              <h2>Projects</h2>
+              <h2 id="projects">Projects</h2>
+              
               <ul>
                 {{#each products}}
                 <li>
