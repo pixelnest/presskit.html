@@ -55,6 +55,8 @@ h6 {
 \* ---------------------------------------------------------- */
 
 h1 {
+  margin: 0;
+
   font-size: 2.85em;
 }
 
@@ -68,8 +70,11 @@ p {
   margin: 15px 0;
 }
 
+/* Lists. */
+
 ul,
 ol {
+  margin: 15px 0;
   padding-left: 30px;
 }
 
@@ -102,19 +107,23 @@ body {
 }
 
 .page {
-  display: flex;
-
   max-width: 955px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 25px;
 }
 
-.page-nav {
-  min-width: 25%;
-}
+@media (min-width: 800px) {
+  .page {
+    display: flex;
+  }
 
-.factsheet {
-  min-width: 33%;
+  .page-nav {
+    min-width: 25%;
+  }
+
+  .factsheet {
+    min-width: 33%;
+  }
 }
 
 /* ---------------------------------------------------------- *\
@@ -172,16 +181,14 @@ a:hover {
  * Components - Grid.
 \* ---------------------------------------------------------- */
 
-.grid {
-  display: flex;
-}
+@media (min-width: 800px) {
+  .grid {
+    display: flex;
+  }
 
-.grid .grid__item {
-  padding-left: 25px;
-}
-
-.grid .grid__item:first-child {
-  padding-left: 0;
+  .grid__item:not(:first-child) {
+    padding-left: 25px;
+  }
 }
 
 /* ---------------------------------------------------------- *\
