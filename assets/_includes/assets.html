@@ -22,24 +22,30 @@
   {{/each}}
 </section>
 
-<section>
+<section class="block">
   <h2>Images</h2>
-  <a href="images/images.zip">Download all images (.zip)</a>
+
+  <aside class="block__notice">
+    <a href="images/images.zip">download all screenshots & photos as .zip (XXMB)</a>
+  </aside>
 
   {{#each images.screenshots}}
   <img src="images/{{.}}">
   {{/each}}
 </section>
 
-<section>
+<section class="block">
   <h2>Logo & Icon</h2>
-  <a href="images/logos-icons.zip">Download all logos & icons (.zip)</a>
 
-  {{#images.logos}}
-  <img src="images/{{.}}">
-  {{/images.logos}}
+  <aside class="block__notice">
+    <a href="images/logos-icons.zip">download logo files as .zip (XXMB)</a>
+  </aside>
 
-  {{#images.icons}}
+  {{#each images.logos}}
   <img src="images/{{.}}">
-  {{/images.icons}}
+  {{/each}}
+
+  {{#each images.icons}}
+  <img src="images/{{.}}">
+  {{/each}}
 </section>
