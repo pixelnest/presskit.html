@@ -1,19 +1,23 @@
-<section>
+<section class="block">
   <h2>Videos</h2>
 
   {{#each presskit.trailers.trailer}}
   <div>
+    {{#youtube}}
     <p>
-      {{name}}
+      <strong>{{../name}}</strong> <a href="https://www.youtube.com/embed/{{.}}">YouTube</a>
     </p>
 
-    {{#youtube}}
     <div class="video-player">
       <iframe class="video-player__frame" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
     </div>
     {{/youtube}}
 
     {{#vimeo}}
+    <p>
+      <strong>{{../name}}</strong> <a href="https://player.vimeo.com/video/{{.}}">Vimeo</a>
+    </p>
+
     <div class="video-player">
       <iframe class="video-player__frame" src="https://player.vimeo.com/video/{{.}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
