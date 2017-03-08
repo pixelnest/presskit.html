@@ -8,11 +8,15 @@
     </p>
 
     {{#youtube}}
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
+    <div class="video-player">
+      <iframe class="video-player__frame" src="https://www.youtube.com/embed/{{.}}" frameborder="0" allowfullscreen></iframe>
+    </div>
     {{/youtube}}
 
     {{#vimeo}}
-    <iframe src="https://player.vimeo.com/video/{{.}}" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="video-player">
+      <iframe class="video-player__frame" src="https://player.vimeo.com/video/{{.}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
     {{/vimeo}}
   </div>
   {{/each}}
