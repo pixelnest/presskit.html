@@ -1,6 +1,10 @@
 <section class="block grid">
   <article class="grid__item">
+    {{#if title}}
     <h2 id="credits">{{title}}</h2>
+    {{else}}
+    <h2 id="credits">{{presskit.title}} Credits</h2>
+    {{/if}}
 
     <dl>
       {{#each presskit.credits.credit}}
