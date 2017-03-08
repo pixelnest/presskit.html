@@ -47,31 +47,7 @@
 
           {{>assets}}
           {{>recognition}}
-
-          <section>
-            {{>team title="Team & Repeating Collaborator"}}
-
-            <article>
-              <h2>Contact</h2>
-
-              {{#presskit.contacts.contact}}
-              <p>
-                {{name}}
-                <br>
-
-                {{#mail}}
-                <a href="mailto:{{.}}">{{.}}</a>
-                <br>
-                {{/mail}}
-
-                {{#link}}
-                <a href="{{.}}">{{.}}</a>
-                <br>
-                {{/link}}
-              </p>
-              {{/presskit.contacts.contact}}
-            </article>
-          </section>
+          {{>team title="Team & Repeating Collaborator" showContact="true"}}
         </main>
 
         {{>footer}}

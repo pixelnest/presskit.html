@@ -1,4 +1,4 @@
-<section>
+<section class="block">
   <h2>Awards & Recognition</h2>
 
   <ul>
@@ -8,7 +8,7 @@
   </ul>
 </section>
 
-<section>
+<section class="block">
   <h2>Selected Articles</h2>
 
   <ul>
@@ -18,12 +18,15 @@
   </ul>
 </section>
 
-<section>
+<section class="block">
   <h2>Additional Links</h2>
 
-  {{#each presskit.additionals.additional}}
-  <p>
-    {{description}} <a href="{{link}}">{{title}}</a>
-  </p>
-  {{/each}}
+  <dl>
+    {{#each presskit.additionals.additional}}
+    <dt>{{title}}</dt>
+    <dd>
+      {{description}} <a href="{{link}}">{{domainURL link}}</a>
+    </dd>
+    {{/each}}
+  </dl>
 </section>

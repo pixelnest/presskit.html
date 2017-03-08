@@ -68,6 +68,31 @@ p {
   margin: 15px 0;
 }
 
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+dd + dt {
+  margin-top: 15px;
+}
+
 /* ---------------------------------------------------------- *\
  * Layout.
 \* ---------------------------------------------------------- */
@@ -157,29 +182,6 @@ a:hover {
 
 .grid .grid__item:first-child {
   padding-left: 0;
-}
-
-/* ---------------------------------------------------------- *\
- * Components - Factsheet.
-\* ---------------------------------------------------------- */
-
-.factsheet {
-}
-
-.factsheet dl {
-  margin: 0;
-}
-
-.factsheet dt {
-  font-weight: bold;
-}
-
-.factsheet dd {
-  margin: 0;
-}
-
-.factsheet dd + dt {
-  margin-top: 15px;
 }
 
 /* ---------------------------------------------------------- *\

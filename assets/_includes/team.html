@@ -1,18 +1,41 @@
-<article>
-  <h2>{{title}}</h2>
+<section class="block">
+  <article>
+    <h2>{{title}}</h2>
 
-  {{#each presskit.credits.credit}}
-  <p>
-    {{person}}
-    <br>
+    <dl>
+      {{#each presskit.credits.credit}}
+      <dt>{{person}}</dt>
 
-    {{role}}
-    <br>
+      <dd>
+        {{#if website}}
+          <a href="{{website}}">{{role}}</a>
+        {{else}}
+          {{role}}
+        {{/if}}
+      </dd>
+      {{/each}}
+    </dl>
+  </article>
 
-    {{#website}}
-    <a href="{{.}}">{{.}}</a>
-    <br>
-    {{/website}}
-  </p>
-  {{/each}}
-</article>
+  {{#if showContact}}
+  <article>
+    <h2>Contact</h2>
+
+    <dl>
+      {{#each presskit.contacts.contact}}
+        <dt>{{name}}</dt>
+
+        <dd>
+          {{#if mail}}
+          <a href="mailto:{{mail}}">{{mail}}</a>
+          {{/if}}
+
+          {{#if link}}
+          <a href="{{link}}">{{prettyURL link}}</a>
+          {{/if}}
+        </dd>
+      {{/each}}
+    </dl>
+  </article>
+  {{/if}}
+</section>
