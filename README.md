@@ -7,6 +7,10 @@ Complete re-implementation of [presskit()](http://dopresskit.com) (originally cr
 
 The goal is to generate only HTML pages — no PHP required at all. Just fill some XML data files, add some images, execute a command, and boom. It's done.
 
+## Roadmap
+
+The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-presskit-html). Feel free to send a pull request.
+
 ## Installation
 
 The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/):
@@ -56,7 +60,6 @@ You can also [try our example](https://github.com/pixelnest/presskit.html/tree/m
 After looking for all data, `presskit` will generate a `build/` folder with all the html files ready to be uploaded on your server.
 
 Simply copy **all** the files to your hosting location... and you're done!
-
 
 *Note: the webserver is __not__ included.*
 
