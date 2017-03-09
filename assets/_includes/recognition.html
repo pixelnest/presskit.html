@@ -12,7 +12,7 @@
   <h2 id="articles">Selected Articles</h2>
 
   <ul>
-    {{#each presskit.quotes.quote}}
+    {{#presskit.quotes.quote}}
     <li class="quote">
       <blockquote class="quote__content" cite="{{link}}">
         {{description}}
@@ -21,7 +21,7 @@
         {{name}}, <a href="{{link}}">{{website}}</a>
       </cite>
     </li>
-    {{/each}}
+    {{/presskit.quotes.quote}}
   </ul>
 </section>
 
