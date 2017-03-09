@@ -29,10 +29,9 @@
               <p>{{text}}</p>
               {{/each}}
 
-              {{#each presskit.history}}
-              <h3>{{header}}</h3>
-              <p>{{text}}</p>
-              {{/each}}
+              {{#if presskit.history}}
+              <p>{{presskit.history}}</p>
+              {{/if}}
 
               <h2 id="features">Features</h2>
 
