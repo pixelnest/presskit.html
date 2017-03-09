@@ -1,14 +1,87 @@
-<nav class="page-nav grid__item">
-  <h1>{{presskit.title}}</h1>
-  <p>
-    <a href="{{presskit.link}}">{{presskit.link}}</a>
-  </p>
+<nav class="page-nav nav grid__item">
+  <h1 class="nav__title">{{presskit.title}}</h1>
 
-  <ul>
-    {{#each presskit.sections}}
+  <aside class="nav__subtitle">
+    {{#if isProduct}}
+    <a href="..">press kit</a>
+    {{else}}
+    <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
+    {{/if}}
+  </aside>
+
+  <ul class="nav__list">
     <li>
-      <a href="{{link}}">{{name}}</a>
+      <a class="nav__item" href="#factsheet">Factsheet</a>
     </li>
-    {{/each}}
+
+    {{#if presskit.description}}
+    <li>
+      <a class="nav__item" href="#description">Description</a>
+    </li>
+    {{/if}}
+
+    {{#if presskit.history}}
+    <li>
+      <a class="nav__item" href="#history">History</a>
+    </li>
+    {{/if}}
+
+    {{#if products}}
+    <li>
+      <a class="nav__item" href="#projects">Projects</a>
+    </li>
+    {{/if}}
+
+    {{#if presskit.trailers}}
+    <li>
+      <a class="nav__item" href="#trailers">Videos</a>
+    </li>
+    {{/if}}
+
+    {{#if images.screenshots}}
+    <li>
+      <a class="nav__item" href="#images">Images</a>
+    </li>
+    {{/if}}
+
+    {{#if images.logos}}
+    <li>
+      <a class="nav__item" href="#logo">Logo & Icon</a>
+    </li>
+    {{/if}}
+
+    {{#if presskit.awards}}
+    <li>
+      <a class="nav__item" href="#awards">Awards & Recognition</a>
+    </li>
+    {{/if}}
+
+    {{#if presskit.quotes}}
+    <li>
+      <a class="nav__item" href="#quotes">Selected Articles</a>
+    </li>
+    {{/if}}
+
+    {{#if presskit.additionals}}
+    <li>
+      <a class="nav__item" href="#links">Additional Links</a>
+    </li>
+    {{/if}}
+
+    {{#if isProduct}}
+    <li>
+      <a class="nav__item" href="#credits">About {{company.title}}</a>
+    </li>
+    {{/if}}
+
+    <li>
+      <a class="nav__item" href="#credits">Team</a>
+    </li>
+
+    {{#if presskit.contacts}}
+    <li>
+      <a class="nav__item" href="#contact">Contact</a>
+    </li>
+    {{/if}}
   </ul>
 </nav>

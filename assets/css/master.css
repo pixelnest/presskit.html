@@ -57,7 +57,7 @@ h6 {
 h1 {
   margin: 0;
 
-  font-size: 2.85em;
+  font-size: 2.8em;
 }
 
 h2 {
@@ -149,6 +149,48 @@ a:focus {
 
 a:active,
 a:hover {
+  outline: none;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Nav.
+\* ---------------------------------------------------------- */
+
+.nav__title {
+  padding: 0 15px;
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+.nav__subtitle {
+  padding: 5px 15px;
+}
+
+.nav__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item,
+.nav__item:visited {
+  display: block;
+
+  padding: 5px 15px;
+
+  color: inherit;
+}
+
+.nav__item:hover {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.05);
+
+  text-decoration: none;
+}
+
+.nav__item:focus {
+  background: rgba(0, 0, 0, 0.05);
   outline: none;
 }
 
