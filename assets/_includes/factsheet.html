@@ -23,7 +23,7 @@
     </dd>
 
     <dt>Social:</dt>
-    {{#each presskit.socials.social}}
+    {{#each presskit.socials}}
     <dd>
       <a href="{{link}}">{{name}}</a>
     </dd>
@@ -61,7 +61,7 @@
     <dd>{{presskit.pressCanRequestCopy}}</dd>
 
     <dt>Platforms:</dt>
-    {{#each presskit.platforms.platform}}
+    {{#each presskit.platforms}}
     <dd>
       <a href="{{link}}">{{name}}</a>
     </dd>
@@ -73,7 +73,7 @@
     </dd>
 
     <dt>Regular Price:</dt>
-    {{#each presskit.prices.price}}
+    {{#each presskit.prices}}
     <dd>{{currency}} {{value}}</dd>
     {{/each}}
   </dl>

@@ -3,7 +3,7 @@
   <h2 id="awards">Awards & Recognition</h2>
 
   <ul>
-    {{#each presskit.awards.award}}
+    {{#each presskit.awards}}
     <li>{{description}} - {{info}}</li>
     {{/each}}
   </ul>
@@ -15,7 +15,7 @@
   <h2 id="articles">Selected Articles</h2>
 
   <ul>
-    {{#presskit.quotes.quote}}
+    {{#each presskit.quotes}}
     <li class="quote">
       <blockquote class="quote__content" cite="{{link}}">
         {{description}}
@@ -24,7 +24,7 @@
         {{name}}, <a href="{{link}}">{{website}}</a>
       </cite>
     </li>
-    {{/presskit.quotes.quote}}
+    {{/each}}
   </ul>
 </section>
 {{/if}}
@@ -34,7 +34,7 @@
   <h2 id="links">Additional Links</h2>
 
   <dl>
-    {{#each presskit.additionals.additional}}
+    {{#each presskit.additionals}}
     <dt>{{title}}</dt>
     <dd>
       {{description}} <a href="{{link}}">{{domainURL link}}</a>
