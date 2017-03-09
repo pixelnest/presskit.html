@@ -55,12 +55,6 @@
     </history>
   </histories>
 
-  <!--
-    <history>
-      You can also use this simpler variant if you have a small story to tell.
-    </history>
-  -->
-
   <!-- Try to mix videos from different products here. -->
   <trailers>
     <trailer>
@@ -76,11 +70,11 @@
 
   <awards>
     <award>
-      <description>An award.</description>
+      <description>An award</description>
       <info>Name, location, 29 April, 1988</info>
     </award>
     <award>
-      <description>A nomination.</description>
+      <description>A nomination</description>
       <info>Name, location, 03 October, 1988</info>
     </award>
   </awards>
