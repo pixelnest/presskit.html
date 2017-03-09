@@ -1,7 +1,7 @@
 {
   "name": "presskit.html",
   "description": "Re-implementation of presskit() in static HTML",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Pixelnest Studio",
   "license": "MIT",
   "homepage": "https://github.com/pixelnest/presskit.html#readme",
