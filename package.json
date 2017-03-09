@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "node bin/presskit",
-    "test": "standard | snazzy && jest"
+    "test": "standard | snazzy && jest --watch"
   },
   "standard": {
     "globals": [
