@@ -1,18 +1,31 @@
 #!/usr/bin/env node
 
-const parseArgs = require('minimist')
+const chalk = require('chalk')
+const program = require('commander')
 const presskit = require('../lib/index')
+
+// -------------------------------------------------------------
+// Constants.
+// -------------------------------------------------------------
+
+const version = require('../package.json').version
+const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
+const description = `Generate a "Presskit" based on information found in data.xml files. The format and the ouput are (nearly) the same as ${chalk.blue('http://dopresskit.com/')} by Rami Ismail (http://vlambeer.com). However, this command will generate static HTML files.
+
+  More information on ${chalk.blue('https://github.com/pixelnest/presskit.html')}`
 
 // -------------------------------------------------------------
 // Module.
 // -------------------------------------------------------------
 
-// Slice removes `node` and the script name from the argv list.
-const argv = parseArgs(process.argv.slice(2), {
-  boolean: ['watch'],
-  alias: {
-    'watch': ['w']
-  }
-})
+program
+  .version(version)
+  .description(description)
+  .usage(usage)
+  .option('-w, --watch', 'Watch project for changes and re-generate if needed')
+  .parse(process.argv)
 
-presskit.start(argv)
+presskit.start({
+  entryPoint: program.args,
+  watch: program.watch
+})
