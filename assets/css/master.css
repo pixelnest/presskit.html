@@ -231,6 +231,10 @@ a:hover {
   .grid__item:not(:first-child) {
     padding-left: 25px;
   }
+
+  .grid__item--flexible {
+    flex: 1;
+  }
 }
 
 /* ---------------------------------------------------------- *\
