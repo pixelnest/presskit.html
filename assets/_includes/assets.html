@@ -1,3 +1,4 @@
+{{#if presskit.trailers}}
 <section class="block">
   <h2 id="videos">Videos</h2>
 
@@ -25,7 +26,9 @@
   </div>
   {{/each}}
 </section>
+{{/if}}
 
+{{#if images.screenshots}}
 <section class="block">
   <h2 id="images">Images</h2>
 
@@ -37,7 +40,9 @@
   <img src="images/{{.}}">
   {{/each}}
 </section>
+{{/if}}
 
+{{#if images.logos}}
 <section class="block">
   <h2 id="logo">Logo & Icon</h2>
 
@@ -53,3 +58,4 @@
   <img src="images/{{.}}">
   {{/each}}
 </section>
+{{/if}}

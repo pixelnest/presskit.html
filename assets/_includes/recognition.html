@@ -1,3 +1,4 @@
+{{#if presskit.awards}}
 <section class="block">
   <h2 id="awards">Awards & Recognition</h2>
 
@@ -7,7 +8,9 @@
     {{/each}}
   </ul>
 </section>
+{{/if}}
 
+{{#if presskit.quotes}}
 <section class="block">
   <h2 id="articles">Selected Articles</h2>
 
@@ -24,7 +27,9 @@
     {{/presskit.quotes.quote}}
   </ul>
 </section>
+{{/if}}
 
+{{#if presskit.additionals}}
 <section class="block">
   <h2 id="links">Additional Links</h2>
 
@@ -37,3 +42,4 @@
     {{/each}}
   </dl>
 </section>
+{{/if}}
