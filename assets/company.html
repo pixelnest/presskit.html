@@ -19,23 +19,9 @@
             {{>factsheet}}
 
             <article class="description grid__item grid__item--flexible">
-              <h2 id="description">Description</h2>
-              <p>{{presskit.description}}</p>
-
-              <h2 id="history">History</h2>
-
-              {{#each presskit.histories}}
-              <h3>{{header}}</h3>
-              <p>{{text}}</p>
-              {{/each}}
-
-              {{#each presskit.history}}
-              <h3>{{header}}</h3>
-              <p>{{text}}</p>
-              {{/each}}
+              {{>description}}
 
               <h2 id="projects">Projects</h2>
-
               <ul>
                 {{#each products}}
                 <li>
