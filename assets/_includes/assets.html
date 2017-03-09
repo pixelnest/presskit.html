@@ -36,9 +36,13 @@
     <a href="images/images.zip">download all screenshots & photos as .zip (XXMB)</a>
   </aside>
 
-  {{#each images.screenshots}}
-  <img src="images/{{.}}">
-  {{/each}}
+  <div class="gallery" id="gallery">
+    {{#each images.screenshots}}
+    <div class="gallery__item">
+      <img src="images/{{.}}">
+    </div>
+    {{/each}}
+  </div>
 </section>
 {{/if}}
 

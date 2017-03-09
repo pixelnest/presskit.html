@@ -238,6 +238,34 @@ a:hover {
 }
 
 /* ---------------------------------------------------------- *\
+ * Components - Images Gallery.
+\* ---------------------------------------------------------- */
+
+.gallery {
+  margin-left: -25px;
+
+  font-size: 0; /* Disable the small space below the images. */
+}
+
+.gallery__item {
+  float: left;
+
+  width: 100%;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.gallery__item img {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .gallery__item {
+    width: 50%;
+  }
+}
+
+/* ---------------------------------------------------------- *\
  * Components - Video player.
 \* ---------------------------------------------------------- */
 

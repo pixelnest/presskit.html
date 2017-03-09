@@ -1,3 +1,14 @@
+<script src="{{assets}}/js/masonry.min.js"></script>
+<script src="{{assets}}/js/imagesloaded.min.js"></script>
 <script>
-  // GA
+  // Initialize the grid on the images gallery.
+  document.addEventListener('DOMContentLoaded', function onContentLoaded() {
+    var images = document.querySelector('#gallery')
+
+    imagesLoaded(images, function onImagesLoaded() {
+      new Masonry(images, {
+        itemSelector: '.gallery__item'
+      })
+    })
+  })
 </script>
