@@ -26,6 +26,6 @@ program
   .parse(process.argv)
 
 presskit.start({
-  entryPoint: program.args,
+  entryPoint: program.args[0],
   watch: program.watch
 })
