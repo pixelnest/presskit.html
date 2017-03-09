@@ -1,4 +1,5 @@
 <section class="block grid">
+  {{#if presskit.credits}}
   <article class="grid__item">
     {{#if title}}
     <h2 id="credits">{{title}}</h2>
@@ -20,7 +21,9 @@
       {{/each}}
     </dl>
   </article>
+  {{/if}}
 
+  {{#if presskit.contacts}}
   <article class="grid__item">
     <h2 id="contact">Contact</h2>
 
@@ -40,4 +43,5 @@
       {{/each}}
     </dl>
   </article>
+  {{/if}}
 </section>
