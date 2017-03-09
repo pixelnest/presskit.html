@@ -133,4 +133,23 @@
 			<role>Musician, Freelancer</role>
 		</credit>
 	</credits>
+
+	<contacts>
+		<contact>
+			<name>Inquiries</name>
+			<mail>mysupergame@pizzaburger.studio</mail>
+		</contact>
+		<contact>
+			<name>Twitter</name>
+			<link>https://twitter.com/pizzaburgerstudio</link>
+		</contact>
+		<contact>
+			<name>Facebook</name>
+			<link>https://facebook.com/pizzaburgerstudio</link>
+		</contact>
+		<contact>
+			<name>Web</name>
+			<link>http://mysupergame.pizzaburger.studio/</link>
+		</contact>
+	</contacts>
 </product>

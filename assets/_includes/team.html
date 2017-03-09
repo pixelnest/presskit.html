@@ -21,25 +21,23 @@
     </dl>
   </article>
 
-  {{#if showContact}}
   <article class="grid__item">
     <h2 id="contact">Contact</h2>
 
     <dl>
       {{#each presskit.contacts.contact}}
-        <dt>{{name}}</dt>
+      <dt>{{name}}</dt>
 
-        <dd>
-          {{#if mail}}
-          <a href="mailto:{{mail}}">{{mail}}</a>
-          {{/if}}
+      <dd>
+        {{#if mail}}
+        <a href="mailto:{{mail}}">{{mail}}</a>
+        {{/if}}
 
-          {{#if link}}
-          <a href="{{link}}">{{prettyURL link}}</a>
-          {{/if}}
-        </dd>
+        {{#if link}}
+        <a href="{{link}}">{{prettyURL link}}</a>
+        {{/if}}
+      </dd>
       {{/each}}
     </dl>
   </article>
-  {{/if}}
 </section>
