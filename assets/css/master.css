@@ -45,6 +45,11 @@ h6 {
   font-weight: normal;
 }
 
+::-moz-selection {
+  color: white;
+  background: #3398ff;
+}
+
 ::selection {
   color: white;
   background: #3398ff;
@@ -118,6 +123,8 @@ body {
 
 @media (min-width: 800px) {
   .page {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -229,6 +236,8 @@ a:hover {
 
 @media (min-width: 800px) {
   .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -237,7 +246,9 @@ a:hover {
   }
 
   .grid__item--flexible {
-    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
   }
 }
 
