@@ -24,10 +24,12 @@ program
   .version(version)
   .description(description)
   .usage(usage)
+  .option('-o, --output [destination]', 'Output the build folder to the [destination]', process.cwd())
   .option('-w, --watch', 'Watch project for changes and re-generate if needed')
   .parse(process.argv)
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
+  output: program.output,
   watch: program.watch
 })
