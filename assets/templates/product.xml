@@ -4,7 +4,7 @@
   <release-date></release-date>
   <website></website>
 
-  <!-- true or false -->
+  <!-- true or false: -->
   <press-can-request-copy>true</press-can-request-copy>
 
   <platforms>
@@ -23,7 +23,18 @@
 
   <description></description>
 
+  <!-- Choose between a single block: -->
   <history></history>
+
+  <!-- Or multiple blocks: -->
+  <!--
+  <histories>
+    <history>
+      <header></header>
+      <text></text>
+    </history>
+  </histories>
+  -->
 
   <features>
     <feature></feature>
@@ -33,7 +44,7 @@
     <trailer>
       <name></name>
 
-      <!-- Pick one -->
+      <!-- Pick one: -->
       <youtube>
         <!-- Video ID only, not the full URL -->
       </youtube>
@@ -55,7 +66,7 @@
       <description></description>
       <name></name>
       <website></website>
-      <link>/</link>
+      <link></link>
     </quote>
   </quotes>
 
@@ -71,13 +82,19 @@
     <credit>
       <person></person>
       <role></role>
+
+      <!-- Optional: -->
+      <website></website>
     </credit>
   </credits>
 
   <contacts>
     <contact>
       <name></name>
+
+      <!-- Pick one: -->
       <mail></mail>
+      <link></link>
     </contact>
   </contacts>
 </product>
