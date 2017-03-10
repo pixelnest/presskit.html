@@ -34,6 +34,8 @@
 	<trailers>
 		<trailer>
 			<name></name>
+
+			<!-- Pick one -->
 			<youtube><!-- Video ID only, not the full URL --></youtube>
       <vimeo><!-- Video ID only, not the full URL --></vimeo>
 		</trailer>
@@ -57,7 +59,7 @@
 
 	<additionals>
 		<additional>
-			<title>/title>
+			<title></title>
 			<description></description>
 			<link></link>
 		</additional>

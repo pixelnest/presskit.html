@@ -6,7 +6,7 @@
   <website></website>
   <press-contact></press-contact>
 
-  <!-- Google anayltics ID -->
+  <!-- Google analytics ID -->
   <analytics></analytics>
 
   <!--
@@ -26,7 +26,7 @@
   <socials>
     <social>
       <name></name>
-      <link><!-- URL starting http or https --></link>
+      <link><!-- URL starting with http or https --></link>
     </social>
   </socials>
 
@@ -43,6 +43,8 @@
   <trailers>
     <trailer>
       <name></name>
+
+      <!-- Pick one -->
       <youtube><!-- Video ID only, not the full URL --></youtube>
       <vimeo><!-- Video ID only, not the full URL --></vimeo>
     </trailer>
@@ -82,7 +84,7 @@
   <contacts>
     <contact>
       <name></name>
-      <mail><!-- Email adress--></mail>
+      <mail><!-- Email address --></mail>
     </contact>
     <contact>
       <name></name>
