@@ -29,3 +29,10 @@ presskit.start({
   entryPoint: program.args[0],
   watch: program.watch
 })
+program
+  .command('new <type>')
+  .description('Create a default valid "data.xml" file in the current working directory')
+  .action(function (type) {
+    presskit.template(type, process.cwd())
+  })
+
