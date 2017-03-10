@@ -26,12 +26,13 @@
   <socials>
     <social>
       <name></name>
-      <link><!-- URL starting with http or https --></link>
+      <link>
+        <!-- URL starting with http or https -->
+      </link>
     </social>
   </socials>
 
-  <description>
-  </description>
+  <description></description>
 
   <histories>
     <history>
@@ -45,8 +46,12 @@
       <name></name>
 
       <!-- Pick one -->
-      <youtube><!-- Video ID only, not the full URL --></youtube>
-      <vimeo><!-- Video ID only, not the full URL --></vimeo>
+      <youtube>
+        <!-- Video ID only, not the full URL -->
+      </youtube>
+      <vimeo>
+        <!-- Video ID only, not the full URL -->
+      </vimeo>
     </trailer>
   </trailers>
 
@@ -84,7 +89,9 @@
   <contacts>
     <contact>
       <name></name>
-      <mail><!-- Email address --></mail>
+      <mail>
+        <!-- Email address -->
+      </mail>
     </contact>
     <contact>
       <name></name>
