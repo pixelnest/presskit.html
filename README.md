@@ -3,9 +3,11 @@
 ![Build status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-Complete re-implementation of [presskit()](http://dopresskit.com) (originally created by [Rami Ismail](https://twitter.com/tha_rami)).
+Complete re-implementation of [presskit()][dopresskit] (originally created by [Rami Ismail](https://twitter.com/tha_rami)).
 
 The goal is to generate only HTML pages — no PHP required at all. Just fill some XML data files, add some images, execute a command, and boom. It's done.
+
+**You already have a presskit and you want to use this tool instead of the old unmaintained PHP-based [presskit()][dopresskit]? [Read the migration guide](#migration-guide).**
 
 ## Roadmap
 
@@ -25,7 +27,7 @@ This should add (globally) the `presskit` command to your shell.
 
 ## Usage
 
-`presskit` will scan your local working directory (where you are executing the command) and all direct sub-directories for data files.
+`presskit` will scan your local working directory (where you are executing the command) and all direct sub-directories for `data.xml` files.
 
 A data file is a `data.xml` file, which follows a clear structure.
 
@@ -33,24 +35,24 @@ A data file is a `data.xml` file, which follows a clear structure.
 
 You should have:
 
-- one data file for your company
-- one data file per product in unique subfolders
-- all assets (images) located in an `images/` subfolder next to your data file
+- One `data.xml` for your company.
+- One `data.xml` per product in unique subfolders
+- All assets (images) located in an `images/` subfolder next to the corresponding `data.xml`.
 
 Example:
 
 ```
-/data.xml
-/images
-  /header.png
-  /logo.png
-/product-name-01/
-  /data.xml
-  /images  
-    /header.png
-    /logo.png
-    /screenshot1.png
-    /screenshot2.png
+📄 data.xml
+📂 images/
+  📄 header.png
+  📄 logo.png
+📂 product-name-01/
+  📄 data.xml
+  📂 images/
+    📄 header.png
+    📄 logo.png
+    📄 screenshot1.png
+    📄 screenshot2.png
 ```
 
 You can also [try our example](https://github.com/pixelnest/presskit.html/tree/master/data) from this repository.
@@ -59,14 +61,92 @@ You can also [try our example](https://github.com/pixelnest/presskit.html/tree/m
 
 After looking for all data, `presskit` will generate a `build/` folder with all the html files ready to be uploaded on your server.
 
-Simply copy **all** the files to your hosting location... and you're done!
+Simply copy **all** the files to your server… and you're done!
 
-*Note: the webserver is __not__ included.*
+_Note: the webserver is **not** included._
 
-<!-- TODO -->
-<!-- Contributing -->
-<!-- Live examples -->
+## Migration Guide
 
-## Images
+This tool is almost a drop-in replacement from [presskit()][dopresskit] (well, except for the fact that it generates HTML instead of using a PHP back-end — but that's simpler, not harder). Which means that you can go in your folder containing the `data.xml` and `images/`, run `presskit build` and boom, you're done. Well, almost.
+
+We have made some breaking changes between this format and the original [presskit()][dopresskit] format.
+
+But be reassured: there are fairly small, and are, indeed, useful.
+
+Follow the guide.
+
+### Company `data.xml`
+
+Your main `data.xml` containing your company information should use a `<company></company>` root tag for your XML document.
+
+Before:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<game>
+	<title>Pixelnest Studio</title>
+  <!-- The rest -->
+</game>
+```
+
+After:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<company>
+  <title>Pixelnest Studio</title>
+  <!-- The rest -->
+</company>
+```
+
+**Why?** It allows us to better differentiate the main `data.xml` from the others. And moreover, it does not make sense that the company `data.xml` is considered as a `<game>`, right?
+
+### Release dates
+
+The original [presskit()][dopresskit] assumed that you had only one release date for a product or game. And we all know that it's simply not true.
+
+That's why we handle multiple release dates.
+
+So, in your product/game `data.xml`, you must change your `<release-date>` tag.
+
+Before:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+	<title>My Super Game</title>
+  <release-date>04 Feb, 2016</release-date>
+  <!-- The rest -->
+</product>
+```
+
+After:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+	<title>My Super Game</title>
+	<release-dates>
+		<release-date>PC/Mac - 04 Feb, 2016</release-date>
+		<release-date>iOS/Android - 04 Feb, 2017</release-date>
+	</release-dates>
+  <!-- The rest -->
+</product>
+```
+
+**Why?** We all know that there's no single release date for a product or a game.
+
+---
+
+## Credits
+
+### [presskit()][dopresskit]
+
+This couldn't have be made without the awesome work from the original [presskit()][dopresskit] team. Thanks to them!
+
+### Assets
 
 The images used in this repository can be found on [Unsplash](https://unsplash.com/), a free provider of high-quality images.
+
+
+[dopresskit]: http://dopresskit.com
