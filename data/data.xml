@@ -7,6 +7,8 @@
   <website>http://pizzaburger.studio/</website>
   <press-contact>contact@pizzaburger.studio</press-contact>
 
+  <analytics>UA-42424242-0</analytics>
+
   <!-- true or false -->
   <press-can-request-copy>true</press-can-request-copy>
 
