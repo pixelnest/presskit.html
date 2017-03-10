@@ -1,18 +1,12 @@
 #!/usr/bin/env node
 
-const chalk = require('chalk')
 const program = require('commander')
-const presskit = require('../lib/index')
 
 // -------------------------------------------------------------
 // Constants.
 // -------------------------------------------------------------
 
 const version = require('../package.json').version
-const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
-const description = `Generate a "Presskit" based on information found in data.xml files. The format and the ouput are (nearly) the same as ${chalk.blue('http://dopresskit.com/')} by Rami Ismail (http://vlambeer.com). However, this command will generate static HTML files.
-
-  More information on ${chalk.blue('https://github.com/pixelnest/presskit.html')}`
 
 // -------------------------------------------------------------
 // Module.
@@ -20,19 +14,6 @@ const description = `Generate a "Presskit" based on information found in data.xm
 
 program
   .version(version)
-  .description(description)
-  .usage(usage)
-  .option('-w, --watch', 'Watch project for changes and re-generate if needed')
+  .command('build [entrypoint]', 'Build the presskit from the folder [entry point]')
+  .command('new [destination]', 'Create an empty template in the [destination] folder')
   .parse(process.argv)
-
-presskit.start({
-  entryPoint: program.args[0],
-  watch: program.watch
-})
-program
-  .command('new <type>')
-  .description('Create a default valid "data.xml" file in the current working directory')
-  .action(function (type) {
-    presskit.template(type, process.cwd())
-  })
-
