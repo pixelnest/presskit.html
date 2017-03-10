@@ -27,4 +27,4 @@ program
   .option('-t, --type [company]', 'Set the type of the new `data.xml` file', 'company')
   .parse(process.argv)
 
-presskit.template(program.type, program.args[0] || process.cwd())
+presskit.runNewCommand(program.type, program.args[0] || process.cwd())

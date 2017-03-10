@@ -27,7 +27,7 @@ program
   .option('-w, --watch', 'Watch project for changes and re-generate if needed')
   .parse(process.argv)
 
-presskit.start({
+presskit.runBuildCommand({
   entryPoint: program.args[0],
   watch: program.watch
 })
