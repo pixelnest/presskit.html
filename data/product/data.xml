@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <product>
 	<title>My Super Game</title>
-	<release-date>04 Feb, 2016</release-date>
 	<website>http://pizzaburger.studio/mysupergame</website>
-
-	<!-- true or false -->
 	<press-can-request-copy>true</press-can-request-copy>
+
+	<release-dates>
+		<release-date>04 Feb, 2016</release-date>
+		<release-date>04 Feb, 2016</release-date>
+	</release-dates>
 
 	<platforms>
 		<platform>

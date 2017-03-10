@@ -55,7 +55,9 @@
     <dd>Based in {{company.basedIn}}</dd>
 
     <dt>Release date:</dt>
-    <dd>{{presskit.releaseDate}}</dd>
+    {{#each presskit.releaseDates}}
+    <dd>{{.}}</dd>
+    {{/each}}
 
     <dt>Press copy request:</dt>
     <dd>{{presskit.pressCanRequestCopy}}</dd>
