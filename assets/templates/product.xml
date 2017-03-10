@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <product>
-	<title></title>
-	<release-date></release-date>
-	<website></website>
+  <title></title>
+  <release-date></release-date>
+  <website></website>
 
-	<!-- true or false -->
-	<press-can-request-copy>true</press-can-request-copy>
+  <!-- true or false -->
+  <press-can-request-copy>true</press-can-request-copy>
 
-	<platforms>
-		<platform>
-			<name></name>
-			<link></link>
-		</platform>
-	</platforms>
+  <platforms>
+    <platform>
+      <name></name>
+      <link></link>
+    </platform>
+  </platforms>
 
-	<prices>
-		<price>
-			<currency></currency>
-			<value></value>
-		</price>
-	</prices>
+  <prices>
+    <price>
+      <currency></currency>
+      <value></value>
+    </price>
+  </prices>
 
-	<description></description>
+  <description></description>
 
-	<history></history>
+  <history></history>
 
-	<features>
-		<feature></feature>
-	</features>
+  <features>
+    <feature></feature>
+  </features>
 
-	<trailers>
-		<trailer>
-			<name></name>
+  <trailers>
+    <trailer>
+      <name></name>
 
-			<!-- Pick one -->
-			<youtube>
-				<!-- Video ID only, not the full URL -->
-			</youtube>
-			<vimeo>
-				<!-- Video ID only, not the full URL -->
-			</vimeo>
-		</trailer>
-	</trailers>
+      <!-- Pick one -->
+      <youtube>
+        <!-- Video ID only, not the full URL -->
+      </youtube>
+      <vimeo>
+        <!-- Video ID only, not the full URL -->
+      </vimeo>
+    </trailer>
+  </trailers>
 
-	<awards>
-		<award>
-			<description></description>
-			<info></info>
-		</award>
-	</awards>
+  <awards>
+    <award>
+      <description></description>
+      <info></info>
+    </award>
+  </awards>
 
-	<quotes>
-		<quote>
-			<description></description>
-			<name></name>
-			<website></website>
-			<link>/</link>
-		</quote>
-	</quotes>
+  <quotes>
+    <quote>
+      <description></description>
+      <name></name>
+      <website></website>
+      <link>/</link>
+    </quote>
+  </quotes>
 
-	<additionals>
-		<additional>
-			<title></title>
-			<description></description>
-			<link></link>
-		</additional>
-	</additionals>
+  <additionals>
+    <additional>
+      <title></title>
+      <description></description>
+      <link></link>
+    </additional>
+  </additionals>
 
-	<credits>
-		<credit>
-			<person></person>
-			<role></role>
-		</credit>
-	</credits>
+  <credits>
+    <credit>
+      <person></person>
+      <role></role>
+    </credit>
+  </credits>
 
-	<contacts>
-		<contact>
-			<name></name>
-			<mail></mail>
-		</contact>
-	</contacts>
+  <contacts>
+    <contact>
+      <name></name>
+      <mail></mail>
+    </contact>
+  </contacts>
 </product>
