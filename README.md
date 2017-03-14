@@ -75,6 +75,38 @@ But be reassured: there are fairly small, and are, indeed, useful.
 
 Follow the guide.
 
+### URLs
+
+[presskit()][dopresskit] didn't require the protocol (ie., `http` or `https`) for most URLs.
+
+For example:
+
+```xml
+<socials>
+  <social>
+    <name>twitter.com/pixelnest/</name>
+    <link>twitter.com/pixelnest/</link>
+  </social>
+</socials>
+```
+
+Note that the `<link>` has no `http` or `https` protocol before its destination.
+
+The problem with that is that we cannot deduce the protocol automatically. It will work seamlessly for the biggest sites like Facebook or Twitter, but we cannot guarantee that it will link correctly for everything.
+
+That's why we require that you specify the protocol for your URLs:
+
+```xml
+<socials>
+  <social>
+    <name>twitter.com/pixelnest/</name>
+    <link>https://twitter.com/pixelnest/</link>
+  </social>
+</socials>
+```
+
+Otherwise, the URL will be relative to your presskit, and thus, will break.
+
 ### Company `data.xml`
 
 Your main `data.xml` containing your company information should use a `<company></company>` root tag for your XML document.
