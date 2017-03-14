@@ -33,7 +33,13 @@
   <h2 id="images">Images</h2>
 
   <aside class="block__notice">
-    <a href="images/images.zip">download all screenshots & photos as .zip (XXMB)</a>
+    <a href="images/images.zip">
+      download all screenshots & photos as .zip
+
+      {{#if images.screenshotZipSize}}
+      ({{images.screenshotZipSize}}MB)
+      {{/if}}
+    </a>
   </aside>
 
   <div class="gallery" id="gallery">
@@ -51,7 +57,13 @@
   <h2 id="logo">Logo & Icon</h2>
 
   <aside class="block__notice">
-    <a href="images/logo.zip">download logo files as .zip (XXMB)</a>
+    <a href="images/logo.zip">
+      download logo files as .zip
+
+      {{#if images.logoZipSize}}
+      ({{images.logoZipSize}}MB)
+      {{/if}}
+    </a>
   </aside>
 
   {{#each images.logos}}
