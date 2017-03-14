@@ -77,6 +77,12 @@ Follow the guide.
 
 ### URLs
 
+This re-implementation of [presskit()][dopresskit] has a big difference: all your product URLs will break. With [presskit()][dopresskit], you pointed to `/sheet.php?p=MYSUPERGAME` for the `MYSUPERGAME` page. Here, you will point to `/MYSUPERGAME/` directly (the `index.html` is not required, which makes prettier URLs).
+
+**This can't be changed.** We don't use PHP, but simple, robust and lightweight HTML files, and this difference is inevitable.
+
+### External URLs
+
 [presskit()][dopresskit] didn't require the protocol (ie., `http` or `https`) for most URLs.
 
 For example:
