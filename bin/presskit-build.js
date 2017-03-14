@@ -26,10 +26,14 @@ program
   .usage(usage)
   .option('-o, --output [destination]', 'Output the build folder to the [destination]', process.cwd())
   .option('-w, --watch', 'Watch project for changes and re-generate if needed')
+  .option('-d, --dev', 'Add monitoring of CSS and templates in watch mode')
+  .option('-p, --port [8080]', 'Set the server port to [8080]', 8080)
   .parse(process.argv)
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
   output: program.output,
-  watch: program.watch
+  watch: program.watch,
+  port: program.port,
+  dev: program.dev
 })
