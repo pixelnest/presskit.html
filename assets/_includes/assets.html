@@ -41,7 +41,9 @@
   <div class="gallery" id="gallery">
     {{#each images.screenshots}}
     <div class="gallery__item">
-      <img src="images/{{.}}">
+      <a href="images/{{.}}">
+        <img src="images/{{.}}" alt="{{basename .}}">
+      </a>
     </div>
     {{/each}}
   </div>
@@ -59,7 +61,9 @@
   </aside>
 
   {{#each images.logos}}
-  <img src="images/{{.}}">
+  <a href="images/{{.}}">
+    <img src="images/{{.}}" alt="{{basename .}}">
+  </a>
   {{/each}}
 </section>
 {{/if}}
