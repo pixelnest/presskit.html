@@ -11,14 +11,6 @@
   <!-- Google analytics ID: -->
   <analytics></analytics>
 
-  <!--
-    - false (no video allowed)
-    - ask (permission on case-per-case basis)
-    - non-commercial (no monetization allowed)
-    - monetize (full permission)
-  -->
-  <monetization-permission></monetization-permission>
-
   <phone></phone>
   <address>
     <line>

@@ -9,14 +9,6 @@
 
   <analytics>UA-42424242-0</analytics>
 
-  <!--
-    - false (no video allowed)
-    - ask (permission on case-per-case basis)
-    - non-commercial (no monetization allowed)
-    - monetize (full permission)
-  -->
-  <monetization-permission>monetize</monetization-permission>
-
   <phone>+42 (3) 42 42 42 42 42</phone>
   <address>
     <line>42, invisible lane</line>
