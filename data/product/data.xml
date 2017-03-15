@@ -74,6 +74,12 @@
     </trailer>
   </trailers>
 
+  <widgets>
+    <steam>347160</steam>
+    <humble>steredenn/7SDLfk23hw</humble>
+    <itch>27992</itch>
+  </widgets>
+
   <awards>
     <award>
       <description>Game of the year without a doubt</description>

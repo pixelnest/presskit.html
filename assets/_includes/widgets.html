@@ -1,0 +1,23 @@
+{{#if presskit.widgets}}
+<section class="block">
+  <h2 id="widgets">Widgets</h2>
+
+  {{#if presskit.widgets.steam}}
+  <p>
+    <iframe src="http://store.steampowered.com/widget/{{presskit.widgets.steam}}/" frameborder="0" class="widget widget--steam"></iframe>
+  </p>
+  {{/if}}
+
+  {{#if presskit.widgets.humble}}
+  <p>
+    <iframe src="https://www.humblebundle.com/widget/v2/product/{{presskit.widgets.humble}}" frameborder="0" scrolling="no" class="widget widget--humble"></iframe>
+  </p>
+  {{/if}}
+
+  {{#if presskit.widgets.itch}}
+  <p>
+    <iframe src="https://itch.io/embed/{{presskit.widgets.itch}}?dark=true" frameborder="0" class="widget widget--itch"></iframe>
+  </p>
+  {{/if}}
+</section>
+{{/if}}

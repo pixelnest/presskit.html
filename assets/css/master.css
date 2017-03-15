@@ -367,3 +367,29 @@ a:hover {
   background: -webkit-linear-gradient(top, #3398ff, #0077dd);
   background:         linear-gradient(to bottom, #3398ff, #0077dd);
 }
+
+/* ---------------------------------------------------------- *\
+ * Widgets.
+\* ---------------------------------------------------------- */
+
+.widget {
+  width: 100%;
+}
+
+.widget--steam {
+  height: 190px;
+}
+
+.widget--humble {
+  height: 328px;
+}
+
+@media (max-width: 505px) {
+  .widget--humble {
+    height: 205px;
+  }
+}
+
+.widget--itch {
+  height: 167px;
+}
