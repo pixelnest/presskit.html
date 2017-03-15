@@ -346,7 +346,8 @@ a:hover {
 
   padding: 5px 10px;
 
-  background: linear-gradient(to bottom, white, #fafafa);
+  background: -webkit-linear-gradient(top, white, #fafafa);
+  background:         linear-gradient(to bottom, white, #fafafa);
   border: 1px solid #cccccc;
   border-radius: 5px;
 }
@@ -363,5 +364,6 @@ a:hover {
 
 .button:active {
   color: white;
-  background: linear-gradient(to bottom, #3398ff, #0077dd);;
+  background: -webkit-linear-gradient(top, #3398ff, #0077dd);
+  background:         linear-gradient(to bottom, #3398ff, #0077dd);
 }
