@@ -336,3 +336,32 @@ a:hover {
 .quote__author::before {
   content: "-";
 }
+
+/* ---------------------------------------------------------- *\
+ * Components - Button.
+\* ---------------------------------------------------------- */
+
+.button {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: linear-gradient(to bottom, white, #fafafa);
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:focus {
+  border: 1px solid #3398ff;
+  outline: none;
+}
+
+.button:active {
+  color: white;
+  background: linear-gradient(to bottom, #3398ff, #0077dd);;
+}

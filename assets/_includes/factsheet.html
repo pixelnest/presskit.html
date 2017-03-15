@@ -76,5 +76,13 @@
     <dd>{{currency}} {{value}}</dd>
     {{/each}}
   </dl>
+
+  {{#if presskit.pressCopyRequest}}
+  <p class="press">
+    <a href="{{presskit.pressCopyRequest}}" class="button" tabindex="0">
+      Request Press Copy
+    </a>
+  </p>
+  {{/if}}
   {{/if}}
 </aside>
