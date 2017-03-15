@@ -2,7 +2,10 @@
 <product>
 	<title>My Super Game</title>
 	<website>http://pizzaburger.studio/mysupergame</website>
-	<press-can-request-copy>true</press-can-request-copy>
+
+	<press-copy-request>
+		http://pizzaburger.studio/mysupergame/request/
+	</press-copy-request>
 
 	<release-dates>
 		<release-date>04 Feb, 2016</release-date>

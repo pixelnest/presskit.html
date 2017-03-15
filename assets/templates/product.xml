@@ -4,8 +4,8 @@
   <release-date></release-date>
   <website></website>
 
-  <!-- true or false: -->
-  <press-can-request-copy>true</press-can-request-copy>
+  <!-- Link to request press copy: -->
+  <press-copy-request></press-copy-request>
 
   <platforms>
     <platform>

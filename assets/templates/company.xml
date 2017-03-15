@@ -11,9 +11,6 @@
   <!-- Google analytics ID: -->
   <analytics></analytics>
 
-  <!-- true or false: -->
-  <press-can-request-copy>true</press-can-request-copy>
-
   <!--
     - false (no video allowed)
     - ask (permission on case-per-case basis)
