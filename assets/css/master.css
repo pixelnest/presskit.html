@@ -174,6 +174,14 @@ a:hover {
   line-height: 1;
 }
 
+.nav__title a,
+.nav__title a:visited,
+.nav__title a:hover {
+  color: inherit;
+
+  text-decoration: none;
+}
+
 .nav__subtitle {
   padding: 5px 15px;
 }
