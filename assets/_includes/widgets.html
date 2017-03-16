@@ -19,5 +19,12 @@
     <iframe src="https://itch.io/embed/{{presskit.widgets.itch}}?dark=true" frameborder="0" class="widget widget--itch"></iframe>
   </p>
   {{/if}}
+
+  {{#if presskit.widgets.bandcamp}}
+  <p>
+    <!-- TODO: customize `linkcol` with brand color. -->
+    <iframe src="https://bandcamp.com/EmbeddedPlayer/album={{presskit.widgets.bandcamp}}/size=large/bgcol=ffffff/linkcol=3398ff/tracklist=false/artwork=small/transparent=true/" seamless class="widget widget--bandcamp"></iframe>
+  </p>
+  {{/if}}
 </section>
 {{/if}}

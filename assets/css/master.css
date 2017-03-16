@@ -393,3 +393,10 @@ a:hover {
 .widget--itch {
   height: 167px;
 }
+
+.widget--bandcamp {
+  width: 100%;
+  height: 120px;
+
+  border: 0;
+}

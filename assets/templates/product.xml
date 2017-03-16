@@ -68,6 +68,10 @@
       <!-- itch.io ID -->
       <!-- e.g. 42424 -->
     </itch>
+    <bandcamp>
+      <!-- Bandcamp ID -->
+      <!-- e.g. 4242424242 -->
+    </bandcamp>
   </widgets>
 
   <awards>
