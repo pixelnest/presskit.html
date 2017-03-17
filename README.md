@@ -149,11 +149,11 @@ TODO
 
 ## Migration Guide
 
-This tool is almost a drop-in replacement for [presskit()][dopresskit] (well, except for the fact that it generates HTML instead of using a PHP back-end — but that's simpler, not harder). Which means that you can go in your folder containing the `data.xml` and `images/`, run `presskit build` and boom, you're done. _Well, almost._
+This tool is almost a drop-in replacement for [presskit()][dopresskit] (well, except for the fact that it generates HTML instead of using a PHP back-end — but that's simpler, not harder). Which mean that you can go in your folder containing the `data.xml` and `images/`, run `presskit build` and boom, you're done.
 
-We have made some breaking changes between this format and the original [presskit()][dopresskit] format.
+_Well, almost._
 
-But be reassured: they are fairly small, and are, indeed, useful.
+We have made some breaking changes between this format and the original [presskit()][dopresskit] format. But be reassured: they are fairly small, and are, indeed, useful.
 
 Follow the guide.
 
