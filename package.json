@@ -1,34 +1,27 @@
 {
   "name": "presskit.html",
-  "description": "Re-implementation of presskit() in static HTML",
   "version": "0.1.0",
-  "author": "Pixelnest Studio",
+  "description": "Re-implementation of presskit() in static HTML",
   "license": "MIT",
+  "repository": "pixelnest/presskit.html",
+  "author": {
+    "name": "Pixelnest Studio",
+    "url": "pixelnest.io"
+  },
+  "keywords": [
+    "presskit",
+    "static site generator"
+  ],
   "homepage": "https://github.com/pixelnest/presskit.html#readme",
-  "repository": "https://github.com/pixelnest/presskit.html.git",
   "bugs": "https://github.com/pixelnest/presskit.html/issues",
-  "main": "lib/main.js",
+  "main": "lib/index.js",
   "bin": {
     "presskit": "bin/presskit"
   },
   "scripts": {
-    "start": "node bin/presskit",
+    "start": "node bin/presskit build --watch --dev data",
     "test": "standard | snazzy && jest",
     "tester": "jest --watch"
-  },
-  "standard": {
-    "globals": [
-      "beforeAll",
-      "afterAll",
-      "beforeEach",
-      "afterEach",
-      "it",
-      "describe",
-      "expect"
-    ]
-  },
-  "jest": {
-    "testEnvironment": "node"
   },
   "engines": {
     "node": ">=7.6.x"
@@ -50,5 +43,19 @@
     "mock-fs": "^3.12.1",
     "snazzy": "^5.0.0",
     "standard": "*"
+  },
+  "standard": {
+    "globals": [
+      "beforeAll",
+      "afterAll",
+      "beforeEach",
+      "afterEach",
+      "it",
+      "describe",
+      "expect"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
