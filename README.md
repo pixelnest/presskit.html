@@ -65,7 +65,7 @@ The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-p
 The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/):
 
 ```shell
-npm install -g <TODO,  package not ready!>
+npm install -g presskit
 ```
 
 (Feeling fancy? Use [Yarn](https://yarnpkg.com/en/) instead.)
