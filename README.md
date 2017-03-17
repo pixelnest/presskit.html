@@ -122,7 +122,7 @@ Before:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <game>
-	<title>Pixelnest Studio</title>
+  <title>Pixelnest Studio</title>
   <!-- The rest -->
 </game>
 ```
@@ -152,7 +152,7 @@ Before:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <product>
-	<title>My Super Game</title>
+  <title>My Super Game</title>
   <release-date>04 Feb, 2016</release-date>
   <!-- The rest -->
 </product>
@@ -163,11 +163,11 @@ After:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <product>
-	<title>My Super Game</title>
-	<release-dates>
-		<release-date>PC/Mac - 04 Feb, 2016</release-date>
-		<release-date>iOS/Android - 04 Feb, 2017</release-date>
-	</release-dates>
+  <title>My Super Game</title>
+  <release-dates>
+    <release-date>PC/Mac - 04 Feb, 2016</release-date>
+    <release-date>iOS/Android - 04 Feb, 2017</release-date>
+  </release-dates>
   <!-- The rest -->
 </product>
 ```
