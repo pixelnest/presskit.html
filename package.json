@@ -1,5 +1,5 @@
 {
-  "name": "presskit.html",
+  "name": "presskit",
   "version": "0.1.0",
   "description": "Re-implementation of presskit() as a static site generator",
   "license": "MIT",
