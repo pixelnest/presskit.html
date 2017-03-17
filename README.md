@@ -54,7 +54,7 @@ However, _we have tried to be as close as possible to the original presskit form
 
 This is by design: the aim of the original [presskit()][dopresskit] was to create an instantly-recognizable website — almost a standard in the videogame industry.
 
-Just try it: [follow our migration guide](#migration-guide), run **presskit.html** in the folder containing your [presskit()][dopresskit]-based `data.xml` and `images/` and you will have a ready to deploy set of HTML pages which are almost identical to what you already have.
+You already have a presskit? Just try it: [follow our migration guide](#migration-guide), run **presskit.html** in the folder containing your [presskit()][dopresskit]-based `data.xml` and `images/` and you will have a ready to deploy set of HTML pages which are almost identical to what you already have.
 
 ## Roadmap
 
