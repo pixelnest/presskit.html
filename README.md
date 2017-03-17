@@ -1,6 +1,6 @@
 # ![presskit.html](header.png)
 
-> Static re-implementation of presskit()
+> Static site generator of presskit()
 
 ![Build status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
@@ -262,7 +262,7 @@ After:
 
 ### [presskit()][dopresskit]
 
-This couldn't have be made without the awesome work from the original [presskit()][dopresskit] team. Thanks to them!
+This couldn't have be made without the awesome work of [Rami Ismail](https://twitter.com/tha_rami) and the [presskit()][dopresskit] team. Thanks to them!
 
 ### Assets
 
