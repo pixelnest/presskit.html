@@ -176,6 +176,10 @@ a:hover {
  * Components - Nav.
 \* ---------------------------------------------------------- */
 
+.nav {
+  margin-bottom: 30px;
+}
+
 .nav__title {
   padding: 0 15px;
 
