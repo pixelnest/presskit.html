@@ -12,9 +12,9 @@ const version = require('../package.json').version
 
 const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
 
-const description = `Generate a "Presskit" based on information found in data.xml files. The format and the ouput are (nearly) the same as ${chalk.blue('http://dopresskit.com/')} by Rami Ismail (http://vlambeer.com). However, this command will generate static HTML files.
+const description = `Generate a presskit based on information found in \`data.xml\` files. The format and the ouput are (nearly) the same as ${chalk.blue('http://dopresskit.com/')}. However, this command will generate static HTML files.
 
-  More information on ${chalk.blue('https://github.com/pixelnest/presskit.html')}`
+  More information on ${chalk.blue('https://github.com/pixelnest/presskit.html#usage')}.`
 
 // -------------------------------------------------------------
 // Module.
