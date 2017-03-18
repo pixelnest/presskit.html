@@ -79,12 +79,21 @@ p {
   margin: 15px 0;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 /* Lists. */
 
 ul,
 ol {
   margin: 15px 0;
   padding-left: 30px;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
 }
 
 ul {
