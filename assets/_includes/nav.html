@@ -1,6 +1,10 @@
 <nav class="page-nav nav grid__item">
   <h1 class="nav__title">
+    {{#if isCompany}}
     <a href=".">{{presskit.title}}</a>
+    {{else}}
+    <a href="..">{{company.title}}</a>
+    {{/if}}
   </h1>
 
   <aside class="nav__subtitle">
