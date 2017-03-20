@@ -273,6 +273,24 @@ After:
 
 **Why?** We all know that there's no single release date for a product or a game.
 
+### Contacts
+
+In each `data.xml`, you can set a list of contacts:
+
+```xml
+<contacts>
+  <contact>
+    <name>Inquiries</name>
+    <mail>contact@pizzaburger.studio</mail>
+  </contact>
+  <!-- Others -->
+</contacts>
+```
+
+In [presskit()][dopresskit], you needed to set these informations _only in the company page_. Each product then retrieved the values from the company and added them automatically.
+
+We modified that: now, you **need** to set these informations everywhere. That way, you can change mails and links for each product individually.
+
 ---
 
 ## Credits
