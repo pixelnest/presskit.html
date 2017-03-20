@@ -1,6 +1,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{#if company}}
+<title>{{presskit.title}} - {{company.title}}</title>
+{{else}}
 <title>{{presskit.title}}</title>
+{{/if}}
 
 <link rel="shortcut icon" href="images/favicon.ico?t={{buildTime}}">
 
