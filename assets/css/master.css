@@ -142,6 +142,10 @@ body {
     min-width: 25%;
   }
 
+  .page-wrapper {
+    max-width: 75%;
+  }
+
   .factsheet {
     min-width: 33%;
   }
