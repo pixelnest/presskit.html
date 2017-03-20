@@ -85,6 +85,12 @@ npm install -g presskit
 
 This should add a globally available `presskit` command to your shell.
 
+To update to a new version of **presskit.html**, just type:
+
+```shell
+npm update -g presskit
+```
+
 ## Usage
 
 Run this command:
