@@ -21,7 +21,8 @@
   "scripts": {
     "start": "node bin/presskit build --watch --dev data",
     "test": "standard | snazzy && jest",
-    "tester": "jest --watch"
+    "tester": "jest --watch",
+    "docs": "presskit build -DL -o docs data"
   },
   "engines": {
     "node": ">=7.6.x"
