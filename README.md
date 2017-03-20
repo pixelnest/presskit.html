@@ -32,9 +32,10 @@ It uses an **almost-identical format and output** as its precursor. The goal is 
 
 And even if [presskit()][dopresskit] was conceived with videogames in mind, we think that you can use it for any kind of product.
 
-Example:
+Examples (built with **presskit.html**):
 
-* [Pixelnest Studio](http://pixelnest.io/presskit/) (built with **presskit.html**)
+* [Pixelnest Studio](http://pixelnest.io/presskit/)
+* [Fake Pizza Burger Studio](http://pixelnest.io/presskit.html/example/)
 
 The goal of **presskit.html** is to generate only static HTML pages — no PHP required at all. Just fill some XML data files, add some images, execute a command, and boom. It's done.
 
@@ -166,7 +167,7 @@ Simply copy **all** the files in the `build/` folder to your server… and you'r
 
 _Note: the webserver is **not** included._
 
-You can also [try our example](https://github.com/pixelnest/presskit.html/tree/master/data) from this repository.
+You can also [try our example](https://github.com/pixelnest/presskit.html/tree/master/data) from this repository, available online here: http://pixelnest.io/presskit.html/example/.
 
 ## Documentation
 
