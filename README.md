@@ -158,6 +158,30 @@ You can also [try our example](https://github.com/pixelnest/presskit.html/tree/m
 
 TODO
 
+### Tags
+
+#### Widgets (for game developers)
+
+This is a new feature of **presskit.html**: you can put your widgets directly into your presskit pages.
+
+- Steam `<steam>STEAM_ID</steam>`
+- Humble Bundle `<humble>product_name/BUNDLE_ID</humble>`
+- Itch.io `<itch>ITCH_ID</itch>`
+- Bandcamp `<bandcamp>BANDCAMP_ID</bandcamp>`
+
+Just add the `<widgets>` tag, and the widget providers that you want:
+
+```xml
+<widgets>
+  <steam>347160</steam>
+  <humble>steredenn/7SDLfk23hw</humble>
+  <itch>27992</itch>
+  <bandcamp>1135613467</bandcamp>
+</widgets>
+```
+
+We don't support other widgets for the moment, but feel free to send a pull request or submit an issue.
+
 ### Archives
 
 **presskit.html** will find every images and logos in the `images/` folder of a `data.xml`. Then, it will create two archives: `images.zip` and `logo.zip`.
