@@ -355,7 +355,8 @@ This couldn't have be made without the awesome work of [Rami Ismail](https://twi
 
 ### Assets
 
-The images used in this repository can be found on [Unsplash](https://unsplash.com/), a free provider of high-quality images.
+* The images used in this repository can be found on [Unsplash](https://unsplash.com/), a free provider of high-quality images.
+* Pizza gif is from [Giphy](http://giphy.com/).
 
 
 [dopresskit]: http://dopresskit.com
