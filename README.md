@@ -212,6 +212,8 @@ Otherwise, the URL will be relative to your presskit, and thus, will break.
 
 ### Company `data.xml`
 
+**This is recommended, but presskit.html is smart enough to detect the company `data.xml` automatically, if your file structure is correct.**
+
 Your main `data.xml` containing your company information should use a `<company></company>` root tag for your XML document.
 
 Before:
