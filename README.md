@@ -73,7 +73,9 @@ The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-p
 
 ## Installation
 
-The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/):
+You will need a terminal and [Node.js](https://nodejs.org/).
+
+The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/) (bundled with Node.js):
 
 ```shell
 npm install -g presskit
