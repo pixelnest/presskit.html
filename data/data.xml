@@ -32,7 +32,7 @@
   </socials>
 
   <description>
-    What is your company? What are you doing?
+    This is a fake presskit for a fake company called Pizza Burger Studio.
   </description>
 
   <histories>
@@ -46,7 +46,6 @@
     </history>
   </histories>
 
-  <!-- Try to mix videos from different products here. -->
   <trailers>
     <trailer>
       <name>Example from YouTube. Don't give a full link: the ID is enough</name>
