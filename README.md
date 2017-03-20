@@ -5,7 +5,7 @@
 ![Build status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-* [Why presskit.html](#why)
+* [Why presskit.html?](#why)
 * [Showcase](#showcase)
 * [Roadmap](#roadmap)
 * [Installation](#installation)
