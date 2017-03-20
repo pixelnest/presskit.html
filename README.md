@@ -196,6 +196,18 @@ Just add the `<widgets>` tag, and the widget providers that you want:
 
 We don't support other widgets for the moment, but feel free to send a pull request or submit an issue.
 
+### Images
+
+For each `data.xml`, you can add an `images/` folder containing the assets of your product or game.
+
+- An image named `header.png` or `header.jpg` will be used for the page's banner.
+- An image named `logo.png` or `logo.jpg` will be used as your page's logo.
+- Each `jpg`, `jpeg`, `png` or `gif` will be displayed in the gallery.
+
+#### Favicon
+
+If a `favicon.ico` is found in the `images/` folder of a `data.xml`, it will be used as the favicon of this HTML page. It will not be exported in the `images.zip`, nor visible in the images gallery.
+
 ### Archives
 
 **presskit.html** will find every images and logos in the `images/` folder of a `data.xml`. Then, it will create two archives: `images.zip` and `logo.zip`.
@@ -203,10 +215,6 @@ We don't support other widgets for the moment, but feel free to send a pull requ
 There's a small trick to know: if you provide one (or both) of these zips in your `images/` folder, **presskit.html** will just copy it directly, instead of overriding it. This is nice, because it allows you to provide a more complete (and heavy) zip. In this archive, you can, for example, put bigger gifs, images, artworks, or even videos.
 
 That's purely optional, and most products or games won't need a specially crafted archive. 😉
-
-### Favicon
-
-If a `favicon.ico` is found in the `images/` folder of a `data.xml`, it will be used as the favicon of this HTML page. It will not be exported in the `images.zip`, nor visible in the images gallery.
 
 ## Migration Guide
 
