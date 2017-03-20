@@ -147,6 +147,10 @@ You can also [try our example](https://github.com/pixelnest/presskit.html/tree/m
 
 TODO
 
+### Favicon
+
+If a `favicon.ico` is found in the `images/` folder of a `data.xml`, it will be used as the favicon of this HTML page. It will not be exported in the `images.zip`, nor visible in the images gallery.
+
 ## Migration Guide
 
 This tool is almost a drop-in replacement for [presskit()][dopresskit] (well, except for the fact that it generates HTML instead of using a PHP back-end — but that's simpler, not harder). Which mean that you can go in your folder containing the `data.xml` and `images/`, run `presskit build` and boom, you're done.
