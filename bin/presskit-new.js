@@ -24,7 +24,7 @@ program
   .version(version)
   .description(description)
   .usage(usage)
-  .option('-t, --type [company]', 'Set the type of the new `data.xml` file', 'company')
+  .option('-t, --type [company]', 'set the type of the new `data.xml` file', 'company')
   .parse(process.argv)
 
 presskit.runNewCommand(program.type, program.args[0] || process.cwd())

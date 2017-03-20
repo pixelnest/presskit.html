@@ -24,12 +24,12 @@ program
   .version(version)
   .description(description)
   .usage(usage)
-  .option('-o, --output [destination]', 'Output the build folder to the [destination]', process.cwd())
-  .option('-w, --watch', 'Watch project for changes and re-generate if needed')
-  .option('-d, --dev', 'Add monitoring of CSS and templates in watch mode')
-  .option('-p, --port [8080]', 'Set the server port to [8080]', 8080)
-  .option('-D, --clean-build-folder', 'Delete the build folder beforehand')
-  .option('-L, --pretty-links', 'Hide index.html at the end of links')
+  .option('-o, --output [destination]', 'output the build folder to the [destination]', process.cwd())
+  .option('-w, --watch', 'watch project for changes and re-generate if needed')
+  .option('-d, --dev', 'add monitoring of CSS and templates in watch mode')
+  .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
+  .option('-D, --clean-build-folder', 'delete the build folder beforehand')
+  .option('-L, --pretty-links', 'hide index.html at the end of links')
   .parse(process.argv)
 
 presskit.runBuildCommand({
