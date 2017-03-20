@@ -1,5 +1,6 @@
 'use strict'
 
+const path = require('path')
 const chalk = require('chalk')
 const program = require('commander')
 const presskit = require('../lib/index')
@@ -24,7 +25,10 @@ program
   .version(version)
   .description(description)
   .usage(usage)
-  .option('-o, --output [destination]', 'output the build folder to the [destination]', process.cwd())
+  .option(
+    '-o, --output [destination]', 'output the build folder to the [destination] (defaults to ./build)',
+    path.join(process.cwd(), 'build')
+  )
   .option('-w, --watch', 'watch project for changes and re-generate if needed')
   .option('-d, --dev', 'add monitoring of CSS and templates in watch mode')
   .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
