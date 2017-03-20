@@ -28,10 +28,12 @@ program
   .option('-w, --watch', 'Watch project for changes and re-generate if needed')
   .option('-d, --dev', 'Add monitoring of CSS and templates in watch mode')
   .option('-p, --port [8080]', 'Set the server port to [8080]', 8080)
+  .option('-L, --pretty-links', 'Hide index.html at the end of links')
   .parse(process.argv)
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
+  prettyLinks: program.prettyLinks,
   output: program.output,
   watch: program.watch,
   port: program.port,
