@@ -6,6 +6,7 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 * [Why presskit.html](#why)
+* [Showcase](#showcase)
 * [Roadmap](#roadmap)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -31,12 +32,9 @@ It uses an **almost-identical format and output** as its precursor. The goal is 
 
 And even if [presskit()][dopresskit] was conceived with videogames in mind, we think that you can use it for any kind of product.
 
-Examples:
+Example:
 
-* [Pixelnest Studio](http://pixelnest.io/presskit/)
-* [Vlambeer](http://www.vlambeer.com/press/)
-* [Flying Oak Games](http://www.flying-oak.com/presskit/index.php)
-* [Chucklefish](http://chucklefish.org/cf-presskit/index.php)
+* [Pixelnest Studio](http://pixelnest.io/presskit/) (built with **presskit.html**)
 
 The goal of **presskit.html** is to generate only static HTML pages — no PHP required at all. Just fill some XML data files, add some images, execute a command, and boom. It's done.
 
@@ -55,6 +53,19 @@ However, _we have tried to be as close as possible to the original presskit form
 This is by design: the aim of the original [presskit()][dopresskit] was to create an instantly-recognizable website — almost a standard in the videogame industry.
 
 You already have a presskit? Just try it: [follow our migration guide](#migration-guide), run **presskit.html** in the folder containing your [presskit()][dopresskit]-based `data.xml` and `images/` and you will have a ready to deploy set of HTML pages which are almost identical to what you already have.
+
+## Showcase
+
+Built with **presskit.html**:
+
+* [Pixelnest Studio](http://pixelnest.io/presskit/)
+
+<small>_You are using **presskit.html**? Tell us or submit a pull request!_</small>
+
+Want to compare with [presskit()][dopresskit] websites? Check these ones:
+
+* [Vlambeer](http://www.vlambeer.com/press/)
+* [Flying Oak Games](http://www.flying-oak.com/presskit/index.php)
 
 ## Roadmap
 
