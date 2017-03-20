@@ -93,6 +93,12 @@ presskit build
 
 **presskit.html** will then scan your local working directory (where you are executing the command) and all direct sub-directories for `data.xml` files and `images/` folders.
 
+To launch your presskit with a server and automatically reload it each time your save a `data.xml`, just use:
+
+```
+presskit build --watch
+```
+
 You can also specify the folder to scan:
 
 ```shell
