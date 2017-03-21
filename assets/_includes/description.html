@@ -1,12 +1,12 @@
 <h2 id="description">Description</h2>
-<p>{{presskit.description}}</p>
+<p>{{rawText presskit.description}}</p>
 
 <h2 id="history">History</h2>
 {{#if presskit.history}}
-<p>{{presskit.history}}</p>
+<p>{{rawText presskit.history}}</p>
 {{/if}}
 
 {{#each presskit.histories}}
 <h3>{{header}}</h3>
-<p>{{text}}</p>
+<p>{{rawText text}}</p>
 {{/each}}
