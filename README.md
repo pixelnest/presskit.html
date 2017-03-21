@@ -185,6 +185,16 @@ TODO
 
 ### Tags
 
+**Warning: do not put XML tags inside your content.**
+
+For example, do not do this (note the `<br />`):
+
+```xml
+<description>
+  Lorem ipsum<br /> sit amet.
+</description>
+```
+
 #### Widgets (for game developers)
 
 This is a new feature of **presskit.html**: you can put your widgets directly into your presskit pages.
