@@ -8,6 +8,7 @@
 * [Why presskit.html?](#why)
 * [Showcase](#showcase)
 * [Roadmap](#roadmap)
+* [Quickstart](#quickstart)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Documentation](#documentation)
@@ -71,6 +72,15 @@ Want to compare with [presskit()][dopresskit] websites? Check these ones:
 ## Roadmap
 
 The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-presskit-html).
+
+## Quickstart for existing presskit users
+
+1. Install [Node.js](https://nodejs.org).
+2. Open your terminal ("Terminal" on macOS, "cmd" on Windows).
+3. Run `npm install -g presskit`.
+4. Type `cd`, press space, and drag the folder containing your `data.xml` files.
+5. Run `presskit build`.
+6. Open the `build/` folder, double-click on index.html and… 🍾
 
 ## Installation
 
