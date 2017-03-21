@@ -195,10 +195,11 @@ For example, do not do this (note the `<br />`):
 </description>
 ```
 
-#### Widgets (for game developers)
+#### Widgets
 
 This is a new feature of **presskit.html**: you can put your widgets directly into your presskit pages.
 
+- Mailchimp `<mailchimp>LIST_URL inside your signup form</mailchimp>`
 - Steam `<steam>STEAM_ID</steam>`
 - Humble Bundle `<humble>product_name/BUNDLE_ID</humble>`
 - Itch.io `<itch>ITCH_ID</itch>`
@@ -208,6 +209,7 @@ Just add the `<widgets>` tag, and the widget providers that you want:
 
 ```xml
 <widgets>
+  <mailchimp>//url.us3.list-manage.com/subscribe/post?u=USER_ID&amp;id=LIST_ID</mailchimp>
   <steam>347160</steam>
   <humble>steredenn/7SDLfk23hw</humble>
   <itch>27992</itch>
