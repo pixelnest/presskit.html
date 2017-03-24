@@ -19,7 +19,7 @@ _Created by [Pixelnest Studio](http://pixelnest.io/)._
 
 This is a complete re-implementation, with a permissive MIT license, of [presskit()][dopresskit], which was originally created by [Rami Ismail](https://twitter.com/tha_rami) of [Vlambeer](http://www.vlambeer.com).
 
-Warning: **presskit.html** is, _currently_, a tool for developers. You need to know how to use the command-line — but that's all, to be honest. However, we plan to create a small app to simplify this process in the future. Stay tuned by following our [twitter account](https://twitter.com/pixelnest).
+Warning: **presskit.html** is, _currently_, a tool for developers. You need to know how to use the command-line — but that's all, to be honest. However, we plan to create a small app to simplify this process in the future. Stay tuned by following our [Twitter account](https://twitter.com/pixelnest).
 
 ---
 
