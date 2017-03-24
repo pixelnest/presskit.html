@@ -19,6 +19,8 @@ _Created by [Pixelnest Studio](http://pixelnest.io/)._
 
 This is a complete re-implementation, with a permissive MIT license, of [presskit()][dopresskit], which was originally created by [Rami Ismail](https://twitter.com/tha_rami) of [Vlambeer](http://www.vlambeer.com).
 
+Warning: **presskit.html** is, _currently_, a tool for developers. You need to know how to use the command-line — but that's all, to be honest. However, we plan to create a small app to simplify this process in the future. Stay tuned by following our [twitter account](https://twitter.com/pixelnest).
+
 ---
 
 **presskit.html** is a tool to create a presskit for your company, products or games.
@@ -44,9 +46,13 @@ The goal of **presskit.html** is to generate only static HTML pages — no PHP r
 
 ## Why
 
-**Why reimplement [presskit()][dopresskit]?** We love the concept behind static site generators like [Jekyll](https://jekyllrb.com) or [Hugo](https://gohugo.io). These tools create lightweight static HTML pages, which are, by design, more secure and efficient than using a PHP server, for example.
+**Why reimplement [presskit()][dopresskit]?** **presskit.html** is basically a static site generator for [presskit()][dopresskit]. Everything is built once on your computer, and then distributed as static files to your users.
 
-Moreover, if you use one of these tools to build your company or product's website, you can simply drop the result of **presskit.html** into your site directly — it's just HTML pages, after all. 😉
+We love the concept behind static site generators like [Jekyll](https://jekyllrb.com) or [Hugo](https://gohugo.io). These tools create lightweight static HTML pages, which are, by design, more secure and efficient than using a PHP server, for example.
+
+Moreover, if you use one of these tools to build your company or product's website, you can simply drop the result of **presskit.html** into your site directly, whatever the technology you are using — it's just HTML pages, after all. 😉
+
+That's mainly why we built **presskit.html** — that's how we make our websites, and we can integrate our presskits more easily this way.
 
 We have also added some nice little things (like a "Press Copy Request" button, or widgets integration) and created a more robust implementation of [presskit()][dopresskit] (which is, unfortunately, un-maintained since 2014).
 
@@ -181,7 +187,9 @@ You can also [try our example](https://github.com/pixelnest/presskit.html/tree/m
 
 ## Documentation
 
-TODO
+TODO.
+
+However, since **presskit.html** is 99% compatible with [presskit()][dopresskit], you can just read the existing documentation there.
 
 ### Tags
 
@@ -369,6 +377,10 @@ In [presskit()][dopresskit], you needed to set these informations _only in the c
 We modified that: now, you **need** to set these informations everywhere. That way, you can change mails and links for each product individually.
 
 ---
+
+## Pixelnest Studio
+
+[Pixelnest Studio](http://pixelnest.io/) is a small indie company, creating games and apps. You can contact us on [Twitter at @pixelnest](https://twitter.com/pixelnest). Want to check our game, Steredenn? Go to http://steredenn.pixelnest.io/.
 
 ## Credits
 
