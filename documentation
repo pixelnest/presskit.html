@@ -16,3 +16,4 @@ sed "s#$CSS_BASE#$CSS_MODIFIED#" docs/product/data.html > docs/product/index.htm
 
 # Clean.
 rm {docs/company/data.html,docs/product/data.html}
+rm {docs/company/docco.css,docs/product/docco.css}
