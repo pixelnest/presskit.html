@@ -1,5 +1,32 @@
+<!-- # Company -->
+
+<!--
+  **This is your product or game page**. It should focus on _ONLY_ one product. This is not a replacement for your product's website, but a quick way for the press to know it faster.
+
+  If you don't have a `data.xml` yet, the easiest way to start is to run this command in your presskit folder:
+
+  ```bash
+  presskit new --type product
+  ```
+
+  Then, open the generated `data.xml` file and fill the blanks while following this guide.
+
+  ---
+
+  For your company' `data.xml`, [refer to the company documentation](../company/).
+
+  ---
+-->
+
+<!-- Don't forget to set your XML header correctly. -->
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Use a `<product>` or `<game>` tag.
+-->
 <product>
+
+  <!-- This guide is not yet written. -->
   <title>My Super Game</title>
   <website>http://pizzaburger.studio/mysupergame</website>
 
@@ -164,4 +191,6 @@
       <link>http://mysupergame.pizzaburger.studio/</link>
     </contact>
   </contacts>
+
+<!-- All done! 🍾 -->
 </product>
