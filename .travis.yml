@@ -1,3 +1,8 @@
 language: node_js
 node_js:
-  - 7.6
+- 7.6
+notifications:
+  slack:
+    secure: qTKyJRT+HA7Bz0HsClvSBeVrN3M8w4Z6uXDNEkNP/o+1eBmDTl1WXV94Pvi/UkwuABm7XOvdLljvUcHKqalVL1PyiPYbl0Oe8ZPLgNtHKliQ0GY6qQdB4slLYJMzrSAyufID+3g3NW2Flxivb9dXT8lChYEuwXHm0rQlULdLCy+W9/qXPne1NGJN3TbZeGWqlhHI8+7ViQUUDCSPEJ+MZIDbKo6+FAkagJu2ZTsnMR21Ry+ZltaMSrImN2YkXbSEXN9mCKZVsQlDCFD4TnK/LVeMeBeo9MCTsJ7DjkmfqUsh1A7e9dyHdPLIzPPk+lln5PPRuAwjT0L/aPQ50XXDumFRZEAG/G6GyYqq1xRM6flizCjFzoF7vS9qfCapol0oz0jQ1J3AK6rlayXht/IAVAdEanbIDqWhIQQFt9LtE3lKx4yT7QTotmMOdlmkfs44gBa3mpF6d5+sqVSe6bh8rQAQnwoKrJqhDVw3fW1EnaFZzUsfZtmU8BnUgB+cAGMQ9hNeg9rwXq/UWZUejCENwPVQBV2slweT/RXqHEtBN2eUQmdTAx+TBFWLMON8992GqMDM9DnOnRnpvR5lw60/sd+8QBwCLQyjvo5ViVMUngck4bMg2gsOwgXd9UhsJHGvl9G2YOKhFyCR3284Qg8iwe/ZpFIUV9VBBn8Tjip/Wio=
+    on_success: change
+    on_failure: always
