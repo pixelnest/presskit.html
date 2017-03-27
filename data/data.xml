@@ -1,28 +1,46 @@
+<!-- # Company -->
+
+<!-- Don't forget to set your XML header correctly: -->
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Use a `<company>` tag for your main data.xml file.
+  This page will contain all the information about your company.
+  **It will be the root page of your presskit.**
+-->
 <company>
+  <!-- ## General Information -->
+
+  <!-- Your company name, location, and miscelleanous information. -->
   <title>Pizza Burger Studio</title>
   <based-in>Paris, France</based-in>
   <founding-date>February 6, 2014</founding-date>
-
   <website>https://github.com/pixelnest/presskit.html</website>
-  <press-contact>contact@pizzaburger.studio</press-contact>
-
-  <analytics>UA-42424242-0</analytics>
-
   <phone>+42 (3) 42 42 42 42 42</phone>
+
+  <!--
+    For the address, use as many lines as you want.
+    Don't forget to specify the country.
+  -->
   <address>
-    <line>42, invisible lane</line>
+    <line>42 street of Pixelnest</line>
     <line>35000 Rennes</line>
     <line>France</line>
   </address>
 
+  <!--
+    This section allows you to set your social networks handles.
+    You can put whatever you like.
+
+    Twitter and Facebook look like obvious choices. ;)
+  -->
   <socials>
     <social>
-      <name>twitter.com/pizzaburgerstudio</name>
+      <name>Twitter @pizzaburgerstudio</name>
       <link>https://twitter.com/pizzaburgerstudio</link>
     </social>
     <social>
-      <name>facebook.com/pizzaburgerstudio</name>
+      <name>Facebook Page</name>
       <link>https://facebook.com/pizzaburgerstudio</link>
     </social>
     <social>
@@ -31,10 +49,37 @@
     </social>
   </socials>
 
+  <!-- This field is the mail address your want to give to the press. -->
+  <press-contact>contact@pizzaburger.studio</press-contact>
+
+  <!-- Use this tag to set your Google analytics tracking code ID. -->
+  <analytics>UA-42424242-0</analytics>
+
+  <!-- ## Description & History -->
+
+  <!-- The description is a simple short block to describe your company or studio. Be brief. -->
   <description>
     This is a fake presskit for a fake company called Pizza Burger Studio.
   </description>
 
+  <!--
+    Tell your story with the `<history>` tag.
+
+    You have two possibilities here.
+
+    - Use an `<histories>` block like in the example.
+    - Or use a single `<history>` block if you don't have much to say.
+
+    You can't have both.
+
+    Example of a single block:
+
+    ```xml
+    <history>
+      Hello, world.
+    </history>
+    ```
+  -->
   <histories>
     <history>
       <header>Built with presskit.html</header>
@@ -45,6 +90,8 @@
       <text>Find presskit.html on https://github.com/pixelnest/presskit.html</text>
     </history>
   </histories>
+
+  <!-- ## Trailers -->
 
   <trailers>
     <trailer>
@@ -57,6 +104,8 @@
       <vimeo>108650530</vimeo>
     </trailer>
   </trailers>
+
+  <!-- ## Awards, quotes & citations -->
 
   <awards>
     <award>
@@ -91,6 +140,8 @@
     </additional>
   </additionals>
 
+  <!-- ## Team & Contacts -->
+
   <credits>
     <credit>
       <person>Patricia Pizza</person>
@@ -102,6 +153,8 @@
     </credit>
     <credit>
       <person>Jake Burgza</person>
+
+      <!-- The `<website>` tag is optional. -->
       <website>http://www.jakeburgza.com</website>
       <role>Artist, Collaborator</role>
     </credit>
@@ -112,6 +165,7 @@
     </credit>
   </credits>
 
+  <!-- For each person, pick one between `<link>` and `<mail>`. -->
   <contacts>
     <contact>
       <name>Inquiries</name>
@@ -130,4 +184,6 @@
       <link>http://pizzaburger.studio</link>
     </contact>
   </contacts>
+
+  <!-- Well-done, it's over for your company page. ;) -->
 </company>
