@@ -41,6 +41,7 @@
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
+    "docco": "https://github.com/solarsailer/docco.git",
     "jest": "^19.0.2",
     "mock-fs": "^3.12.1",
     "snazzy": "^5.0.0",
