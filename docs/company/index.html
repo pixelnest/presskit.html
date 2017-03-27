@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Company</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../css/docco.css">
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <h1 id="company">Company</h1>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p><strong>This is your company page</strong>. It should not focus on a specific product, but present your whole company. The journalists won’t, most of the time, know you or your studio. With this page, you will have an opportunity to show your people, your work, your history and your contributions in a standard format. This is not a replacement for your website, but a quick way for the press to know you faster.</p>
+<p>If you don’t have a <code>data.xml</code> yet, the easiest way to start is to run this command in your presskit folder:</p>
+<pre><code class="lang-bash">presskit new --type company
+</code></pre>
+<p>Then, open the generated <code>data.xml</code> file and fill the blanks while following this guide.</p>
+<p>Okay… ready? Let’s do this.</p>
+<hr>
+<p>For your products’ <code>data.xml</code>, <a href="../product/">refer to the product documentation</a>.</p>
+<hr>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Don’t forget to set your XML header correctly.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">"1.0"</span> encoding=<span class="hljs-string">"utf-8"</span><span class="hljs-meta">?&gt;</span></span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>Use a <code>&lt;company&gt;</code> tag for your main <code>data.xml</code> file. <strong>It will be the root page of your presskit.</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">&lt;<span class="hljs-name">company</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <h2 id="general-information">General Information</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>Begin with your company name, location, and miscellaneous information.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Pizza Burger Studio<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">based-in</span>&gt;</span>Paris, France<span class="hljs-tag">&lt;/<span class="hljs-name">based-in</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">founding-date</span>&gt;</span>February 6, 2014<span class="hljs-tag">&lt;/<span class="hljs-name">founding-date</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">website</span>&gt;</span>https://github.com/pixelnest/presskit.html<span class="hljs-tag">&lt;/<span class="hljs-name">website</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">phone</span>&gt;</span>+42 (3) 42 42 42 42 42<span class="hljs-tag">&lt;/<span class="hljs-name">phone</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>For the address, use as many lines as you want.
+Don’t forget to specify the country.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">address</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">line</span>&gt;</span>42 street of Pixelnest<span class="hljs-tag">&lt;/<span class="hljs-name">line</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">line</span>&gt;</span>35000 Rennes<span class="hljs-tag">&lt;/<span class="hljs-name">line</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">line</span>&gt;</span>France<span class="hljs-tag">&lt;/<span class="hljs-name">line</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">address</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>This section allows you to set your social networks links.
+You can put whatever you like.</p>
+<p>But Twitter and Facebook look like obvious choices. ;)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">socials</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">social</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Twitter @pizzaburgerstudio<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://twitter.com/pizzaburgerstudio<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">social</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">social</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Facebook Page<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://facebook.com/pizzaburgerstudio<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">social</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">social</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Skype<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>callto:pizzaburgerstudio<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">social</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">socials</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>This field is the primary mail address you want to give to the press.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">press-contact</span>&gt;</span>contact@pizzaburger.studio<span class="hljs-tag">&lt;/<span class="hljs-name">press-contact</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>Use this tag to set your Google analytics tracking code.</p>
+<p><strong>It’s, of course, completely optional.</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">analytics</span>&gt;</span>UA-42424242-0<span class="hljs-tag">&lt;/<span class="hljs-name">analytics</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <h2 id="description-history">Description &amp; History</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>The description is a simple short block to describe your company or studio. Be brief.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>
+    This is a fake presskit for a fake company called Pizza Burger Studio.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>Tell your story with the <code>&lt;history&gt;</code> tag.</p>
+<p>You have two possibilities here.</p>
+<ul>
+<li>Use an <code>&lt;histories&gt;</code> block like in the example.</li>
+<li>Or use a single <code>&lt;history&gt;</code> block if you don’t have much to say.</li>
+</ul>
+<p>You can’t have both.</p>
+<p>Example of a single block:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">history</span>&gt;</span>
+Hello, world.
+<span class="hljs-tag">&lt;/<span class="hljs-name">history</span>&gt;</span>
+</code></pre>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">histories</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">history</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>Built with presskit.html<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>This presskit is generated by presskit.html, a tool created by Pixelnest Studio.<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">history</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">history</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>Free and Open Source<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>Find presskit.html on https://github.com/pixelnest/presskit.html<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">history</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">histories</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <h2 id="trailers">Trailers</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>Add your videos. Because we are in the <code>&lt;company&gt;</code> page, try to be representative of all the products of your company.</p>
+<p>You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.</p>
+<p>Don’t put the full link: just the ID is necessary.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">trailers</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">trailer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Example from YouTube. Don't give a full link: the ID is enough<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">youtube</span>&gt;</span>er416Ad3R1g<span class="hljs-tag">&lt;/<span class="hljs-name">youtube</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">trailer</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">trailer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Example from both YouTube and Vimeo<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">youtube</span>&gt;</span>YH3c1QZzRK4<span class="hljs-tag">&lt;/<span class="hljs-name">youtube</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">vimeo</span>&gt;</span>108650530<span class="hljs-tag">&lt;/<span class="hljs-name">vimeo</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">trailer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">trailers</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <h2 id="awards-quotes-citations">Awards, quotes &amp; citations</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>You got awards? Great! Put them here.</p>
+<p>But don’t add too much here: this is your company page, not a product one.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">awards</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">award</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>An award<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span>Name, location, 29 April, 1988<span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">award</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">award</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>A nomination<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">info</span>&gt;</span>Name, location, 03 October, 1988<span class="hljs-tag">&lt;/<span class="hljs-name">info</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">award</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">awards</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>Quotes are used to show the appreciation of your users.</p>
+<p>Show something important, something nice, or something funny, for example.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">quotes</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">quote</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>There's not enough pizza in your life. It's never enough.<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>@mrhelmut<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">website</span>&gt;</span>Tweet<span class="hljs-tag">&lt;/<span class="hljs-name">website</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://twitter.com/mrhelmut/status/717276362814447616<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">quote</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">quotes</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>Need to link to a resource? A small product? An RSS feed?</p>
+<p>You want to show your blog? Your personal Twitter account?</p>
+<p>Put those here, in the <code>&lt;additionals&gt;</code> tag.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">additionals</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">additional</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Patricia Pizza Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>@patpiz at<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://twitter.com/patpiz<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">additional</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">additional</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Bob Burger Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>@bobburg at<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://twitter.com/bobburg<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">additional</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">additionals</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <h2 id="team-contacts">Team &amp; Contacts</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <p>This is for your people.</p>
+<p>Add yourself, of course, but also your <strong>frequent</strong> collaborators for example.</p>
+<p>If a collaborator has only worked on one product, add her/him on this product page instead.</p>
+<p>The <code>&lt;role&gt;</code> tag can be anything you want. But we recommend to, at least, put the company name for the founders/employees. This will distinguish this person from the external collaborators.</p>
+<p>The <code>&lt;website&gt;</code> tag is optional.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">credits</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">credit</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">person</span>&gt;</span>Patricia Pizza<span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">role</span>&gt;</span>Founder, Developer, Pizza Burger Studio<span class="hljs-tag">&lt;/<span class="hljs-name">role</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">credit</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">credit</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">person</span>&gt;</span>Bob Burger<span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">role</span>&gt;</span>Founder, Designer, Pizza Burger Studio<span class="hljs-tag">&lt;/<span class="hljs-name">role</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">credit</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">credit</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">person</span>&gt;</span>Jake Burgza<span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">website</span>&gt;</span>http://www.jakeburgza.com<span class="hljs-tag">&lt;/<span class="hljs-name">website</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">role</span>&gt;</span>Artist, Collaborator<span class="hljs-tag">&lt;/<span class="hljs-name">role</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">credit</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">credit</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">person</span>&gt;</span>Sophia Pizer<span class="hljs-tag">&lt;/<span class="hljs-name">person</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">website</span>&gt;</span>http://www.sophiapizer.com<span class="hljs-tag">&lt;/<span class="hljs-name">website</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">role</span>&gt;</span>Musician, Collaborator<span class="hljs-tag">&lt;/<span class="hljs-name">role</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">credit</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">credits</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>Add more contact information.</p>
+<p>For the company page, you can repeat your social network accounts, as well as another contact mail address, or your company website.</p>
+<p>For each person, pick one between a <code>&lt;link&gt;</code> and <code>&lt;mail&gt;</code> tag.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">contacts</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">contact</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Inquiries<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">mail</span>&gt;</span>contact@pizzaburger.studio<span class="hljs-tag">&lt;/<span class="hljs-name">mail</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">contact</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">contact</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://twitter.com/pizzaburgerstudio<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">contact</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">contact</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Facebook<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>https://facebook.com/pizzaburgerstudio<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">contact</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">contact</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Web<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">link</span>&gt;</span>http://pizzaburger.studio<span class="hljs-tag">&lt;/<span class="hljs-name">link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">contact</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">contacts</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p>Well-done, it’s over for this one. ;)</p>
+<p><a href="../product/">It’s time to do the product pages.</a></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-tag">&lt;/<span class="hljs-name">company</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
