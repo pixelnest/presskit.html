@@ -6,18 +6,18 @@
   If you don't have a `data.xml` yet, the easiest way to start is to run this command in your presskit folder:
 
   ```bash
-  presskit new --type company
+  presskit new -t company
   ```
 
   Then, open the generated `data.xml` file and fill the blanks while following this guide.
 
   Okay… ready? Let's do this.
 
-  ---
+  <hr>
 
   For your products' `data.xml`, [refer to the product documentation](../product/).
 
-  ---
+  <hr>
 -->
 
 <!-- Don't forget to set your XML header correctly. -->
