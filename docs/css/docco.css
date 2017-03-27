@@ -1,0 +1,547 @@
+/*
+ * This is a modified version of the `docco` classic CSS.
+ * https://github.com/jashkenas/docco/blob/master/resources/classic/docco.css
+ */
+
+/* ---------------------------------------------------------- *\
+ * Layout and Typography.
+\* ---------------------------------------------------------- */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  color: #252519;
+
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#container {
+  min-height: 100%;
+}
+
+a {
+  color: #261a3b;
+}
+
+a:visited {
+  color: #261a3b;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 30px 0 15px 0;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+hr {
+  height: 1px;
+  margin: 20px 0;
+
+  border: 0 none;
+  border-top: 1px solid #e5e5ee;
+}
+
+pre,
+tt,
+code {
+  margin: 0;
+  padding: 0;
+
+  font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+ul.sections {
+  margin: 0;
+  padding: 0 0 5px 0;
+
+  list-style: none;;
+}
+
+/*
+  Force border-box so that % widths fit the parent
+  container without overlap because of margin/padding.
+
+  More Info : http://www.quirksmode.org/css/box.html
+*/
+ul.sections > li > div {
+  -webkit-box-sizing: border-box; /* webkit */
+     -moz-box-sizing: border-box; /* firefox */
+          box-sizing: border-box; /* css3 */
+
+   -khtml-box-sizing: border-box;  /* konqueror */
+      -ms-box-sizing: border-box;  /* ie */
+}
+
+/* ---------------------------------------------------------- *\
+ * "Jump Page" widget.
+\* ---------------------------------------------------------- */
+
+#jump_to,
+#jump_page {
+  margin: 0;
+
+  list-style: none;
+
+  background: white;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-box-shadow: 0 0 25px #777777;
+     -moz-box-shadow: 0 0 25px #777777;
+
+  font: 16px Arial;
+
+  cursor: pointer;
+  text-align: right;
+}
+
+#jump_to a {
+  text-decoration: none;
+}
+
+#jump_to a.large {
+  display: none;
+}
+
+#jump_to a.small {
+  color: #676767;
+
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#jump_to,
+#jump_wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  margin: 0;
+  padding: 10px 15px;
+}
+
+#jump_wrapper {
+  display: none;
+
+  padding: 0;
+}
+
+#jump_to:hover #jump_wrapper {
+  display: block;
+}
+
+#jump_page {
+  margin: 0 0 25px 25px;
+  padding: 5px 0 3px;
+}
+
+#jump_page .source {
+  display: block;
+
+  padding: 15px;
+
+  border-top: 1px solid #eeeeee;
+
+  text-decoration: none;
+}
+
+#jump_page .source:hover {
+  background: #f5f5ff;
+}
+
+#jump_page .source:first-child {
+}
+
+/* ---------------------------------------------------------- *\
+ * Low resolutions (> 320px)
+\* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 320px) {
+  .pilwrap {
+    display: none;
+  }
+
+  ul.sections > li > div {
+    display: block;
+
+    padding: 5px 10px 0 10px;
+  }
+
+  ul.sections > li > div.annotation {
+    background: #ffffff;
+  }
+
+  ul.sections > li > div.annotation ul,
+  ul.sections > li > div.annotation ol {
+    padding-left: 30px;
+  }
+
+  ul.sections > li > div.content {
+    overflow-x: auto;
+
+    margin: 5px 10px 5px 10px;
+    padding-bottom: 5px;
+
+    background: #f5f5ff;
+    border: 1px solid #dedede;
+    -webkit-box-shadow: inset 0 0 5px #e5e5ee;
+            box-shadow: inset 0 0 5px #e5e5ee;
+  }
+
+  ul.sections > li > div.annotation pre {
+    margin: 7px 0 7px;
+    padding-left: 15px;
+  }
+
+  ul.sections > li > div.annotation p tt,
+  .annotation code {
+    padding: 0 0.2em;
+
+    background: #f8f8ff;
+    border: 1px solid #dedede;
+
+    font-size: 12px;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * (> 481px)
+\* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 481px) {
+  #container {
+    position: relative;
+  }
+
+  body {
+    background-color: #f5f5ff;
+
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  pre,
+  tt,
+  code {
+    line-height: 18px;
+  }
+
+  #jump_to {
+    padding: 5px 10px;
+  }
+
+  #jump_wrapper {
+    padding: 0;
+  }
+
+  #jump_to,
+  #jump_page {
+    font: 10px Arial;
+
+    text-transform: uppercase;
+  }
+
+  #jump_page .source {
+    padding: 5px 10px;
+  }
+
+  #jump_to a.large {
+    display: inline-block;
+  }
+
+  #jump_to a.small {
+    display: none;
+  }
+
+  #background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+
+    width: 350px;
+
+    background: #ffffff;
+    border-right: 1px solid #e5e5ee;
+  }
+
+  ul.sections > li > div.annotation ul,
+  ul.sections > li > div.annotation ol {
+    padding-left: 40px;
+  }
+
+  ul.sections > li {
+    white-space: nowrap;
+  }
+
+  ul.sections > li > div {
+    display: inline-block;
+  }
+
+  ul.sections > li > div.annotation {
+    overflow-x: hidden;
+
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 5px;
+    padding: 13px;
+
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+  }
+
+  ul.sections > li > div.annotation pre {
+    margin: 15px 0 15px;
+    padding-left: 15px;
+  }
+
+  ul.sections > li > div.content {
+    padding: 13px;
+
+    background: #f5f5ff;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+
+    vertical-align: top;
+  }
+
+  .pilwrap {
+    position: relative;
+
+    display: inline;
+  }
+
+  .pilcrow {
+    position: absolute;
+    top: 3px;
+    left: -20px;
+
+    padding: 1px 2px;
+
+    opacity: 0;
+    color: #454545;
+
+    font: 12px Arial;
+
+    -webkit-transition: opacity 0.2s linear;
+    text-decoration: none;
+  }
+
+  .for-h1 .pilcrow {
+    top: 47px;
+  }
+
+  .for-h2 .pilcrow,
+  .for-h3 .pilcrow,
+  .for-h4 .pilcrow {
+    top: 35px;
+  }
+
+  ul.sections > li > div.annotation:hover .pilcrow {
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * (> 1025px)
+\* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 1025px) {
+  #background {
+    width: 525px;
+  }
+
+  ul.sections > li > div.annotation {
+    min-width: 525px;
+    max-width: 525px;
+    padding: 10px 25px 1px 50px;
+  }
+
+  ul.sections > li > div.content {
+    padding: 9px 15px 16px 25px;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Syntax Highlighting.
+\* ---------------------------------------------------------- */
+
+/* The syntax highlighter used is https://highlightjs.org */
+
+td.linenos {
+  padding-right: 10px;
+
+  background-color: #f0f0f0;
+}
+
+span.lineno {
+  padding: 0 5px 0 5px;
+
+  background-color: #f0f0f0;
+}
+
+/*
+  github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+
+pre code {
+  display: block;
+
+  padding: 0.5em;
+
+  color: #000000;
+  background: #f8f8ff;
+}
+
+pre .hljs-comment,
+pre .hljs-template_comment,
+pre .hljs-diff .hljs-header,
+pre .hljs-javadoc {
+  color: #408080;
+
+  font-style: italic;
+}
+
+pre .hljs-keyword,
+pre .hljs-assignment,
+pre .hljs-literal,
+pre .hljs-css .hljs-rule .hljs-keyword,
+pre .hljs-winutils,
+pre .hljs-javascript .hljs-title,
+pre .hljs-lisp .hljs-title,
+pre .hljs-subst {
+  color: #954121;
+  /*font-weight: bold*/
+}
+
+pre .hljs-number,
+pre .hljs-hexcolor {
+  color: #40a070;
+}
+
+pre .hljs-string,
+pre .hljs-tag .hljs-value,
+pre .hljs-phpdoc,
+pre .hljs-tex .hljs-formula {
+  color: #219161;
+}
+
+pre .hljs-title,
+pre .hljs-id {
+  color: #19469d;
+}
+
+pre .hljs-params {
+  color: #0000ff;
+}
+
+pre .hljs-javascript .hljs-title,
+pre .hljs-lisp .hljs-title,
+pre .hljs-subst {
+  font-weight: normal;
+}
+
+pre .hljs-class .hljs-title,
+pre .hljs-haskell .hljs-label,
+pre .hljs-tex .hljs-command {
+  color: #445588;
+
+  font-weight: bold;
+}
+
+pre .hljs-tag,
+pre .hljs-tag .hljs-title,
+pre .hljs-rules .hljs-property,
+pre .hljs-django .hljs-tag .hljs-keyword {
+  color: #000080;
+
+  font-weight: normal;
+}
+
+pre .hljs-attribute,
+pre .hljs-variable,
+pre .hljs-instancevar,
+pre .hljs-lisp .hljs-body {
+  color: #008080;
+}
+
+pre .hljs-regexp {
+  color: #bb6688;
+}
+
+pre .hljs-class {
+  color: #445588;
+
+  font-weight: bold;
+}
+
+pre .hljs-symbol,
+pre .hljs-ruby .hljs-symbol .hljs-string,
+pre .hljs-ruby .hljs-symbol .hljs-keyword,
+pre .hljs-ruby .hljs-symbol .hljs-keymethods,
+pre .hljs-lisp .hljs-keyword,
+pre .hljs-tex .hljs-special,
+pre .hljs-input_number {
+  color: #990073;
+}
+
+pre .hljs-builtin,
+pre .hljs-constructor,
+pre .hljs-built_in,
+pre .hljs-lisp .hljs-title {
+  color: #0086b3;
+}
+
+pre .hljs-preprocessor,
+pre .hljs-pi,
+pre .hljs-doctype,
+pre .hljs-shebang,
+pre .hljs-cdata {
+  color: #999999;
+
+  font-weight: bold;
+}
+
+pre .hljs-deletion {
+  background: #ffdddd;
+}
+
+pre .hljs-addition {
+  background: #ddffdd;
+}
+
+pre .hljs-diff .hljs-change {
+  background: #0086b3;
+}
+
+pre .hljs-chunk {
+  color: #aaaaaa;
+}
+
+pre .hljs-tex .hljs-formula {
+  opacity: 0.5;
+}
