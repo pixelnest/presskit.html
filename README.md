@@ -187,9 +187,16 @@ You can also [try our example](https://github.com/pixelnest/presskit.html/tree/m
 
 ## Documentation
 
-TODO.
+For a tag by tag walkthrough, open these links:
 
-However, since **presskit.html** is 99% compatible with [presskit()][dopresskit], you can just read the existing documentation there.
+- [Company `data.xml` file](http://pixelnest.io/presskit.html/company/)
+- [Product or game `data.xml` file](http://pixelnest.io/presskit.html/product/) (TODO)
+
+**If you have never written a presskit before, those links are a must-read.**
+
+For a more detailed documentation about some specific features, see below.
+
+_NB: since **presskit.html** is 99% compatible with [presskit()][dopresskit], you can also just read the existing documentation there._
 
 ### Tags
 
