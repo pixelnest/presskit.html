@@ -892,9 +892,9 @@ diff@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.2.0.tgz#c9ce393a4b7cbd0b058a725c93df299027868ff9"
 
-"docco@https://github.com/solarsailer/docco.git":
+"docco@https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a":
   version "0.7.0"
-  resolved "https://github.com/solarsailer/docco.git#d06cd2953a83b4c60bbc3d4a54430c9406513d3d"
+  resolved "https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a"
   dependencies:
     commander ">= 0.5.2"
     fs-extra ">= 0.6.0"
