@@ -1,17 +1,35 @@
 <!-- # Company -->
 
-<!-- Don't forget to set your XML header correctly: -->
+<!--
+  **This is your company page**. It should not focus on a specific product, but present your whole company. The journalists won't, most of the time, know you or your studio. With this page, you will have an opportunity to show your people, your work, your history and your contributions in a standard format. This is not a replacement for your website, but a quick way for the press to know you faster.
+
+  If you don't have a `data.xml` yet, the easiest way to start is to run this command in your presskit folder:
+
+  ```bash
+  presskit new --type company
+  ```
+
+  Then, open the generated `data.xml` file and fill the blanks while following this guide.
+
+  Okay… ready? Let's do this.
+
+  ---
+
+  For your products' `data.xml`, [refer to the product documentation](../product/).
+
+  ---
+-->
+
+<!-- Don't forget to set your XML header correctly. -->
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  Use a `<company>` tag for your main data.xml file.
-  This page will contain all the information about your company.
-  **It will be the root page of your presskit.**
+  Use a `<company>` tag for your main `data.xml` file. **It will be the root page of your presskit.**
 -->
 <company>
   <!-- ## General Information -->
 
-  <!-- Your company name, location, and miscelleanous information. -->
+  <!-- Begin with your company name, location, and miscellaneous information. -->
   <title>Pizza Burger Studio</title>
   <based-in>Paris, France</based-in>
   <founding-date>February 6, 2014</founding-date>
@@ -29,10 +47,10 @@
   </address>
 
   <!--
-    This section allows you to set your social networks handles.
+    This section allows you to set your social networks links.
     You can put whatever you like.
 
-    Twitter and Facebook look like obvious choices. ;)
+    But Twitter and Facebook look like obvious choices. ;)
   -->
   <socials>
     <social>
@@ -49,10 +67,14 @@
     </social>
   </socials>
 
-  <!-- This field is the mail address your want to give to the press. -->
+  <!-- This field is the primary mail address you want to give to the press. -->
   <press-contact>contact@pizzaburger.studio</press-contact>
 
-  <!-- Use this tag to set your Google analytics tracking code ID. -->
+  <!--
+    Use this tag to set your Google analytics tracking code.
+
+    **It's, of course, completely optional.**
+  -->
   <analytics>UA-42424242-0</analytics>
 
   <!-- ## Description & History -->
@@ -93,6 +115,13 @@
 
   <!-- ## Trailers -->
 
+  <!--
+    Add your videos. Because we are in the `<company>` page, try to be representative of all the products of your company.
+
+    You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.
+
+    Don't put the full link: just the ID is necessary.
+  -->
   <trailers>
     <trailer>
       <name>Example from YouTube. Don't give a full link: the ID is enough</name>
@@ -107,6 +136,11 @@
 
   <!-- ## Awards, quotes & citations -->
 
+  <!--
+    You got awards? Great! Put them here.
+
+    But don't add too much here: this is your company page, not a product one.
+  -->
   <awards>
     <award>
       <description>An award</description>
@@ -118,6 +152,11 @@
     </award>
   </awards>
 
+  <!--
+    Quotes are used to show the appreciation of your users.
+
+    Show something important, something nice, or something funny, for example.
+  -->
   <quotes>
     <quote>
       <description>There's not enough pizza in your life. It's never enough.</description>
@@ -127,6 +166,13 @@
     </quote>
   </quotes>
 
+  <!--
+    Need to link to a resource? A small product? An RSS feed?
+
+    You want to show your blog? Your personal Twitter account?
+
+    Put those here, in the `<additionals>` tag.
+  -->
   <additionals>
     <additional>
       <title>Patricia Pizza Twitter</title>
@@ -142,6 +188,17 @@
 
   <!-- ## Team & Contacts -->
 
+  <!--
+    This is for your people.
+
+    Add yourself, of course, but also your **frequent** collaborators for example.
+
+    If a collaborator has only worked on one product, add her/him on this product page instead.
+
+    The `<role>` tag can be anything you want. But we recommend to, at least, put the company name for the founders/employees. This will distinguish this person from the external collaborators.
+
+    The `<website>` tag is optional.
+  -->
   <credits>
     <credit>
       <person>Patricia Pizza</person>
@@ -153,8 +210,6 @@
     </credit>
     <credit>
       <person>Jake Burgza</person>
-
-      <!-- The `<website>` tag is optional. -->
       <website>http://www.jakeburgza.com</website>
       <role>Artist, Collaborator</role>
     </credit>
@@ -165,7 +220,13 @@
     </credit>
   </credits>
 
-  <!-- For each person, pick one between `<link>` and `<mail>`. -->
+  <!--
+    Add more contact information.
+
+    For the company page, you can repeat your social network accounts, as well as another contact mail address, or your company website.
+
+    For each person, pick one between a `<link>` and `<mail>` tag.
+  -->
   <contacts>
     <contact>
       <name>Inquiries</name>
@@ -185,5 +246,9 @@
     </contact>
   </contacts>
 
-  <!-- Well-done, it's over for your company page. ;) -->
+  <!--
+    Well-done, it's over for this one. ;)
+
+    [It's time to do the product pages.](../product/)
+  -->
 </company>
