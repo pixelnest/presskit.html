@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 
+BASEDIR=$(dirname $0)
+cd $BASEDIR
+
 BIN=$(npm bin)
 
 $BIN/docco -l classic -o docs/company data/data.xml
 $BIN/docco -l classic -o docs/product data/product/data.xml
 
-mv docs/company/data.html docs/company/index.html
-mv docs/product/data.html docs/product/index.html
+# Use custom CSS.
+CSS_BASE='<link rel="stylesheet" media="all" href="docco.css" />'
+CSS_MODIFIED='<link rel="stylesheet" href="../css/docco.css">'
+sed "s#$CSS_BASE#$CSS_MODIFIED#" docs/company/data.html > docs/company/index.html
+sed "s#$CSS_BASE#$CSS_MODIFIED#" docs/product/data.html > docs/product/index.html
+
+# Clean.
+rm {docs/company/data.html,docs/product/data.html}
