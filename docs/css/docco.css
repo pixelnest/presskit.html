@@ -91,6 +91,10 @@ ul.sections {
   font-size: 12px;
 }
 
+.annotation pre {
+  margin-bottom: 15px;
+}
+
 .annotation pre code {
   padding: 5px 10px;
 }
