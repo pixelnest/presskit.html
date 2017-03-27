@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+BIN=$(npm bin)
+
+$BIN/docco -l classic -o docs/company data/data.xml
+$BIN/docco -l classic -o docs/product data/product/data.xml
+
+mv docs/company/data.html docs/company/index.html
+mv docs/product/data.html docs/product/index.html
