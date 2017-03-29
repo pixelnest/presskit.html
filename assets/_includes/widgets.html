@@ -2,6 +2,30 @@
 <section class="block">
   <h2 id="widgets">Widgets</h2>
 
+  <div class="grid">
+    {{#if presskit.widgets.appstore}}
+    <p class="grid__item">
+      <a
+        href="https://itunes.apple.com/app/id{{presskit.widgets.appstore}}"
+        target="_blank"
+        class="widget widget--appstore">
+        {{>appstore}}
+      </a>
+    </p>
+    {{/if}}
+
+    {{#if presskit.widgets.playstore}}
+    <p class="grid__item">
+      <a
+        href="https://play.google.com/store/apps/details?id={{presskit.widgets.playstore}}"
+        target="_blank"
+        class="widget widget--playstore">
+        {{>playstore}}
+      </a>
+    </p>
+    {{/if}}
+  </div>
+
   {{#if presskit.widgets.steam}}
   <p>
     <iframe src="http://store.steampowered.com/widget/{{presskit.widgets.steam}}/" frameborder="0" class="widget widget--steam"></iframe>

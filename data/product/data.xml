@@ -102,6 +102,8 @@
   </trailers>
 
   <widgets>
+    <appstore>950812012</appstore>
+    <playstore>com.noodlecake.altosadventure</playstore>
     <steam>347160</steam>
     <humble>steredenn/7SDLfk23hw</humble>
     <itch>27992</itch>

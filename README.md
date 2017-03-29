@@ -215,6 +215,8 @@ For example, do not do this (note the `<br />`):
 This is a new feature of **presskit.html**: you can put your widgets directly into your presskit pages.
 
 - Mailchimp `<mailchimp>LIST_URL inside your signup form</mailchimp>`
+- App Store `<appstore>APP_ID</appstore>`
+- Play Store `<playstore>com.domain.yourappid</playstore>`
 - Steam `<steam>STEAM_ID</steam>`
 - Humble Bundle `<humble>product_name/BUNDLE_ID</humble>`
 - Itch.io `<itch>ITCH_ID</itch>`
@@ -225,6 +227,8 @@ Just add the `<widgets>` tag, and the widget providers that you want:
 ```xml
 <widgets>
   <mailchimp>//url.us3.list-manage.com/subscribe/post?u=USER_ID&amp;id=LIST_ID</mailchimp>
+  <appstore>950812012</appstore>
+  <playstore>com.noodlecake.altosadventure</playstore>
   <steam>347160</steam>
   <humble>steredenn/7SDLfk23hw</humble>
   <itch>27992</itch>
