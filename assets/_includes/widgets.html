@@ -6,7 +6,7 @@
     {{#if presskit.widgets.appstore}}
     <p class="grid__item">
       <a
-        href="https://itunes.apple.com/app/id{{presskit.widgets.appstore}}"
+        href="https://itunes.apple.com/app/id{{trim presskit.widgets.appstore}}"
         target="_blank"
         class="widget widget--appstore">
         {{>appstore}}
@@ -17,7 +17,7 @@
     {{#if presskit.widgets.playstore}}
     <p class="grid__item">
       <a
-        href="https://play.google.com/store/apps/details?id={{presskit.widgets.playstore}}"
+        href="https://play.google.com/store/apps/details?id={{trim presskit.widgets.playstore}}"
         target="_blank"
         class="widget widget--playstore">
         {{>playstore}}
@@ -28,26 +28,26 @@
 
   {{#if presskit.widgets.steam}}
   <p>
-    <iframe src="http://store.steampowered.com/widget/{{presskit.widgets.steam}}/" frameborder="0" class="widget widget--steam"></iframe>
+    <iframe src="http://store.steampowered.com/widget/{{trim presskit.widgets.steam}}/" frameborder="0" class="widget widget--steam"></iframe>
   </p>
   {{/if}}
 
   {{#if presskit.widgets.humble}}
   <p>
-    <iframe src="https://www.humblebundle.com/widget/v2/product/{{presskit.widgets.humble}}" frameborder="0" scrolling="no" class="widget widget--humble"></iframe>
+    <iframe src="https://www.humblebundle.com/widget/v2/product/{{trim presskit.widgets.humble}}" frameborder="0" scrolling="no" class="widget widget--humble"></iframe>
   </p>
   {{/if}}
 
   {{#if presskit.widgets.itch}}
   <p>
-    <iframe src="https://itch.io/embed/{{presskit.widgets.itch}}?dark=true" frameborder="0" class="widget widget--itch"></iframe>
+    <iframe src="https://itch.io/embed/{{trim presskit.widgets.itch}}?dark=true" frameborder="0" class="widget widget--itch"></iframe>
   </p>
   {{/if}}
 
   {{#if presskit.widgets.bandcamp}}
   <p>
     <!-- TODO: customize `linkcol` with brand color. -->
-    <iframe src="https://bandcamp.com/EmbeddedPlayer/album={{presskit.widgets.bandcamp}}/size=large/bgcol=ffffff/linkcol=3398ff/tracklist=false/artwork=small/transparent=true/" seamless class="widget widget--bandcamp"></iframe>
+    <iframe src="https://bandcamp.com/EmbeddedPlayer/album={{trim presskit.widgets.bandcamp}}/size=large/bgcol=ffffff/linkcol=3398ff/tracklist=false/artwork=small/transparent=true/" seamless class="widget widget--bandcamp"></iframe>
   </p>
   {{/if}}
 </section>

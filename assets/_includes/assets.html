@@ -6,21 +6,21 @@
   <div>
     {{#youtube}}
     <p>
-      <strong>{{../name}}</strong> <a href="https://www.youtube.com/embed/{{.}}?rel=0">YouTube</a>
+      <strong>{{../name}}</strong> <a href="https://www.youtube.com/embed/{{trim .}}?rel=0">YouTube</a>
     </p>
 
     <div class="video-player">
-      <iframe class="video-player__frame" src="https://www.youtube.com/embed/{{.}}?rel=0" frameborder="0" allowfullscreen></iframe>
+      <iframe class="video-player__frame" src="https://www.youtube.com/embed/{{trim .}}?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     {{/youtube}}
 
     {{#vimeo}}
     <p>
-      <strong>{{../name}}</strong> <a href="https://player.vimeo.com/video/{{.}}">Vimeo</a>
+      <strong>{{../name}}</strong> <a href="https://player.vimeo.com/video/{{trim .}}">Vimeo</a>
     </p>
 
     <div class="video-player">
-      <iframe class="video-player__frame" src="https://player.vimeo.com/video/{{.}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe class="video-player__frame" src="https://player.vimeo.com/video/{{trim .}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     {{/vimeo}}
   </div>
