@@ -246,6 +246,18 @@ For each `data.xml`, you can add an `images/` folder containing the assets of yo
 - An image named `logo.png` or `logo.jpg` will be used as your page's logo.
 - Each `jpg`, `jpeg`, `png` or `gif` will be displayed in the gallery.
 
+#### Logos
+
+You can provide multiple logos for a page. As long as they start with "logo", they will be displayed in the "Logo & Icon" section.
+
+This will work, for example:
+
+```
+📄 logo01.png
+📄 logo02.png
+📄 logo03.jpg
+```
+
 #### Favicon
 
 If a `favicon.ico` is found in the `images/` folder of a `data.xml`, it will be used as the favicon of this HTML page. It will not be exported in the `images.zip`, nor visible in the images gallery.
