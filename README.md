@@ -68,6 +68,7 @@ Built with **presskit.html**:
 
 * [Pixelnest Studio](http://pixelnest.io/presskit/)
 * [Genix Lab](http://www.genix-lab.com/presskit/)
+* [Creative Brothers](http://www.creativebrothers.io/presskit/en/)
 
 <small>_You are using **presskit.html**? Tell us or submit a pull request!_</small>
 
