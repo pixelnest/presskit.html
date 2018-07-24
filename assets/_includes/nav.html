@@ -15,7 +15,18 @@
     {{/if}}
   </aside>
 
-  <ul class="nav__list">
+  <div class="nav__toggle" id="hamburger">
+    <a href="#" class="button" id="hamburger-toggle">
+      <svg width="10" height="10" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+        <g fill="currentColor" fill-rule="nonzero">
+          <path d="M0 16h19v3H0zM0 8h19v3H0zM0 0h19v3H0z" />
+        </g>
+      </svg>
+      &nbsp;Menu
+    </a>
+  </div>
+
+  <ul class="nav__list" id="hamburger-target">
     <li>
       <a class="nav__item" href="#factsheet">Factsheet</a>
     </li>

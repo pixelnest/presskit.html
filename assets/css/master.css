@@ -240,6 +240,48 @@ a:hover {
 }
 
 /* ---------------------------------------------------------- *\
+ * Nav - Hamburger.
+\* ---------------------------------------------------------- */
+
+.nav__toggle {
+  display: none;
+
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.nav__toggle .button {
+  display: block;
+
+  height: 30px;
+}
+
+/* Nav list variant for hamburger feature. */
+.nav__list--slider {
+  overflow-y: hidden;
+
+  max-height: 0;
+
+  -webkit-transition: max-height 0.5s ease-in-out;
+     -moz-transition: max-height 0.5s ease-in-out;
+       -o-transition: max-height 0.5s ease-in-out;
+          transition: max-height 0.5s ease-in-out;
+}
+
+
+@media (min-width: 800px) {
+  .nav__toggle {
+    /* Always hide the button on big screens. */
+    display: none !important;
+  }
+
+  .nav__list--slider {
+    /* Always show the list on big screens. So disable slider. */
+    max-height: unset !important;
+  }
+}
+
+/* ---------------------------------------------------------- *\
  * Components - Block.
 \* ---------------------------------------------------------- */
 
