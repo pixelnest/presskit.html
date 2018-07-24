@@ -8,7 +8,7 @@
 * [Why presskit.html?](#why)
 * [Showcase](#showcase)
 * [Roadmap](#roadmap)
-* [Quickstart](#quickstart)
+* [Quickstart](#quickstart-for-existing-presskit-users)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Documentation](#documentation)
