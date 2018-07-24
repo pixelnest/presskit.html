@@ -187,6 +187,21 @@ _Note: the webserver is **not** included._
 
 You can also [try our example](https://github.com/pixelnest/presskit.html/tree/master/data) from this repository, available online here: http://pixelnest.io/presskit.html/example/.
 
+### Additional options of `presskit build`
+
+`presskit build` has a few other features. Use `presskit build -h` to discover them all.
+
+Two interesting ones are:
+
+- `presskit build --collapse-menu` uses a collapsed menu for the main navigation at the top (commonly-known as the "[hamburger button](https://en.wikipedia.org/wiki/Hamburger_button)") — only for small screens. This option toggles this behavior on all pages.
+- `presskit build --pretty-links` hides `index.html` at the end of URLs.
+
+You can combine all these options together, of course.
+
+### Create `data.xml` files with `presskit new`
+
+You can also generate empty `data.xml` with the `presskit new` command.
+
 ## Documentation
 
 For a tag by tag walkthrough, open these links:
