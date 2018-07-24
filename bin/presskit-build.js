@@ -34,12 +34,14 @@ program
   .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
   .option('-D, --clean-build-folder', 'delete the build folder beforehand')
   .option('-L, --pretty-links', 'hide index.html at the end of links')
+  .option('-M, --collapse-menu', 'use a collapsed menu (hamburger) on small screens')
   .parse(process.argv)
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
   cleanBuildFolder: program.cleanBuildFolder,
   prettyLinks: program.prettyLinks,
+  hamburger: program.collapseMenu,
   output: program.output,
   watch: program.watch,
   port: program.port,

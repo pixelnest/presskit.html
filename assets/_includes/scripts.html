@@ -1,4 +1,3 @@
-<script src="{{assets}}/js/hamburger.js"></script>
 <script src="{{assets}}/js/masonry.min.js"></script>
 <script src="{{assets}}/js/imagesloaded.min.js"></script>
 <script>
@@ -13,6 +12,10 @@
     })
   })
 </script>
+
+{{#if hamburger}}
+<script src="{{assets}}/js/hamburger.js"></script>
+{{/if}}
 
 {{#if analytics}}
 <script>
