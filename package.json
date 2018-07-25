@@ -23,7 +23,7 @@
     "test": "standard | snazzy && jest",
     "tester": "jest --watch",
     "docs": "./documentation",
-    "docs:example": "presskit build -DL -o docs/example data"
+    "docs:example": "node bin/presskit build -DLM -o docs/example data"
   },
   "engines": {
     "node": ">=7.6.x"
