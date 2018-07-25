@@ -1,6 +1,6 @@
 {
   "name": "presskit",
-  "version": "0.6.4",
+  "version": "0.7.0",
   "description": "Re-implementation of presskit() as a static site generator",
   "license": "MIT",
   "repository": "pixelnest/presskit.html",
