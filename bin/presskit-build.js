@@ -35,12 +35,14 @@ program
   .option('-D, --clean-build-folder', 'delete the build folder beforehand')
   .option('-L, --pretty-links', 'hide index.html at the end of links')
   .option('-M, --collapse-menu', 'use a collapsed menu (hamburger) on small screens')
+  .option('-B, --base-url [base]', 'prefix absolute urls with [base] (if your presskit is not at the root of your server)', '/')
   .parse(process.argv)
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
   cleanBuildFolder: program.cleanBuildFolder,
   prettyLinks: program.prettyLinks,
+  baseUrl: program.baseUrl,
   hamburger: program.collapseMenu,
   output: program.output,
   watch: program.watch,
