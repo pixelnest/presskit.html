@@ -75,6 +75,20 @@
     {{#each presskit.prices}}
     <dd>{{currency}} {{value}}</dd>
     {{/each}}
+
+    {{#each presskit.relations}}
+    <dt>{{type}}:</dt>
+    <dd>
+      <a href="{{permalink path}}">{{text}}</a>
+    </dd>
+    {{/each}}
+
+    {{#each presskit.relationOf}}
+    <dt>{{type}} of:</dt>
+    <dd>
+      <a href="{{permalink path}}">{{text}}</a>
+    </dd>
+    {{/each}}
   </dl>
 
   {{#if presskit.pressCopyRequest}}
