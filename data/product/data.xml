@@ -26,14 +26,20 @@
 -->
 <product>
 
-  <!-- This guide is not yet written. -->
+  <!-- This guide is not fully written yet. -->
+
+  <!-- ## General Information -->
+
+  <!-- Begin with your product name, website, and miscellaneous information. -->
   <title>My Super Game</title>
   <website>http://pizzaburger.studio/mysupergame</website>
 
+  <!-- You can also add an URL to a request page for this product. A button will be displayed on the page. -->
   <press-copy-request>
     http://pizzaburger.studio/mysupergame/request/
   </press-copy-request>
 
+  <!-- Add as many dates, platforms and prices as needed. -->
   <release-dates>
     <release-date>04 Feb, 2016</release-date>
     <release-date>10 Oct, 2016</release-date>
@@ -69,6 +75,44 @@
     </price>
   </prices>
 
+  <!-- ## Relations -->
+
+  <!--
+    You can specify relations between products using the `<relations>` tag.
+
+
+    Then, on this page product, you will see a new line in the factsheet:
+
+    ```
+    DLC:
+    My Super Game: Ultimate Edition
+    ```
+
+    Of course, the `Product Name` value is clickable.
+
+    In the related product page, a new value will also be added:
+
+    ```
+    DLC of:
+    My Super Game
+    ```
+
+    _Obviously, since the name we provide in the example is not a real product (ie., the product data.xml does not exist), this tag will be ignored for this page._
+
+    You can have as many relations as you want. You can use it to show DLCs, expansions, sequels, prequels, etc.
+
+    **Warning**: you need to rebuild the presskit to see the changes.
+  -->
+  <relations>
+    <relation>
+      <type>DLC</type>
+      <product>My Super Game: Ultimate Edition</product>
+    </relation>
+  </relations>
+
+  <!-- ## Description & History -->
+
+  <!-- Describe your product here. Be brief. -->
   <description>
     Here goes a quick description of your product or game. Be concise and explain in very few words the concept or the gameplay and why it's really cool and why everyone should use or play it.
   </description>

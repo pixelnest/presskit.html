@@ -86,18 +86,70 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-5">&#182;</a>
               </div>
-              <p>This guide is not yet written.</p>
+              <p>This guide is not fully written yet.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <h2 id="general-information">General Information</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Begin with your product name, website, and miscellaneous information.</p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My Super Game<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">website</span>&gt;</span>http://pizzaburger.studio/mysupergame<span class="hljs-tag">&lt;/<span class="hljs-name">website</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">website</span>&gt;</span>http://pizzaburger.studio/mysupergame<span class="hljs-tag">&lt;/<span class="hljs-name">website</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>You can also add an URL to a request page for this product. A button will be displayed on the page.</p>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">press-copy-request</span>&gt;</span>
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">press-copy-request</span>&gt;</span>
     http://pizzaburger.studio/mysupergame/request/
-  <span class="hljs-tag">&lt;/<span class="hljs-name">press-copy-request</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">press-copy-request</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Add as many dates, platforms and prices as needed.</p>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">release-dates</span>&gt;</span>
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">release-dates</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">release-date</span>&gt;</span>04 Feb, 2016<span class="hljs-tag">&lt;/<span class="hljs-name">release-date</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">release-date</span>&gt;</span>10 Oct, 2016<span class="hljs-tag">&lt;/<span class="hljs-name">release-date</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">release-dates</span>&gt;</span>
@@ -130,9 +182,78 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">currency</span>&gt;</span>JPY<span class="hljs-tag">&lt;/<span class="hljs-name">currency</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>2300<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">prices</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">prices</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <h2 id="relations">Relations</h2>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>You can specify relations between products using the <code>&lt;relations&gt;</code> tag.</p>
+<p>Then, on this page product, you will see a new line in the factsheet:</p>
+<pre><code>DLC:
+My Super Game: Ultimate Edition
+</code></pre><p>Of course, the <code>Product Name</code> value is clickable.</p>
+<p>In the related product page, a new value will also be added:</p>
+<pre><code>DLC of:
+My Super Game
+</code></pre><p><em>Obviously, since the name we provide in the example is not a real product (ie., the product data.xml does not exist), this tag will be ignored for this page.</em></p>
+<p>You can have as many relations as you want. You can use it to show DLCs, expansions, sequels, prequels, etc.</p>
+<p><strong>Warning</strong>: you need to rebuild the presskit to see the changes.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">relations</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">relation</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">type</span>&gt;</span>DLC<span class="hljs-tag">&lt;/<span class="hljs-name">type</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">product</span>&gt;</span>My Super Game: Ultimate Edition<span class="hljs-tag">&lt;/<span class="hljs-name">product</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">relation</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">relations</span>&gt;</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <h2 id="description-history">Description &amp; History</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>Describe your product here. Be brief.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>
     Here goes a quick description of your product or game. Be concise and explain in very few words the concept or the gameplay and why it's really cool and why everyone should use or play it.
   <span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
 
@@ -260,11 +381,11 @@
         </li>
         
         
-        <li id="section-6">
+        <li id="section-14">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-6">&#182;</a>
+                <a class="pilcrow" href="#section-14">&#182;</a>
               </div>
               <p>All done! 🍾</p>
 
