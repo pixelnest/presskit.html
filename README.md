@@ -54,7 +54,7 @@ Moreover, if you use one of these tools to build your company or product's websi
 
 That's mainly why we built **presskit.html** — that's how we make our websites, and we can integrate our presskits more easily this way.
 
-We have also added some nice little things (like a "Press Copy Request" button, or widgets integration) and created a more robust implementation of presskit() (which is, unfortunately, un-maintained since 2014).
+We have also added some nice little things (like a "Press Copy Request" button, widgets integration, relations between products or an optional hamburger menu, for example) and created a more robust implementation of presskit() (which is, unfortunately, un-maintained since 2014).
 
 However, _we have tried to be as close as possible to the original presskit format and style._ In fact, comparing the output of **presskit.html** with the one of presskit() should be almost indistinguishable.
 
@@ -254,6 +254,37 @@ Just add the `<widgets>` tag, and the widget providers that you want:
 ```
 
 We don't support other widgets for the moment, but feel free to send a pull request or submit an issue.
+
+#### Relations
+
+This is a new feature of **presskit.html**: you can specify relations between products using the `<relations>` tag.
+
+For example, on a product page, you could add something like:
+
+```xml
+<title>StarCraft</title>
+
+[…]
+
+<relations>
+  <relation>
+    <type>Expansion</type>
+    <product>StarCraft: Brood War</product>
+  </relation>
+  <relation>
+    <type>Sequel</type>
+    <product>StarCraft II</product>
+  </relation>
+</relations>
+```
+
+_This tag should be added on the **main** page; not the related product._
+
+At build time, a relation will be added to the product and its related product, with a link between the two.
+
+You can have as many relations as you want. You can use it to show DLCs, expansions, sequels, prequels, etc.
+
+**Warning**: you need to rebuild the presskit to see the changes.
 
 ### Images
 
