@@ -66,7 +66,7 @@ You already have a presskit? Just try it: [follow our migration guide](#migratio
 
 Built with **presskit.html**:
 
-* [Pixelnest Studio](http://pixelnest.io/presskit/)
+* [Pixelnest Studio](http://pixelnest.io/presskit/) ([source code](https://github.com/pixelnest/presskit/))
 * [Genix Lab](http://www.genix-lab.com/presskit/)
 * [Creative Brothers](http://www.creativebrothers.io/presskit/en/)
 
