@@ -462,6 +462,10 @@ a:hover {
   height: 167px;
 }
 
+.widget--gamejolt {
+  height: 245px;
+}
+
 .widget--bandcamp {
   width: 100%;
   height: 120px;

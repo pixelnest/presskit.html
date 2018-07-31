@@ -44,6 +44,12 @@
   </p>
   {{/if}}
 
+  {{#if presskit.widgets.gamejolt}}
+  <p>
+    <iframe src="https://widgets.gamejolt.com/package/v1?key={{trim presskit.widgets.gamejolt}}" frameborder="0" class="widget widget--gamejolt"></iframe>
+  </p>
+  {{/if}}
+
   {{#if presskit.widgets.bandcamp}}
   <p>
     <!-- TODO: customize `linkcol` with brand color. -->
