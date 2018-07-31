@@ -237,6 +237,7 @@ This is a new feature of **presskit.html**: you can put your widgets directly in
 - Steam `<steam>STEAM_ID</steam>`
 - Humble Bundle `<humble>product_name/BUNDLE_ID</humble>`
 - Itch.io `<itch>ITCH_ID</itch>`
+- Game Jolt `<gamejolt>PACKAGE_ID</gamejolt>`
 - Bandcamp `<bandcamp>BANDCAMP_ID</bandcamp>`
 
 Just add the `<widgets>` tag, and the widget providers that you want:
@@ -249,6 +250,7 @@ Just add the `<widgets>` tag, and the widget providers that you want:
   <steam>347160</steam>
   <humble>steredenn/7SDLfk23hw</humble>
   <itch>27992</itch>
+  <gamejolt>8ReMi2Nw</gamejolt>
   <bandcamp>1135613467</bandcamp>
 </widgets>
 ```
