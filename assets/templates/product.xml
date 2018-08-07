@@ -68,6 +68,10 @@
       <!-- itch.io ID -->
       <!-- e.g. 42424 -->
     </itch>
+    <gamejolt>
+      <!-- Game Jolt package ID -->
+      <!-- e.g. 4AbCd2Ef -->
+    </gamejolt>
     <bandcamp>
       <!-- Bandcamp ID -->
       <!-- e.g. 4242424242 -->
