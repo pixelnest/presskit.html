@@ -2,8 +2,9 @@
 
 > Re-implementation of presskit() as a static site generator
 
-![Build status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+![Build Status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
+[![NPM - Presskit](https://badgen.net/npm/v/presskit)](https://www.npmjs.com/package/presskit)
+[![Code Style - Standard](https://badgen.net/badge/code%20style/standard/f2a)](http://standardjs.com/)
 
 * [Why presskit.html?](#why)
 * [Showcase](#showcase)
