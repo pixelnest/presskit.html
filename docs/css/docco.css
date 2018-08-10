@@ -64,6 +64,10 @@ hr {
   border-top: 1px solid #e5e5ee;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 pre,
 tt,
 code {
@@ -292,6 +296,10 @@ ul.sections > li > div {
     border-right: 1px solid #e5e5ee;
   }
 
+  ul.sections > li > div.content {
+    width: calc(95% - 350px);
+  }
+
   ul.sections > li > div.annotation ul,
   ul.sections > li > div.annotation ol {
     padding-left: 40px;
@@ -384,6 +392,7 @@ ul.sections > li > div {
   }
 
   ul.sections > li > div.content {
+    width: calc(95% - 525px);
     padding: 9px 15px 16px 25px;
   }
 }
