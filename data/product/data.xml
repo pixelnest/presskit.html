@@ -39,6 +39,25 @@
     http://pizzaburger.studio/mysupergame/request/
   </press-copy-request>
 
+  <!--
+    If you have one or many publishers for this product, you can add them here.
+
+    The `<based-in>` tag is optional.
+  -->
+  <partners>
+    <partner>
+      <type>Publisher</type>
+      <title>Pixelnest Studio</title>
+      <website>https://pixelnest.io/</website>
+      <based-in>Rennes, France</based-in>
+    </partner>
+    <partner>
+      <type>Distributor</type>
+      <title>Pizza Oven LLC</title>
+      <website>https://pixelnest.io/</website>
+    </partner>
+  </partners>
+
   <!-- Add as many dates, platforms and prices as needed. -->
   <release-dates>
     <release-date>04 Feb, 2016</release-date>

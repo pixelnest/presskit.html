@@ -54,6 +54,14 @@
     </dd>
     <dd>Based in {{company.basedIn}}</dd>
 
+    {{#each presskit.partners}}
+    <dt>{{type}}:</dt>
+    <dd>
+      <a href="{{website}}">{{title}}</a>
+    </dd>
+    {{#if basedIn}}<dd>Based in {{basedIn}}</dd>{{/if}}
+    {{/each}}
+
     <dt>Release date:</dt>
     {{#each presskit.releaseDates}}
     <dd>{{.}}</dd>
