@@ -161,12 +161,24 @@
     Focus on what is really important and is a key aspect of it.
   -->
   <features>
-    <feature>List some "Key Sellings Points" to grab player's attention.</feature>
-    <feature>Don't be too generic ("pixel art graphics!"), don't be too pretentious ("most incredible game experience!").</feature>
-    <feature>Also, people like numbers, so you can add some (450 weapons, hundreds of levels, dozens of hours of playtime!).</feature>
-    <feature>Need ideas? Maybe explain some game modes?</feature>
-    <feature>It would be a nice place to say something about multiplayer, if you have some.</feature>
-    <feature>Have you translated your game? (You probably should btw.)</feature>
+    <feature>
+      List some "Key Sellings Points" to grab player's attention.
+    </feature>
+    <feature>
+      Don't be too generic ("pixel art graphics!"), don't be too pretentious ("most incredible game experience!").
+    </feature>
+    <feature>
+      Also, people like numbers, so you can add some (450 weapons, hundreds of levels, dozens of hours of playtime!).
+    </feature>
+    <feature>
+      Need ideas? Maybe explain some game modes?
+    </feature>
+    <feature>
+      It would be a nice place to say something about multiplayer, if you have some.
+    </feature>
+    <feature>
+      Have you translated your game? (You probably should btw.)
+    </feature>
   </features>
 
 
@@ -355,15 +367,21 @@
     </contact>
     <contact>
       <name>Twitter</name>
-      <link>https://twitter.com/pizzaburgerstudio</link>
+      <link>
+        https://twitter.com/pizzaburgerstudio
+      </link>
     </contact>
     <contact>
       <name>Facebook</name>
-      <link>https://facebook.com/pizzaburgerstudio</link>
+      <link>
+        https://facebook.com/pizzaburgerstudio
+      </link>
     </contact>
     <contact>
       <name>Web</name>
-      <link>http://mysupergame.pizzaburger.studio/</link>
+      <link>
+        http://mysupergame.pizzaburger.studio/
+      </link>
     </contact>
   </contacts>
 
