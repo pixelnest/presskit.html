@@ -222,6 +222,18 @@
     </additional>
   </additionals>
 
+  <abouts>
+    <about>
+      <title>Pixelnest Studio</title>
+      <description>Pixelnest Studio is a small French studio which creates games, websites and apps. They made Steredenn, a roguelike-shmup in big pixels. They are also behind presskit.html, which you are probably using if you are reading this.</description>
+      <link>https://pixelnest.io/</link>
+    </about>
+    <about>
+      <title>Pizza Oven LLC</title>
+      <description>This is a fake company to illustrate the fact that you can have multiple about tags in your product page.</description>
+    </about>
+  </abouts>
+
   <credits>
     <credit>
       <person>Krokmou</person>
