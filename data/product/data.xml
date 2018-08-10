@@ -3,6 +3,8 @@
 <!--
   **This is your product or game page**. It should focus on _ONLY_ one product. This is not a replacement for your product's website, but a quick way for the press to know it faster.
 
+  [Check the actual rendered page for the code you'll find below.](http://pixelnest.io/presskit.html/example/product/)
+
   If you don't have a `data.xml` yet, the easiest way to start is to run this command in your presskit folder:
 
   ```bash
