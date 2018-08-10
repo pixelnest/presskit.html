@@ -26,7 +26,7 @@
     "docs:example": "node bin/presskit build -DLM -o docs/example data"
   },
   "engines": {
-    "node": ">=7.6.x"
+    "node": ">=8.11.x"
   },
   "dependencies": {
     "archiver": "^1.3.0",
