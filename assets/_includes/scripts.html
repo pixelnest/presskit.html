@@ -1,15 +1,21 @@
 <script src="{{assets}}/js/masonry.min.js"></script>
 <script src="{{assets}}/js/imagesloaded.min.js"></script>
 <script>
-  // Initialize the grid on the images gallery.
+  // Add masonry layout on the galleries.
   document.addEventListener('DOMContentLoaded', function onContentLoaded() {
-    var images = document.querySelector('#gallery')
+    var galleries = document.querySelectorAll('.gallery');
 
-    imagesLoaded(images, function onImagesLoaded() {
-      new Masonry(images, {
-        itemSelector: '.gallery__item'
-      })
-    })
+    for (var i = 0; i < galleries.length; i++) {
+      (function (index) {
+        var gallery = galleries[index];
+
+        imagesLoaded(gallery, function onImagesLoaded() {
+          new Masonry(gallery, {
+            itemSelector: '.gallery__item'
+          });
+        });
+      })(i);
+    }
   })
 </script>
 
