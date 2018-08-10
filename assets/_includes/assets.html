@@ -44,7 +44,7 @@
     </a>
   </aside>
 
-  <div class="gallery" id="gallery">
+  <div class="gallery clearfix" id="gallery">
     {{#each images.screenshots}}
     <div class="gallery__item">
       <a href="images/{{.}}">
@@ -53,6 +53,21 @@
     </div>
     {{/each}}
   </div>
+
+  {{#each images.screenshotsWithCategory}}
+  <section>
+    <h3 class="capitalize" id="gallery-{{title}}">{{title}}</h3>
+    <div class="gallery clearfix">
+      {{#each elements}}
+      <div class="gallery__item">
+        <a href="images/{{.}}">
+          <img src="images/{{.}}" alt="{{basename .}}">
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+  {{/each}}
 </section>
 {{/if}}
 
