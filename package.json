@@ -43,9 +43,9 @@
   },
   "devDependencies": {
     "docco": "https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a",
-    "jest": "^19.0.2",
+    "jest": "^23.5.0",
     "mock-fs": "^4.5.0",
-    "snazzy": "^5.0.0",
+    "snazzy": "^7.1.1",
     "standard": "*"
   },
   "standard": {
