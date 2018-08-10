@@ -208,7 +208,7 @@ You can also generate empty `data.xml` with the `presskit new` command.
 For a tag by tag walkthrough, open these links:
 
 - [Company `data.xml` file](http://pixelnest.io/presskit.html/company/)
-- [Product or game `data.xml` file](http://pixelnest.io/presskit.html/product/) (TODO)
+- [Product or game `data.xml` file](http://pixelnest.io/presskit.html/product/)
 
 **If you have never written a presskit before, those links are a must-read.**
 

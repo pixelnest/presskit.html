@@ -25,9 +25,6 @@
   Use a `<product>` or `<game>` tag.
 -->
 <product>
-
-  <!-- This guide is not fully written yet. -->
-
   <!-- ## General Information -->
 
   <!-- Begin with your product name, website, and miscellaneous information. -->
@@ -64,6 +61,7 @@
     <release-date>10 Oct, 2016</release-date>
   </release-dates>
 
+  <!-- Put all the platforms your product is available on. -->
   <platforms>
     <platform>
       <name>PC / Mac</name>
@@ -75,6 +73,7 @@
     </platform>
   </platforms>
 
+  <!-- Show the price of your product. Try to be exhaustive, it will be helpful for a reviewer. -->
   <prices>
     <price>
       <currency>EUR</currency>
@@ -136,10 +135,29 @@
     Here goes a quick description of your product or game. Be concise and explain in very few words the concept or the gameplay and why it's really cool and why everyone should use or play it.
   </description>
 
+  <!--
+    Tell the story of your product with the `<history>` tag.
+
+    You have two possibilities here.
+
+    - Use an `<history>` block like in the example.
+    - Or use an `<histories>` block if you have tons of things to say.
+
+    You can't have both.
+
+    You can see an example of the `<histories>` block in the company page.
+  -->
   <history>
     Add some storytelling here. Not the scenario of your game, but rather some backgrounds behind the creation process: why are you making this game? Most projects starts with a cool story.
   </history>
 
+  <!-- ## Features -->
+
+  <!--
+    Show the most important features of your product.
+
+    Focus on what is really important and is a key aspect of it.
+  -->
   <features>
     <feature>List some "Key Sellings Points" to grab player's attention.</feature>
     <feature>Don't be too generic ("pixel art graphics!"), don't be too pretentious ("most incredible game experience!").</feature>
@@ -148,6 +166,17 @@
     <feature>It would be a nice place to say something about multiplayer, if you have some.</feature>
     <feature>Have you translated your game? (You probably should btw.)</feature>
   </features>
+
+
+  <!-- ## Trailers -->
+
+  <!--
+    Add your videos. Trailer, teaser, snippets? Let's roll!
+
+    You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.
+
+    Don't put the full link: just the ID is necessary.
+  -->
 
   <trailers>
     <trailer>
@@ -164,6 +193,17 @@
     </trailer>
   </trailers>
 
+  <!-- ## Widgets -->
+
+  <!--
+    Add your widgets to your product here.
+
+    If the product is not a game or an app, you won't probably need that.
+
+    We only need the ID of the product on the store.
+
+    This section is **optional**, and you can use as many widgets (or none) as you want.
+  -->
   <widgets>
     <appstore>950812012</appstore>
     <playstore>com.noodlecake.altosadventure</playstore>
@@ -173,6 +213,13 @@
     <bandcamp>1135613467</bandcamp>
   </widgets>
 
+  <!-- ## Awards, quotes & links -->
+
+  <!--
+    You got awards for this product? Great! Put them here.
+
+    **Optional.**
+  -->
   <awards>
     <award>
       <description>Game of the year without a doubt</description>
@@ -188,6 +235,13 @@
     </award>
   </awards>
 
+  <!--
+    Quotes are used to show the appreciation of your users.
+
+    Show something important, something nice, or something funny, for example.
+
+    **Optional.**
+  -->
   <quotes>
     <quote>
       <description>This is my favorite game of all time.</description>
@@ -209,6 +263,15 @@
     </quote>
   </quotes>
 
+  <!--
+    Need to link to a resource? A small product? An RSS feed? An OST?
+
+    A press release?
+
+    Put those here, in the `<additionals>` tag.
+
+    **Optional.**
+  -->
   <additionals>
     <additional>
       <title>Original Soundtrack (OST)</title>
@@ -222,6 +285,21 @@
     </additional>
   </additionals>
 
+  <!-- ## About -->
+
+  <!--
+    An "About Your Company" section is automatically generated from the content of the company page.
+
+    This <abouts> tag is completely **optional**. If you don't want this section, just delete it. But sometimes, you want to add a description for a partner.
+
+    This is this the place to do it.
+
+    For example, if you have a publisher, you can speak a bit more about it here.
+
+    Most of the time, you should link that to the <partner> tag above, if you want to explain a partner a bit more. But you could use this section for other purpose.
+
+    The <link> tag is optional.
+  -->
   <abouts>
     <about>
       <title>Pixelnest Studio</title>
@@ -234,6 +312,17 @@
     </about>
   </abouts>
 
+  <!-- ## Team & Contacts -->
+
+  <!--
+    This is for the product team.
+
+    Add yourself, of course, but also your collaborators, freelancers and/or partners for example.
+
+    The `<role>` tag can be anything you want. But we recommend to, at least, put the company name for the founders/employees. This will distinguish this person from the external collaborators.
+
+    The `<website>` tag is optional.
+  -->
   <credits>
     <credit>
       <person>Krokmou</person>
@@ -250,6 +339,13 @@
     </credit>
   </credits>
 
+  <!--
+    Add more contact information.
+
+    Add links to your product social accounts, as well as mail specific to this product. And the website.
+
+    For each item, pick one between a `<link>` and `<mail>` tag.
+  -->
   <contacts>
     <contact>
       <name>Inquiries</name>

@@ -134,7 +134,7 @@
     </trailer>
   </trailers>
 
-  <!-- ## Awards, quotes & citations -->
+  <!-- ## Awards, quotes & links -->
 
   <!--
     You got awards? Great! Put them here.
@@ -225,7 +225,7 @@
 
     For the company page, you can repeat your social network accounts, as well as another contact mail address, or your company website.
 
-    For each person, pick one between a `<link>` and `<mail>` tag.
+    For each item, pick one between a `<link>` and `<mail>` tag.
   -->
   <contacts>
     <contact>
