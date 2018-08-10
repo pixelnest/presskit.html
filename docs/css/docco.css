@@ -231,10 +231,12 @@ ul.sections > li > div {
 }
 
 /* ---------------------------------------------------------- *\
- * (> 481px)
+ * (> 750px)
+ *
+ * Change layout from one-column to two-columns.
 \* ---------------------------------------------------------- */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 750px) {
   #container {
     position: relative;
   }
@@ -366,6 +368,8 @@ ul.sections > li > div {
 
 /* ---------------------------------------------------------- *\
  * (> 1025px)
+ *
+ * Add more spaces.
 \* ---------------------------------------------------------- */
 
 @media only screen and (min-width: 1025px) {
