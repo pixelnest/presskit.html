@@ -48,7 +48,7 @@
     {{#each images.screenshots}}
     <div class="gallery__item">
       <a href="images/{{.}}">
-        <img src="images/{{.}}" alt="{{basename .}}">
+        <img src="{{thumbOrImage .}}" alt="{{basename .}}">
       </a>
     </div>
     {{/each}}
@@ -61,7 +61,7 @@
       {{#each elements}}
       <div class="gallery__item">
         <a href="images/{{.}}">
-          <img src="images/{{.}}" alt="{{basename .}}">
+          <img src="{{thumbOrImage .}}" alt="{{basename .}}">
         </a>
       </div>
       {{/each}}
