@@ -16,7 +16,47 @@
         });
       })(i);
     }
-  })
+
+    // Add mini-player to gifs.
+    var gifLinks = document.querySelectorAll('a[href$=".gif"]');
+    for (var i = 0; i < gifLinks.length; i++) {
+      (function (index) {
+        var link = gifLinks[index];
+        var img = link.querySelector('img');
+
+        // Don't add the mini-player if no thumbnail.
+        // It's already a gif, so no need to turn it on.
+        if (img.src.indexOf('.thumb.jpg') === -1) {
+          return
+        }
+
+        link.className = 'show-overlay'
+
+        link.onclick = function (e) {
+          // Make it work on IE8.
+          if (e.preventDefault) {
+            const openLinkInBackground = e.ctrlKey || e.metaKey;
+
+            // Stop default behavior, except if ctrl/cmd modifier is used.
+            // In this case, we want the link to go through and open
+            // its target in a background tab.
+            if (!openLinkInBackground) e.preventDefault();
+            e.stopPropagation();
+          } else {
+            // We don't care for the special background tab behavior on old IE.
+            e.returnValue = false;
+          }
+
+          // Remove overlay and remove thumbnail section of the image.
+          link.className = '';
+          img.src = img.src.replace('.thumb.jpg', '');
+
+          // Remove event listener after first trigger.
+          link.onclick = null;
+        }
+      }(i));
+    }
+  });
 </script>
 
 {{#if hamburger}}
