@@ -36,11 +36,13 @@ program
   .option('-L, --pretty-links', 'hide index.html at the end of links')
   .option('-M, --collapse-menu', 'use a collapsed menu (hamburger) on small screens')
   .option('-B, --base-url [base]', 'prefix absolute urls with [base] (if your presskit is not at the root of your server)', '/')
+  .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
   .parse(process.argv)
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
   cleanBuildFolder: program.cleanBuildFolder,
+  ignoreThumbnails: program.ignoreThumbnails,
   prettyLinks: program.prettyLinks,
   baseUrl: program.baseUrl,
   hamburger: program.collapseMenu,
