@@ -371,6 +371,10 @@ a:hover {
   display: block;
 }
 
+.gallery__item a[href$=".gif"]:focus:active {
+  outline: none;
+}
+
 .gallery__item a[href$=".gif"]::after {
   position: absolute;
   z-index: 1;
