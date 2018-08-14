@@ -55,7 +55,7 @@ Moreover, if you use one of these tools to build your company or product's websi
 
 That's mainly why we built **presskit.html** — that's how we make our websites, and we can integrate our presskits more easily this way.
 
-We have also added some nice little things (like a "Press Copy Request" button, widgets integration, relations between products or an optional hamburger menu, for example) and created a more robust implementation of presskit() (which is, unfortunately, un-maintained since 2014).
+We have also added some nice little things (like thumbnails generation, a "Press Copy Request" button, widgets integration, relations between products or an optional hamburger menu, for example) and created a more robust implementation of presskit() (which is, unfortunately, un-maintained since 2014).
 
 However, _we have tried to be as close as possible to the original presskit format and style._ In fact, comparing the output of **presskit.html** with the one of presskit() should be almost indistinguishable.
 
@@ -291,6 +291,10 @@ You can have as many relations as you want. You can use it to show DLCs, expansi
 
 **Warning**: you need to rebuild the presskit to see the changes.
 
+#### Other tags
+
+We recommend to read the [company](http://pixelnest.io/presskit.html/company/) and [product](http://pixelnest.io/presskit.html/product/) documentation pages for more information. New tags include `<partners>` and `<abouts>`. More might be implemented later.
+
 ### Images
 
 For each `data.xml`, you can add an `images/` folder containing the assets of your product or game.
@@ -298,6 +302,8 @@ For each `data.xml`, you can add an `images/` folder containing the assets of yo
 - An image named `header.png` or `header.jpg` will be used for the page's banner.
 - An image named `logo.png` or `logo.jpg` will be used as your page's logo.
 - Each `jpg`, `jpeg`, `png` or `gif` will be displayed in the gallery.
+
+For each non-header/non-logo image, a thumbnail will be automatically generated during the build process. If you don't want to use the thumbnails, you can disable them with the `--ignore-thumbnails` option of `presskit build`. However, we do not recommend this: it might drastically increase the size of your pages. It can be a massive change: for example, on our presskit, one of our page has gone from 100mB to 4mB. We also convert gifs to small JPGs, that you can animate with a click.
 
 #### Logos
 
@@ -310,6 +316,12 @@ This will work, for example:
 📄 logo02.png
 📄 logo03.jpg
 ```
+
+#### Categories
+
+Inside the `images/` folder, you can sort images by categories. It's simple: put a few images into a subfolder (like `images/wallpapers/`), and a new category will be automatically added to the gallery.
+
+[You can find an example here.](http://pixelnest.io/presskit.html/example/product/#gallery-wallpapers)
 
 #### Favicon
 
