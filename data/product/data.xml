@@ -189,6 +189,12 @@
     You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.
 
     Don't put the full link: just the ID is necessary.
+
+    If you want to provide a link to download the video, add this tag in `<trailer>`:
+
+    ```
+    <download>https://example.com/video.mp4</download>
+    ```
   -->
   <trailers>
     <trailer>
@@ -202,6 +208,10 @@
     <trailer>
       <name>Early Access Trailer</name>
       <youtube>EtyQMcc19xY</youtube>
+    </trailer>
+    <trailer>
+      <name>Short gameplay preview: Burger vs Pizza</name>
+      <download>https://github.com/pixelnest/presskit.html</download>
     </trailer>
   </trailers>
 

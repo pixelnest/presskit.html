@@ -280,7 +280,8 @@ Hello, world.
               <p>Add your videos. Because we are in the <code>&lt;company&gt;</code> page, try to be representative of all the products of your company.</p>
 <p>You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.</p>
 <p>Don’t put the full link: just the ID is necessary.</p>
-
+<p>If you want to provide a link to download the video, add this tag in <code>&lt;trailer&gt;</code>:</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">download</span>&gt;</span>https://example.com/video.mp4<span class="hljs-tag">&lt;/<span class="hljs-name">download</span>&gt;</span></code></pre>
             </div>
             
             <div class="content"><div class='highlight'><pre>  <span class="hljs-tag">&lt;<span class="hljs-name">trailers</span>&gt;</span>
@@ -292,8 +293,7 @@ Hello, world.
       <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Example from both YouTube and Vimeo<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">youtube</span>&gt;</span>YH3c1QZzRK4<span class="hljs-tag">&lt;/<span class="hljs-name">youtube</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">vimeo</span>&gt;</span>108650530<span class="hljs-tag">&lt;/<span class="hljs-name">vimeo</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">trailer</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">trailers</span>&gt;</span></pre></div></div>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">trailer</span>&gt;</span></pre></div></div>
             
         </li>
         
@@ -304,9 +304,16 @@ Hello, world.
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-16">&#182;</a>
               </div>
-              <h2 id="awards-quotes-links">Awards, quotes &amp; links</h2>
+              <p>You can also add a video link without YouTube or Vimeo.</p>
+<p>In this case, only a sentence will be shown, along with a download link.</p>
 
             </div>
+            
+            <div class="content"><div class='highlight'><pre>    <span class="hljs-tag">&lt;<span class="hljs-name">trailer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>Interview with Damien Mayance and Matthieu Oger of Pixenest Studio<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">download</span>&gt;</span>https://github.com/pixelnest/presskit.html<span class="hljs-tag">&lt;/<span class="hljs-name">download</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">trailer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">trailers</span>&gt;</span></pre></div></div>
             
         </li>
         
@@ -316,6 +323,19 @@ Hello, world.
               
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <h2 id="awards-quotes-links">Awards, quotes &amp; links</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
               </div>
               <p>You got awards? Great! Put them here.</p>
 <p>But don’t add too much here: this is your company page, not a product one.</p>
@@ -336,11 +356,11 @@ Hello, world.
         </li>
         
         
-        <li id="section-18">
+        <li id="section-19">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-18">&#182;</a>
+                <a class="pilcrow" href="#section-19">&#182;</a>
               </div>
               <p>Quotes are used to show the appreciation of your users.</p>
 <p>Show something important, something nice, or something funny, for example.</p>
@@ -361,11 +381,11 @@ Hello, world.
         </li>
         
         
-        <li id="section-19">
+        <li id="section-20">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-19">&#182;</a>
+                <a class="pilcrow" href="#section-20">&#182;</a>
               </div>
               <p>Need to link to a resource? A small product? An RSS feed?</p>
 <p>You want to show your blog? Your personal Twitter account?</p>
@@ -389,11 +409,11 @@ Hello, world.
         </li>
         
         
-        <li id="section-20">
+        <li id="section-21">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-20">&#182;</a>
+                <a class="pilcrow" href="#section-21">&#182;</a>
               </div>
               <h2 id="team-contacts">Team &amp; Contacts</h2>
 
@@ -402,11 +422,11 @@ Hello, world.
         </li>
         
         
-        <li id="section-21">
+        <li id="section-22">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-21">&#182;</a>
+                <a class="pilcrow" href="#section-22">&#182;</a>
               </div>
               <p>This is for your people.</p>
 <p>Add yourself, of course, but also your <strong>frequent</strong> collaborators for example.</p>
@@ -444,11 +464,11 @@ Hello, world.
         </li>
         
         
-        <li id="section-22">
+        <li id="section-23">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-22">&#182;</a>
+                <a class="pilcrow" href="#section-23">&#182;</a>
               </div>
               <p>Add more contact information.</p>
 <p>For the company page, you can repeat your social network accounts, as well as another contact mail address, or your company website.</p>
@@ -484,11 +504,11 @@ Hello, world.
         </li>
         
         
-        <li id="section-23">
+        <li id="section-24">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-23">&#182;</a>
+                <a class="pilcrow" href="#section-24">&#182;</a>
               </div>
               <p>Well-done, it’s over for this one. ;)</p>
 <p><a href="../product/">It’s time to do the product pages.</a></p>
