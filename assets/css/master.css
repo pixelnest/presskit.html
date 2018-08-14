@@ -395,7 +395,7 @@ a:hover {
   display: flex;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .gallery__item {
     width: 50%;
   }
