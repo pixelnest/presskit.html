@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "node bin/presskit build --watch --dev data",
+    "build": "node bin/presskit build data",
     "test": "standard | snazzy && jest",
     "tester": "jest --watch",
     "docs": "./documentation",
