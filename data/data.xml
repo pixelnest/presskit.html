@@ -123,6 +123,12 @@
     You can use YouTube and/or Vimeo. Only one is needed, and only one is recommended.
 
     Don't put the full link: just the ID is necessary.
+
+    If you want to provide a link to download the video, add this tag in `<trailer>`:
+
+    ```
+    <download>https://example.com/video.mp4</download>
+    ```
   -->
   <trailers>
     <trailer>
@@ -133,6 +139,16 @@
       <name>Example from both YouTube and Vimeo</name>
       <youtube>YH3c1QZzRK4</youtube>
       <vimeo>108650530</vimeo>
+    </trailer>
+
+    <!--
+      You can also add a video link without YouTube or Vimeo.
+
+      In this case, only a sentence will be shown, along with a download link.
+    -->
+    <trailer>
+      <name>Gameplay Preview: Beta 42</name>
+      <download>https://github.com/pixelnest/presskit.html</download>
     </trailer>
   </trailers>
 

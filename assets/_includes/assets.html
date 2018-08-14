@@ -6,7 +6,7 @@
   <div>
     {{#youtube}}
     <p>
-      <strong>{{../name}}</strong> <a href="https://www.youtube.com/embed/{{trim .}}?rel=0">YouTube</a>
+      <strong>{{../name}}</strong> — <a href="https://www.youtube.com/embed/{{trim .}}?rel=0">YouTube</a> {{#if ../download}}| <a href="{{../download}}" target="_blank">Download</a>{{/if}}
     </p>
 
     <div class="video-player">
@@ -16,13 +16,23 @@
 
     {{#vimeo}}
     <p>
-      <strong>{{../name}}</strong> <a href="https://player.vimeo.com/video/{{trim .}}">Vimeo</a>
+      <strong>{{../name}}</strong> — <a href="https://player.vimeo.com/video/{{trim .}}">Vimeo</a> {{#if ../download}}| <a href="{{../download}}" target="_blank">Download</a>{{/if}}
     </p>
 
     <div class="video-player">
       <iframe class="video-player__frame" src="https://player.vimeo.com/video/{{trim .}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     {{/vimeo}}
+
+    {{#unless youtube}}
+      {{#unless vimeo}}
+        {{#download}}
+        <p>
+          <strong>{{../name}}</strong> — <a href="{{../download}}" target="_blank">Download</a>
+        </p>
+        {{/download}}
+      {{/unless}}
+    {{/unless}}
   </div>
   {{/each}}
 </section>
