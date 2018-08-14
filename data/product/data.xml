@@ -217,6 +217,8 @@
     We only need the ID of the product on the store.
 
     This section is **optional**, and you can use as many widgets (or none) as you want.
+
+    **Warning: widgets import many scripts and assets. This may have a penalty on your page size and responsiveness.**
   -->
   <widgets>
     <appstore>950812012</appstore>

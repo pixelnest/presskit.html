@@ -258,6 +258,8 @@ Just add the `<widgets>` tag, and the widget providers that you want:
 
 We don't support other widgets for the moment, but feel free to send a pull request or submit an issue.
 
+**Warning: widgets import many scripts and assets. This may have a penalty on your page size and responsiveness.**
+
 #### Relations
 
 This is a new feature of **presskit.html**: you can specify relations between products using the `<relations>` tag.
