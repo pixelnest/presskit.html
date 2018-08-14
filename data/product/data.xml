@@ -181,7 +181,6 @@
     </feature>
   </features>
 
-
   <!-- ## Trailers -->
 
   <!--
@@ -191,7 +190,6 @@
 
     Don't put the full link: just the ID is necessary.
   -->
-
   <trailers>
     <trailer>
       <name>Release Trailer</name>
