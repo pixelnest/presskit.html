@@ -57,7 +57,11 @@
     {{#each presskit.partners}}
     <dt>{{type}}:</dt>
     <dd>
-      <a href="{{website}}">{{title}}</a>
+      {{#if website}}
+        <a href="{{website}}">{{title}}</a>
+      {{else}}
+        {{title}}
+      {{/if}}
     </dd>
     {{#if basedIn}}<dd>Based in {{basedIn}}</dd>{{/if}}
     {{/each}}
@@ -70,7 +74,11 @@
     <dt>Platforms:</dt>
     {{#each presskit.platforms}}
     <dd>
-      <a href="{{link}}">{{name}}</a>
+      {{#if link}}
+        <a href="{{link}}">{{name}}</a>
+      {{else}}
+        {{name}}
+      {{/if}}
     </dd>
     {{/each}}
 
