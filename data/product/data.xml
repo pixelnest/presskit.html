@@ -41,7 +41,7 @@
   <!--
     If you have one or many publishers for this product, you can add them here.
 
-    The `<based-in>` tag is optional.
+    The `<based-in>` and `<website>` tags are optional.
   -->
   <partners>
     <partner>
@@ -53,7 +53,6 @@
     <partner>
       <type>Distributor</type>
       <title>Pizza Oven LLC</title>
-      <website>https://pixelnest.io/</website>
     </partner>
   </partners>
 
@@ -63,7 +62,11 @@
     <release-date>10 Oct, 2016</release-date>
   </release-dates>
 
-  <!-- Put all the platforms your product is available on. -->
+  <!--
+    Put all the platforms your product is available on.
+
+    `<link>` tag is optional.
+  -->
   <platforms>
     <platform>
       <name>PC / Mac</name>
@@ -72,6 +75,9 @@
     <platform>
       <name>Steam</name>
       <link>http://steampowered.com/</link>
+    </platform>
+    <platform>
+      <name>Inc New Store (TBA)</name>
     </platform>
   </platforms>
 
