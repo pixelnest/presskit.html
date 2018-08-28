@@ -1,6 +1,6 @@
 'use strict'
 
-const path = require('path')
+const path = require('upath')
 const chalk = require('chalk')
 const program = require('commander')
 const presskit = require('../lib/index')

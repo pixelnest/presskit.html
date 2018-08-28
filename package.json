@@ -41,6 +41,7 @@
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.1",
     "sharp": "^0.20.5",
+    "upath": "^1.1.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
