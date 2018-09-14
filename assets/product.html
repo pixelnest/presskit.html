@@ -20,13 +20,15 @@
 
             <article class="description grid__item">
               {{>description}}
-
+              {{#if hasFeatures}}
               <h2 id="features">Features</h2>
               <ul>
                 {{#each presskit.features}}
                 <li>{{.}}</li>
                 {{/each}}
               </ul>
+              {{/if}}
+
             </article>
           </section>
 

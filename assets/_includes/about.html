@@ -12,6 +12,7 @@
 </section>
 {{/if}}
 
+{{#if hasAbouts}}
 {{#each presskit.abouts}}
 <section class="block">
   <h2 id="about_{{title}}">About {{title}}</h2>
@@ -27,3 +28,4 @@
   </dl>
 </section>
 {{/each}}
+{{/if}}
