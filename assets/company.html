@@ -21,6 +21,7 @@
             <article class="description grid__item">
               {{>description}}
 
+              {{#if products}}
               <h2 id="projects">Projects</h2>
               <ul>
                 {{#each products}}
@@ -29,6 +30,7 @@
                 </li>
                 {{/each}}
               </ul>
+              {{/if}}
             </article>
           </section>
 

@@ -3,57 +3,81 @@
 
   {{#if isCompany}}
   <dl class="factsheet__list">
+
+    {{#if hasDeveloper}}
     <dt>Developer:</dt>
     <dd>
       <a href=".">{{presskit.title}}</a>
     </dd>
-    <dd>Based in {{presskit.basedIn}}</dd>
 
+    {{#if hasBasedIn}}
+    <dd>Based in {{presskit.basedIn}}</dd>
+    {{/if}}
+    {{/if}}
+
+    {{#if hasFoundingDate}}
     <dt>Founding date:</dt>
     <dd>{{presskit.foundingDate}}</dd>
+    {{/if}}
 
+    {{#if hasWebsite}}
     <dt>Website:</dt>
     <dd>
       <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
     </dd>
+    {{/if}}
 
+    {{#if hasPressContact}}
     <dt>Press / Business contact:</dt>
     <dd>
       <a href="mailto:{{presskit.pressContact}}">{{presskit.pressContact}}</a>
     </dd>
-
+    {{/if}}
+    {{#if hasSocials}}
     <dt>Social:</dt>
     {{#each presskit.socials}}
     <dd>
       <a href="{{link}}">{{name}}</a>
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasProducts}}
     <dt>Releases:</dt>
     {{#each products}}
     <dd>
       <a href="{{permalink path}}">{{title}}</a>
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasAddresses}}
     <dt>Address:</dt>
     {{#each presskit.address.line}}
     <dd>{{.}}</dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasPhone}}
     <dt>Phone:</dt>
     <dd>{{presskit.phone}}</dd>
+    {{/if}}
   </dl>
   {{/if}}
 
   {{#if isProduct}}
   <dl class="factsheet__list">
+    {{#if hasCompanyDeveloper}}
     <dt>Developer:</dt>
     <dd>
       <a href="..">{{company.title}}</a>
     </dd>
+    {{#if hasCompanyBasedIn}}
     <dd>Based in {{company.basedIn}}</dd>
+    {{/if}}
+    {{/if}}
 
+    {{#if hasPartners}}
     {{#each presskit.partners}}
     <dt>{{type}}:</dt>
     <dd>
@@ -65,12 +89,17 @@
     </dd>
     {{#if basedIn}}<dd>Based in {{basedIn}}</dd>{{/if}}
     {{/each}}
+    {{/if}}
 
+
+    {{#if hasReleaseDates}}
     <dt>Release date:</dt>
     {{#each presskit.releaseDates}}
     <dd>{{.}}</dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasPlatforms}}
     <dt>Platforms:</dt>
     {{#each presskit.platforms}}
     <dd>
@@ -81,33 +110,42 @@
       {{/if}}
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasWebsite}}
     <dt>Website:</dt>
     <dd>
       <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
     </dd>
+    {{/if}}
 
+    {{#if hasPrices}}
     <dt>Regular Price:</dt>
     {{#each presskit.prices}}
     <dd>{{currency}} {{value}}</dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasRelations}}
     {{#each presskit.relations}}
     <dt>{{type}}:</dt>
     <dd>
       <a href="{{permalink path}}">{{text}}</a>
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if hasRelationsOf}}
     {{#each presskit.relationOf}}
     <dt>{{type}} of:</dt>
     <dd>
       <a href="{{permalink path}}">{{text}}</a>
     </dd>
     {{/each}}
+    {{/if}}
   </dl>
 
-  {{#if presskit.pressCopyRequest}}
+  {{#if hasPressCopyRequest}}
   <p class="press">
     <a href="{{presskit.pressCopyRequest}}" class="button" tabindex="0">
       Request Press Copy
