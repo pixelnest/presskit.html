@@ -35,16 +35,14 @@
     "commander": "^3.0.1",
     "fs-extra": "^8.1.0",
     "handlebars": "^4.0.6",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^3.0.0",
-    "sharp": "^0.23.0",
+    "sharp": "^0.33.0",
     "upath": "^1.1.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "docco": "https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a",
-    "jest": "^24.9.0",
-    "mock-fs": "^4.5.0",
+    "jest": "^29.0.0",
+    "mock-fs": "^5.2.0",
     "snazzy": "^8.0.0",
     "standard": "^11.0.0"
   },
