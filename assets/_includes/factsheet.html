@@ -48,11 +48,13 @@
 
   {{#if isProduct}}
   <dl class="factsheet__list">
+    {{#if company.title}}
     <dt>Developer:</dt>
     <dd>
       <a href="..">{{company.title}}</a>
     </dd>
-    <dd>Based in {{company.basedIn}}</dd>
+    {{#if company.basedIn}}<dd>Based in {{company.basedIn}}</dd>{{/if}}
+    {{/if}}
 
     {{#each presskit.partners}}
     <dt>{{type}}:</dt>
