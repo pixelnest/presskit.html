@@ -2,7 +2,7 @@
 
 const path = require('upath')
 const chalk = require('chalk')
-const program = require('commander')
+const { program } = require('commander')
 const presskit = require('../lib/index')
 
 // -------------------------------------------------------------
@@ -39,15 +39,16 @@ program
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
   .parse(process.argv)
 
+const opts = program.opts()
 presskit.runBuildCommand({
   entryPoint: program.args[0],
-  cleanBuildFolder: program.cleanBuildFolder,
-  ignoreThumbnails: program.ignoreThumbnails,
-  prettyLinks: program.prettyLinks,
-  baseUrl: program.baseUrl,
-  hamburger: program.collapseMenu,
-  output: program.output,
-  watch: program.watch,
-  port: program.port,
-  dev: program.dev
+  cleanBuildFolder: opts.cleanBuildFolder,
+  ignoreThumbnails: opts.ignoreThumbnails,
+  prettyLinks: opts.prettyLinks,
+  baseUrl: opts.baseUrl,
+  hamburger: opts.collapseMenu,
+  output: opts.output,
+  watch: opts.watch,
+  port: opts.port,
+  dev: opts.dev
 })
