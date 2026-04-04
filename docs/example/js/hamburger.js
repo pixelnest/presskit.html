@@ -10,15 +10,15 @@
   // To disable this feature, just remove the script tag.
 
   window.addEventListener('DOMContentLoaded', function () {
-    var container = document.querySelector('#hamburger')
-    var button = document.querySelector('#hamburger-toggle')
-    var target = document.querySelector('#hamburger-target')
+    const container = document.querySelector('#hamburger')
+    const button = document.querySelector('#hamburger-toggle')
+    const target = document.querySelector('#hamburger-target')
 
     // Show hamburger (hidden by default if no js or hamburger disabled).
     container.style.display = 'block'
 
     // Get target height.
-    var baseHeight = getElementHeight(target)
+    const baseHeight = getElementHeight(target)
 
     // Do that after the height calculation!
     target.className += ' nav__list--slider'
@@ -27,7 +27,7 @@
       e.preventDefault()
       e.stopPropagation()
 
-      var currentMaxHeight = parseInt(target.style.maxHeight, 10)
+      const currentMaxHeight = parseInt(target.style.maxHeight, 10)
 
       // If not set or 0, toggle to full height.
       // Otherwise, hide.
@@ -41,10 +41,10 @@
 
   // Clone an element outside the screen to safely get its height, then destroy it.
   function getElementHeight (element) {
-    var clone = element.cloneNode(true)
+    const clone = element.cloneNode(true)
     clone.style.cssText = 'visibility: hidden; display: block; margin: -999px 0'
 
-    var height = (element.parentNode.appendChild(clone)).clientHeight
+    const height = (element.parentNode.appendChild(clone)).clientHeight
     element.parentNode.removeChild(clone)
 
     return height

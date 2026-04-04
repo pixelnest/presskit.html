@@ -2,13 +2,15 @@
   <h1 class="nav__title">
     {{#if isCompany}}
     <a href=".">{{presskit.title}}</a>
-    {{else}}
+    {{else if company.title}}
     <a href="..">{{company.title}}</a>
+    {{else}}
+    <a href=".">{{presskit.title}}</a>
     {{/if}}
   </h1>
 
   <aside class="nav__subtitle">
-    {{#if isProduct}}
+    {{#if company.title}}
     <a href="..">press kit</a>
     {{else}}
     <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
@@ -103,7 +105,7 @@
     </li>
     {{/if}}
 
-    {{#if isProduct}}
+    {{#if company.title}}
     <li>
       <a class="nav__item" href="#about">About {{company.title}}</a>
     </li>
