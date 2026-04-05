@@ -7,42 +7,58 @@
     <dd>
       <a href=".">{{presskit.title}}</a>
     </dd>
+    {{#if presskit.basedIn}}
     <dd>Based in {{presskit.basedIn}}</dd>
+    {{/if}}
 
+    {{#if presskit.foundingDate}}
     <dt>Founding date:</dt>
     <dd>{{presskit.foundingDate}}</dd>
+    {{/if}}
 
+    {{#if presskit.website}}
     <dt>Website:</dt>
     <dd>
       <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
     </dd>
+    {{/if}}
 
+    {{#if presskit.pressContact}}
     <dt>Press / Business contact:</dt>
     <dd>
       <a href="mailto:{{presskit.pressContact}}">{{presskit.pressContact}}</a>
     </dd>
+    {{/if}}
 
+    {{#if presskit.socials}}
     <dt>Social:</dt>
     {{#each presskit.socials}}
     <dd>
       <a href="{{link}}">{{name}}</a>
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if products}}
     <dt>Releases:</dt>
     {{#each products}}
     <dd>
       <a href="{{permalink path}}">{{title}}</a>
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if presskit.address.line}}
     <dt>Address:</dt>
     {{#each presskit.address.line}}
     <dd>{{.}}</dd>
     {{/each}}
+    {{/if}}
 
+    {{#if presskit.phone}}
     <dt>Phone:</dt>
     <dd>{{presskit.phone}}</dd>
+    {{/if}}
   </dl>
   {{/if}}
 
@@ -68,11 +84,14 @@
     {{#if basedIn}}<dd>Based in {{basedIn}}</dd>{{/if}}
     {{/each}}
 
+    {{#if presskit.releaseDates}}
     <dt>Release date:</dt>
     {{#each presskit.releaseDates}}
     <dd>{{.}}</dd>
     {{/each}}
+    {{/if}}
 
+    {{#if presskit.platforms}}
     <dt>Platforms:</dt>
     {{#each presskit.platforms}}
     <dd>
@@ -83,16 +102,21 @@
       {{/if}}
     </dd>
     {{/each}}
+    {{/if}}
 
+    {{#if presskit.website}}
     <dt>Website:</dt>
     <dd>
       <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
     </dd>
+    {{/if}}
 
+    {{#if presskit.prices}}
     <dt>Regular Price:</dt>
     {{#each presskit.prices}}
     <dd>{{currency}} {{value}}</dd>
     {{/each}}
+    {{/if}}
 
     {{#each presskit.relations}}
     <dt>{{type}}:</dt>
