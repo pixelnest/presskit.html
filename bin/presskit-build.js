@@ -37,6 +37,7 @@ program
   .option('-M, --collapse-menu', 'use a collapsed menu (hamburger) on small screens')
   .option('-B, --base-url [base]', 'prefix absolute urls with [base] (if your presskit is not at the root of your server)', '/')
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
+  .option('-C, --css [name]', 'CSS theme to use: a built-in name (light, dark) or a path to a custom file', 'light')
   .parse(process.argv)
 
 const opts = program.opts()
@@ -46,6 +47,7 @@ presskit.runBuildCommand({
   ignoreThumbnails: opts.ignoreThumbnails,
   prettyLinks: opts.prettyLinks,
   baseUrl: opts.baseUrl,
+  css: opts.css,
   hamburger: opts.collapseMenu,
   output: opts.output,
   watch: opts.watch,
