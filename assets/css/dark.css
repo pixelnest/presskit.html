@@ -1,0 +1,552 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------- *\
+ * Globals.
+\* ---------------------------------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------- *\
+ * Typography & colors.
+\* ---------------------------------------------------------- */
+
+html {
+  color: #cccccc;
+  background: #1a1a2e;
+
+  font: 62.5%/1.6 "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.26em;
+}
+
+h1,
+h2 {
+  color: #e0e0e0;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+::-moz-selection {
+  color: white;
+  background: #4a90d9;
+}
+
+::selection {
+  color: white;
+  background: #4a90d9;
+}
+
+/* ---------------------------------------------------------- *\
+ * Basic elements.
+\* ---------------------------------------------------------- */
+
+h1 {
+  margin: 0;
+
+  font-size: 2.8em;
+}
+
+h2 {
+  margin: 25px 0 15px 0;
+
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 15px 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lists. */
+
+ul,
+ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  color: #e0e0e0;
+
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+dd + dt {
+  margin-top: 15px;
+}
+
+/* ---------------------------------------------------------- *\
+ * Layout.
+\* ---------------------------------------------------------- */
+
+body {
+  padding: 20px 0;
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@media (min-width: 800px) {
+  .page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .page-nav {
+    min-width: 25%;
+  }
+
+  .page-wrapper {
+    max-width: 75%;
+  }
+
+  .factsheet {
+    min-width: 33%;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Micro Components.
+\* ---------------------------------------------------------- */
+
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  content: " ";
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Links.
+\* ---------------------------------------------------------- */
+
+a,
+a:visited {
+  color: #5dade2;
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: #85c1e9;
+
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Page Header.
+\* ---------------------------------------------------------- */
+
+.page-header img {
+  display: block;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Nav.
+\* ---------------------------------------------------------- */
+
+.nav {
+  margin-bottom: 30px;
+}
+
+.nav__title {
+  padding: 0 15px;
+
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+.nav__title a,
+.nav__title a:visited,
+.nav__title a:hover {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+.nav__subtitle {
+  padding: 5px 15px;
+}
+
+.nav__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__item,
+.nav__item:visited {
+  display: block;
+
+  padding: 5px 15px;
+
+  color: inherit;
+}
+
+.nav__item:hover {
+  color: inherit;
+  background: rgba(255, 255, 255, 0.05);
+
+  text-decoration: none;
+}
+
+.nav__item:focus {
+  background: rgba(255, 255, 255, 0.05);
+  outline: none;
+}
+
+/* ---------------------------------------------------------- *\
+ * Nav - Hamburger.
+\* ---------------------------------------------------------- */
+
+.nav__toggle {
+  display: none;
+
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.nav__toggle .button {
+  display: block;
+
+  height: 30px;
+}
+
+/* Nav list variant for hamburger feature. */
+.nav__list--slider {
+  overflow-y: hidden;
+
+  max-height: 0;
+
+  -webkit-transition: max-height 0.5s ease-in-out;
+     -moz-transition: max-height 0.5s ease-in-out;
+       -o-transition: max-height 0.5s ease-in-out;
+          transition: max-height 0.5s ease-in-out;
+}
+
+
+@media (min-width: 800px) {
+  .nav__toggle {
+    /* Always hide the button on big screens. */
+    display: none !important;
+  }
+
+  .nav__list--slider {
+    /* Always show the list on big screens. So disable slider. */
+    max-height: unset !important;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Block.
+\* ---------------------------------------------------------- */
+
+.block {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #333355;
+}
+
+.block__notice {
+  margin-bottom: 15px;
+  padding: 10px;
+
+  color: #5dade2;
+  background: #16213e;
+  border: 1px solid rgba(93, 173, 226, 0.3);
+  border-radius: 4px;
+}
+
+.block__notice a {
+  color: inherit;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Grid.
+\* ---------------------------------------------------------- */
+
+@media (min-width: 800px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .grid__item:not(:first-child) {
+    padding-left: 25px;
+  }
+
+  .grid__item--flexible {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Images Gallery.
+\* ---------------------------------------------------------- */
+
+.gallery {
+  margin-left: -25px;
+
+  font-size: 0; /* Disable the small space below the images. */
+}
+
+.gallery__item {
+  float: left;
+
+  width: 100%;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.gallery__item img {
+  width: 100%;
+}
+
+.gallery__item a[href$=".gif"] {
+  position: relative;
+
+  display: block;
+}
+
+.gallery__item a[href$=".gif"]:focus:active {
+  outline: none;
+}
+
+.gallery__item a[href$=".gif"]::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAFFQTFRFAAAA/////////////////////////////Pz8/Pz8/Pz8/f39/f39/f39/f39/f39/f39/Pz8/Pz8/Pz8/Pz8/v7+/f39/f39/f39/f39/f395zF2nQAAABt0Uk5TAAEJCxQeIEpXYGFnc3V2d5WarK2/xNLb3N3m8ZFI2gAAAOlJREFUOMuVlckOgzAMRAdIWUrKUgK4/v8P7QWVLA64c0RPY9mxByBQ3U/LSrQuU18jKzM49uQGI2KVJY5Etkq5ZmNBWxNhheWMbOFz5cxZzaXnd8Exz6en5UvZXx98o6OjarsDtyop/Hrnixt/zm3x/AggGQCj/6UFHpLpAMBFICRTB9Qcg6JpjV4ABdMekwSmphMWGUTRBaYL1gwYma6gLBiYEvYr8HTZ9aXzzVDYjHo88sA7SgaufkJhKRI7Zgdg0K5ZtLiC3bG46lPQH5f6XPUBoI8UdUjpY08fpH9EMwAzqsL+5vfxBcKnb1vURTbUAAAAAElFTkSuQmCC");
+
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__item a[href$=".gif"].show-overlay::after {
+  display: flex;
+}
+
+@media (min-width: 500px) {
+  .gallery__item {
+    width: 50%;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Logo.
+\* ---------------------------------------------------------- */
+
+@media (min-width: 800px) {
+  .logo {
+    max-width: 49%;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Video player.
+\* ---------------------------------------------------------- */
+
+.video-player {
+  position: relative;
+
+  padding-bottom: 56.25%; /* 16:9 */
+}
+
+.video-player__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Quote.
+\* ---------------------------------------------------------- */
+
+.quote__content {
+  margin: 0;
+}
+
+.quote__content::before {
+  content: open-quote;
+}
+
+.quote__content::after {
+  content: close-quote;
+}
+
+.quote__author::before {
+  content: "-";
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Button.
+\* ---------------------------------------------------------- */
+
+.button {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  color: #cccccc;
+  background: -webkit-linear-gradient(top, #2a2a4a, #1a1a2e);
+  background:         linear-gradient(to bottom, #2a2a4a, #1a1a2e);
+  border: 1px solid #444466;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:focus {
+  border: 1px solid #4a90d9;
+  outline: none;
+}
+
+.button:active {
+  color: white;
+  background: -webkit-linear-gradient(top, #4a90d9, #357abd);
+  background:         linear-gradient(to bottom, #4a90d9, #357abd);
+}
+
+/* ---------------------------------------------------------- *\
+ * Widgets.
+\* ---------------------------------------------------------- */
+
+.widget {
+  width: 100%;
+}
+
+.widget--steam {
+  height: 190px;
+}
+
+.widget--humble {
+  height: 328px;
+}
+
+@media (max-width: 505px) {
+  .widget--humble {
+    height: 205px;
+  }
+}
+
+.widget--itch {
+  height: 167px;
+}
+
+.widget--gamejolt {
+  height: 245px;
+}
+
+.widget--bandcamp {
+  width: 100%;
+  height: 120px;
+
+  border: 0;
+}
+
+/* ---------------------------------------------------------- *\
+ * Hacks.
+\* ---------------------------------------------------------- */
+
+@media (min-width: 800px) {
+  ._team-fix-margin-top {
+    margin-top: -15px;
+  }
+}
+
+/* ---------------------------------------------------------- *\
+ * Components - Footer.
+\* ---------------------------------------------------------- */
+
+.page-footer {
+  color: #888888;
+}
+
+.page-footer a,
+.page-footer a:visited {
+  color: #5dade2;
+}
