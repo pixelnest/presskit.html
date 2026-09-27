@@ -199,6 +199,18 @@ Two interesting ones are:
 
 You can combine all these options together, of course.
 
+### Themes
+
+Use the `--css` option to change the look of your presskit:
+
+- `presskit build --css light` uses the default light theme.
+- `presskit build --css dark` uses the dark theme.
+- `presskit build --css ./my-theme.css` uses your own CSS file.
+
+The selected theme is exported as `css/theme.css` in the build folder. To create your own theme, the easiest way is to start from a copy of [`light.css`](assets/css/light.css).
+
+A print stylesheet is always included too, so your presskit looks good on paper as well.
+
 ### Create `data.xml` files with `presskit new`
 
 You can also generate empty `data.xml` with the `presskit new` command.
