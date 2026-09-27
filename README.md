@@ -84,7 +84,7 @@ The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-p
 
 ## Quickstart for existing presskit users
 
-1. Install [Node.js](https://nodejs.org).
+1. Install [Node.js](https://nodejs.org) (version 20.9 or newer).
 2. Open your terminal ("Terminal" on macOS, "cmd" on Windows).
 3. Run `npm install -g presskit`.
 4. Type `cd`, press space, and drag the folder containing your `data.xml` files.
@@ -93,7 +93,7 @@ The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-p
 
 ## Installation
 
-You will need a terminal and [Node.js](https://nodejs.org/).
+You will need a terminal and [Node.js](https://nodejs.org/) 20.9 or newer.
 
 The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/) (bundled with Node.js):
 
