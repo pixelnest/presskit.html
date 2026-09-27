@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------- *\
+ * Print stylesheet for presskit.html
+\* ---------------------------------------------------------- */
+
+@media print {
+  /* Reset layout to single column. */
+  body {
+    padding: 0;
+
+    font-size: 12pt;
+  }
+
+  .page {
+    display: block;
+
+    max-width: none;
+    padding: 0;
+  }
+
+  .page-wrapper {
+    max-width: none;
+  }
+
+  /* Hide navigation. */
+  .page-nav {
+    display: none;
+  }
+
+  /* Full-width factsheet + description. */
+  .grid {
+    display: block;
+  }
+
+  .grid__item:not(:first-child) {
+    padding-left: 0;
+  }
+
+  /* Factsheet as a horizontal block before content. */
+  .factsheet {
+    min-width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #ccc;
+  }
+
+  .factsheet__list {
+    columns: 2;
+    column-gap: 30px;
+  }
+
+  .factsheet__list dt {
+    break-after: avoid;
+  }
+
+  .factsheet__list dd + dt {
+    break-before: auto;
+  }
+
+  /* Images: keep them reasonable. */
+  .page-header img {
+    max-height: 200px;
+
+    object-fit: contain;
+  }
+
+  .gallery__item {
+    width: 33.33%;
+
+    page-break-inside: avoid;
+  }
+
+  /* Hide interactive elements. */
+  .nav__toggle,
+  .video-player,
+  .widget,
+  .press {
+    display: none;
+  }
+
+  /* Links: show URL after link text. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+
+    font-size: 0.85em;
+    font-style: italic;
+  }
+
+  /* But not for internal nav or anchor links. */
+  a[href^="#"]::after,
+  a[href^="."]::after,
+  a[href^="mailto"]::after {
+    content: none;
+  }
+
+  /* Avoid page breaks inside blocks. */
+  .block {
+    page-break-inside: avoid;
+  }
+
+  /* Footer. */
+  .page-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+
+    border-top: 1px solid #ccc;
+
+    font-size: 0.85em;
+  }
+}
